@@ -33,6 +33,10 @@ DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data/derived/oss-method-repoloc-pilot"
 SYSTEMS = ("chess", "gantt", "itrust", "jhotdraw")
 
 
+def repo_rel(path: Path) -> str:
+    return str(path.relative_to(PROJECT_ROOT))
+
+
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -397,8 +401,8 @@ def build_system_bundle(system: str, output_root: Path) -> dict[str, Any]:
     # A compact summary for the manifest.
     summary = {
         "system": system,
-        "source_dir": str(source_dir),
-        "generated_requirements_path": str(generated_path),
+        "source_dir": repo_rel(source_dir),
+        "generated_requirements_path": repo_rel(generated_path),
         "requirements": len(requirements),
         "methods": len(methods),
         "classes": len(classes),
@@ -467,9 +471,13 @@ def main() -> int:
         "paper": "Paper 1: Structured Repository Knowledge Trees for LLM-Grounded Code and Test Localization",
         "scope": "pilot code-localization benchmark built from the MSR open-source requirement-to-method traceability dataset",
         "source": {
-            "raw_zip": str(PROJECT_ROOT / "data/raw/oss-method/MSRCaseStudy.zip"),
-            "derived_source_root": str(SOURCE_ROOT),
-            "generated_requirement_root": str(GENERATED_ROOT),
+            "raw_zip": {
+                "included": False,
+                "path": "data/raw/oss-method/MSRCaseStudy.zip",
+                "note": "not bundled in this repository",
+            },
+            "derived_source_root": repo_rel(SOURCE_ROOT),
+            "generated_requirement_root": repo_rel(GENERATED_ROOT),
         },
         "claim_boundary": [
             "Primary branch is original requirement text.",

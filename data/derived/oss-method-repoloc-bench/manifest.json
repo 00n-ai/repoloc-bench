@@ -3,9 +3,13 @@
   "paper": "Paper 1: Structured Repository Knowledge Trees for LLM-Grounded Code and Test Localization",
   "scope": "pilot code-localization benchmark built from the MSR open-source requirement-to-method traceability dataset",
   "source": {
-    "raw_zip": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/raw/oss-method/MSRCaseStudy.zip",
-    "derived_source_root": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements",
-    "generated_requirement_root": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements"
+    "raw_zip": {
+      "included": false,
+      "path": "data/raw/oss-method/MSRCaseStudy.zip",
+      "note": "not bundled in this repository"
+    },
+    "derived_source_root": "data/derived/oss-method-llm-requirements",
+    "generated_requirement_root": "experiments/oss_method_llm_requirements"
   },
   "claim_boundary": [
     "Primary branch is original requirement text.",
@@ -24,8 +28,8 @@
   "systems": [
     {
       "system": "chess",
-      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/chessJSON",
-      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/chess_generated_requirements.jsonl",
+      "source_dir": "data/derived/oss-method-llm-requirements/chessJSON",
+      "generated_requirements_path": "experiments/oss_method_llm_requirements/chess_generated_requirements.jsonl",
       "requirements": 8,
       "methods": 752,
       "classes": 104,
@@ -40,8 +44,8 @@
     },
     {
       "system": "gantt",
-      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/ganttJSON",
-      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/gantt_generated_requirements.jsonl",
+      "source_dir": "data/derived/oss-method-llm-requirements/ganttJSON",
+      "generated_requirements_path": "experiments/oss_method_llm_requirements/gantt_generated_requirements.jsonl",
       "requirements": 18,
       "methods": 5013,
       "classes": 666,
@@ -56,8 +60,8 @@
     },
     {
       "system": "itrust",
-      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/itrustJSON",
-      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/itrust_generated_requirements.jsonl",
+      "source_dir": "data/derived/oss-method-llm-requirements/itrustJSON",
+      "generated_requirements_path": "experiments/oss_method_llm_requirements/itrust_generated_requirements.jsonl",
       "requirements": 34,
       "methods": 4907,
       "classes": 718,
@@ -72,8 +76,8 @@
     },
     {
       "system": "jhotdraw",
-      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/jhotdrawJSON",
-      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/jhotdraw_generated_requirements.jsonl",
+      "source_dir": "data/derived/oss-method-llm-requirements/jhotdrawJSON",
+      "generated_requirements_path": "experiments/oss_method_llm_requirements/jhotdraw_generated_requirements.jsonl",
       "requirements": 21,
       "methods": 6520,
       "classes": 663,
