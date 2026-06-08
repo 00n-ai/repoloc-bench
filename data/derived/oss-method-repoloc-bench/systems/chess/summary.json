@@ -1,0 +1,16 @@
+{
+  "system": "chess",
+  "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/chessJSON",
+  "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/chess_generated_requirements.jsonl",
+  "requirements": 8,
+  "methods": 752,
+  "classes": 104,
+  "traces": 6016,
+  "gold_traces": 563,
+  "methodcalls": 1042,
+  "parameters": 457,
+  "fieldclasses": 451,
+  "fieldmethods": 1031,
+  "interfaces": 23,
+  "superclasses": 18
+}

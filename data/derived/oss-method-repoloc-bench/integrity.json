@@ -1,0 +1,10 @@
+{
+  "manifest_sha256": "90aebccb0c704fc08f74e0ad67fe36dc37d000c0a45ba328e1ffd6f0a434aa2a",
+  "readme_sha256": "efb5f9d1ed60885f9feb53803cfa5b68524936449591d0a010b751c1c2663f55",
+  "system_summaries": {
+    "chess": "488828d53dc13515adef64d9bce218e2a8c112e2f26e1bb4e789826ccdce67cc",
+    "gantt": "2ab89161a8058293518702136a3e4fba07470971dd1eb72c7615cf1332224210",
+    "itrust": "49e6edfaaede64aaf83444b721c9807ed1d2a34a3f81decf046dd31af0f7b942",
+    "jhotdraw": "80ea807629c5c97915098833dfe1b294c0ef59cae215c18c351c44b74a87b82b"
+  }
+}

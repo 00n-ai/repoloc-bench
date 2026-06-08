@@ -1,0 +1,106 @@
+{
+  "dataset_name": "oss-method-repoloc-pilot",
+  "paper": "Paper 1: Structured Repository Knowledge Trees for LLM-Grounded Code and Test Localization",
+  "scope": "pilot code-localization benchmark built from the MSR open-source requirement-to-method traceability dataset",
+  "source": {
+    "raw_zip": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/raw/oss-method/MSRCaseStudy.zip",
+    "derived_source_root": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements",
+    "generated_requirement_root": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements"
+  },
+  "claim_boundary": [
+    "Primary branch is original requirement text.",
+    "LLM-imputed requirements are auxiliary sensitivity data only.",
+    "Gold links use traces with goldfinal == 'T'.",
+    "This package does not yet include test-localization ground truth."
+  ],
+  "totals": {
+    "systems": 4,
+    "requirements": 81,
+    "methods": 17192,
+    "classes": 2151,
+    "traces": 400008,
+    "gold_traces": 3235
+  },
+  "systems": [
+    {
+      "system": "chess",
+      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/chessJSON",
+      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/chess_generated_requirements.jsonl",
+      "requirements": 8,
+      "methods": 752,
+      "classes": 104,
+      "traces": 6016,
+      "gold_traces": 563,
+      "methodcalls": 1042,
+      "parameters": 457,
+      "fieldclasses": 451,
+      "fieldmethods": 1031,
+      "interfaces": 23,
+      "superclasses": 18
+    },
+    {
+      "system": "gantt",
+      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/ganttJSON",
+      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/gantt_generated_requirements.jsonl",
+      "requirements": 18,
+      "methods": 5013,
+      "classes": 666,
+      "traces": 90234,
+      "gold_traces": 1429,
+      "methodcalls": 7578,
+      "parameters": 3843,
+      "fieldclasses": 2452,
+      "fieldmethods": 892,
+      "interfaces": 209,
+      "superclasses": 180
+    },
+    {
+      "system": "itrust",
+      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/itrustJSON",
+      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/itrust_generated_requirements.jsonl",
+      "requirements": 34,
+      "methods": 4907,
+      "classes": 718,
+      "traces": 166838,
+      "gold_traces": 307,
+      "methodcalls": 12134,
+      "parameters": 2197,
+      "fieldclasses": 2048,
+      "fieldmethods": 2786,
+      "interfaces": 5,
+      "superclasses": 135
+    },
+    {
+      "system": "jhotdraw",
+      "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/jhotdrawJSON",
+      "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/jhotdraw_generated_requirements.jsonl",
+      "requirements": 21,
+      "methods": 6520,
+      "classes": 663,
+      "traces": 136920,
+      "gold_traces": 936,
+      "methodcalls": 11413,
+      "parameters": 6867,
+      "fieldclasses": 2300,
+      "fieldmethods": 5733,
+      "interfaces": 99,
+      "superclasses": 296
+    }
+  ],
+  "package_layout": {
+    "requirements_nodes": "systems/<system>/requirements_nodes.jsonl",
+    "original_tasks": "systems/<system>/original_tasks.jsonl",
+    "imputed_tasks": "systems/<system>/imputed_tasks.jsonl",
+    "methods_nodes": "systems/<system>/methods_nodes.jsonl",
+    "classes_nodes": "systems/<system>/classes_nodes.jsonl",
+    "edges": "systems/<system>/edges.jsonl",
+    "source_tables": "systems/<system>/*.json"
+  },
+  "recommended_primary_split": "original",
+  "recommended_auxiliary_split": "llm_imputed",
+  "evaluation_intent": [
+    "Hits@k / MRR for method localization",
+    "ablation of hierarchy and structural edges",
+    "token-efficiency / retrieval-budget analysis"
+  ]
+}

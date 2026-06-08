@@ -1,0 +1,16 @@
+{
+  "system": "itrust",
+  "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/itrustJSON",
+  "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/itrust_generated_requirements.jsonl",
+  "requirements": 34,
+  "methods": 4907,
+  "classes": 718,
+  "traces": 166838,
+  "gold_traces": 307,
+  "methodcalls": 12134,
+  "parameters": 2197,
+  "fieldclasses": 2048,
+  "fieldmethods": 2786,
+  "interfaces": 5,
+  "superclasses": 135
+}

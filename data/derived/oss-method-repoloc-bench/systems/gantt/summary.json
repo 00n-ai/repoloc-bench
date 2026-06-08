@@ -1,0 +1,16 @@
+{
+  "system": "gantt",
+  "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/ganttJSON",
+  "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/gantt_generated_requirements.jsonl",
+  "requirements": 18,
+  "methods": 5013,
+  "classes": 666,
+  "traces": 90234,
+  "gold_traces": 1429,
+  "methodcalls": 7578,
+  "parameters": 3843,
+  "fieldclasses": 2452,
+  "fieldmethods": 892,
+  "interfaces": 209,
+  "superclasses": 180
+}

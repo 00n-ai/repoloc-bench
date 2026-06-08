@@ -1,0 +1,16 @@
+{
+  "system": "jhotdraw",
+  "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-llm-requirements/jhotdrawJSON",
+  "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/jhotdraw_generated_requirements.jsonl",
+  "requirements": 21,
+  "methods": 6520,
+  "classes": 663,
+  "traces": 136920,
+  "gold_traces": 936,
+  "methodcalls": 11413,
+  "parameters": 6867,
+  "fieldclasses": 2300,
+  "fieldmethods": 5733,
+  "interfaces": 99,
+  "superclasses": 296
+}

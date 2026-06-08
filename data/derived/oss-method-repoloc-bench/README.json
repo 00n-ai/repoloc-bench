@@ -1,0 +1,8 @@
+{
+  "title": "OSS Method RepoLoc Pilot Package",
+  "usage": [
+    "Load systems/<system>/original_tasks.jsonl for primary experiments.",
+    "Use systems/<system>/imputed_tasks.jsonl only for auxiliary sensitivity runs.",
+    "Use systems/<system>/edges.jsonl to build the knowledge tree / graph context."
+  ]
+}
