@@ -86,9 +86,8 @@ def build_system_bundle(system: str, output_root: Path) -> dict[str, Any]:
     if not generated_path.exists():
         raise FileNotFoundError(generated_path)
 
-    # Copy the raw normalized source bundle into the package.
+    # Materialize the package bundle.
     bundle_dir = output_root / "systems" / system
-    safe_copytree(source_dir, bundle_dir / "source")
     shutil.copy2(generated_path, bundle_dir / "generated_requirements.jsonl")
 
     requirements = load_json(source_dir / "requirements.json")
