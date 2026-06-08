@@ -12,5 +12,6 @@
   "fieldclasses": 451,
   "fieldmethods": 1031,
   "interfaces": 23,
-  "superclasses": 18
+  "superclasses": 18,
+  "raw_zip_included": true
 }

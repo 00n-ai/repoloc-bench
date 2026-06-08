@@ -4,9 +4,9 @@
   "scope": "pilot code-localization benchmark built from the MSR open-source requirement-to-method traceability dataset",
   "source": {
     "raw_zip": {
-      "included": false,
+      "included": true,
       "path": "data/raw/oss-method/MSRCaseStudy.zip",
-      "note": "not bundled in this repository"
+      "sha256": "e9b9dbeb93b07ee984a7e103b22644b10ec7d6591710c3b7f362ecb24c66a954"
     },
     "derived_source_root": "data/derived/oss-method-llm-requirements",
     "generated_requirement_root": "experiments/oss_method_llm_requirements"
