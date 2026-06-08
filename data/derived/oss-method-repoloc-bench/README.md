@@ -24,3 +24,4 @@ Claim boundary:
 Next step:
 - Attach a public GitHub repo and use `REPO_ATTACHMENT_STEPS.md` to wire in code + test evidence.
 - Test evidence schema stub: `TEST_EVIDENCE_SCHEMA.md`.
+- Task manifest template: `TASK_MANIFEST_TEMPLATE.md`.
