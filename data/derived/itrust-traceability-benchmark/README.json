@@ -1,0 +1,9 @@
+{
+  "title": "Paper 1 Benchmark Dataset",
+  "usage": [
+    "Load systems/itrust/original_tasks.jsonl for the primary benchmark branch.",
+    "Use systems/itrust/imputed_tasks.jsonl only for auxiliary sensitivity runs.",
+    "Use systems/itrust/edges.jsonl or gold_trace_edges.jsonl for graph construction.",
+    "Use splits/* for train/validation/test handling and mask_suites/* for hidden-link recovery."
+  ]
+}

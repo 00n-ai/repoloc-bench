@@ -1,0 +1,157 @@
+{
+  "dataset_name": "itrust-traceability-benchmark",
+  "system": "itrust",
+  "objective": "Create a benchmark-ready dataset that can recover hidden trace links and explain them with structured evidence.",
+  "why": [
+    "Ground Paper 1 in a real repo-backed benchmark rather than a toy graph.",
+    "Measure whether heterogeneous structure improves trace recovery over flat retrieval.",
+    "Separate true trace compatibility from simple semantic similarity.",
+    "Support reranking, symbolic verification, and uncertainty experiments later.",
+    "Produce a reproducible and auditable package for the manuscript."
+  ],
+  "what_we_are_trying_to_accomplish": [
+    "Convert repo artifacts into a clean heterogeneous graph.",
+    "Preserve trace provenance and avoid leakage.",
+    "Create requirement-level train/validation/test splits.",
+    "Create masked gold-edge suites at 10/20/30%.",
+    "Provide a fair baseline surface for retrieval and graph models."
+  ],
+  "claim_boundary": [
+    "Primary branch is original requirement text.",
+    "LLM-imputed requirements are auxiliary sensitivity data only.",
+    "Gold links use traces with goldfinal == 'T'.",
+    "This package is a method-localization benchmark foundation, not yet a test-localization benchmark."
+  ],
+  "source": {
+    "base_package": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-repoloc-pilot/systems/itrust",
+    "generated_requirement_root": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-repoloc-pilot/systems/itrust/generated_requirements.jsonl"
+  },
+  "deliverables": [
+    "benchmark selection note",
+    "artifact inventory",
+    "canonical node/edge schema",
+    "normalized node table",
+    "normalized edge table",
+    "gold trace edge table",
+    "train/validation/test splits",
+    "masked evaluation suites",
+    "baseline results summary",
+    "dataset README / manifest"
+  ],
+  "acceptance_criteria": [
+    "every node has a stable ID, type, and provenance",
+    "every edge points to valid nodes and has a defined relation type",
+    "gold trace links are documented and reproducible",
+    "masked splits are non-overlapping and leakage-free",
+    "the first retrieval baseline can run end-to-end on the dataset",
+    "benchmark metrics can be reported from the same dataset package",
+    "the dataset is understandable by a future reader without hidden assumptions"
+  ],
+  "package_layout": {
+    "systems/<system>/requirements_nodes.jsonl": "requirement nodes with provenance and gold links",
+    "systems/<system>/original_tasks.jsonl": "primary query branch",
+    "systems/<system>/imputed_tasks.jsonl": "auxiliary reconstructed query branch",
+    "systems/<system>/methods_nodes.jsonl": "method nodes",
+    "systems/<system>/classes_nodes.jsonl": "class nodes",
+    "systems/<system>/edges.jsonl": "graph edges",
+    "systems/<system>/gold_trace_edges.jsonl": "positive trace subset only",
+    "splits/<split>_requirements.jsonl": "requirement-level splits",
+    "splits/<split>_gold_traces.jsonl": "gold edges by requirement split",
+    "mask_suites/mask_<pct>.json": "held-out/observed gold edge suites"
+  },
+  "evaluation_intent": [
+    "Hits@k / MRR for method localization",
+    "ablation of hierarchy and structural edges",
+    "token-efficiency / retrieval-budget analysis"
+  ],
+  "totals": {
+    "requirements": 34,
+    "methods": 4907,
+    "classes": 718,
+    "traces": 166838,
+    "gold_traces": 307
+  },
+  "split_summary": {
+    "train": {
+      "requirement_ids": [
+        26,
+        6,
+        29,
+        33,
+        2,
+        23,
+        28,
+        22,
+        10,
+        19,
+        21,
+        14,
+        1,
+        11,
+        15,
+        12,
+        34,
+        18,
+        25,
+        16,
+        8,
+        31,
+        3,
+        20
+      ],
+      "requirement_count": 24,
+      "gold_trace_count": 207
+    },
+    "validation": {
+      "requirement_ids": [
+        9,
+        13,
+        24,
+        30,
+        27
+      ],
+      "requirement_count": 5,
+      "gold_trace_count": 63
+    },
+    "test": {
+      "requirement_ids": [
+        17,
+        7,
+        4,
+        5,
+        32
+      ],
+      "requirement_count": 5,
+      "gold_trace_count": 37
+    }
+  },
+  "mask_summary": [
+    {
+      "mask_percent": 10,
+      "mask_rate": 0.1,
+      "totals": {
+        "gold_edges": 307,
+        "held_out_gold_edges": 39,
+        "observed_gold_edges": 268
+      }
+    },
+    {
+      "mask_percent": 20,
+      "mask_rate": 0.2,
+      "totals": {
+        "gold_edges": 307,
+        "held_out_gold_edges": 64,
+        "observed_gold_edges": 243
+      }
+    },
+    {
+      "mask_percent": 30,
+      "mask_rate": 0.3,
+      "totals": {
+        "gold_edges": 307,
+        "held_out_gold_edges": 95,
+        "observed_gold_edges": 212
+      }
+    }
+  ]
+}

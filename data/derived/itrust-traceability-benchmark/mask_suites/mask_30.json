@@ -1,0 +1,4038 @@
+{
+  "mask_rate": 0.3,
+  "mask_percent": 30,
+  "held_out_gold_edges": [
+    {
+      "edge_id": "itrust:req-method:101718",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:2992",
+      "requirement_id": 1,
+      "method_id": 2992,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:158260",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:4655",
+      "requirement_id": 1,
+      "method_id": 4655,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:4411",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:130",
+      "requirement_id": 2,
+      "method_id": 130,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:158329",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:4657",
+      "requirement_id": 2,
+      "method_id": 4657,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:22160",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:652",
+      "requirement_id": 3,
+      "method_id": 652,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27464",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:808",
+      "requirement_id": 3,
+      "method_id": 808,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27498",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:809",
+      "requirement_id": 3,
+      "method_id": 809,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27566",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:811",
+      "requirement_id": 3,
+      "method_id": 811,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39874",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:1173",
+      "requirement_id": 3,
+      "method_id": 1173,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97402",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2865",
+      "requirement_id": 3,
+      "method_id": 2865,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:14953",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:440",
+      "requirement_id": 4,
+      "method_id": 440,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:28315",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:833",
+      "requirement_id": 4,
+      "method_id": 833,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106277",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:3126",
+      "requirement_id": 4,
+      "method_id": 3126,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:160677",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:4726",
+      "requirement_id": 4,
+      "method_id": 4726,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106244",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:5",
+      "target_node_id": "method:itrust:3125",
+      "requirement_id": 5,
+      "method_id": 3125,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:44807",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:1318",
+      "requirement_id": 6,
+      "method_id": 1318,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101621",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:2989",
+      "requirement_id": 6,
+      "method_id": 2989,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102811",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:3024",
+      "requirement_id": 6,
+      "method_id": 3024,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102981",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:3029",
+      "requirement_id": 6,
+      "method_id": 3029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:35254",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:7",
+      "target_node_id": "method:itrust:1037",
+      "requirement_id": 7,
+      "method_id": 1037,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37635",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:1107",
+      "requirement_id": 8,
+      "method_id": 1107,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96149",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:2828",
+      "requirement_id": 8,
+      "method_id": 2828,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98665",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:2902",
+      "requirement_id": 8,
+      "method_id": 2902,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:13122",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:386",
+      "requirement_id": 9,
+      "method_id": 386,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:13190",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:388",
+      "requirement_id": 9,
+      "method_id": 388,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19684",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 9,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102984",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:3029",
+      "requirement_id": 9,
+      "method_id": 3029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:11809",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:348",
+      "requirement_id": 10,
+      "method_id": 348,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:12251",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:361",
+      "requirement_id": 10,
+      "method_id": 361,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97187",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:2859",
+      "requirement_id": 12,
+      "method_id": 2859,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101573",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:2988",
+      "requirement_id": 12,
+      "method_id": 2988,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:31025",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:913",
+      "requirement_id": 13,
+      "method_id": 913,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:32079",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:944",
+      "requirement_id": 13,
+      "method_id": 944,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97733",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2875",
+      "requirement_id": 13,
+      "method_id": 2875,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99161",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2917",
+      "requirement_id": 13,
+      "method_id": 2917,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99195",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2918",
+      "requirement_id": 13,
+      "method_id": 2918,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:159851",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:4702",
+      "requirement_id": 13,
+      "method_id": 4702,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:160055",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:4708",
+      "requirement_id": 13,
+      "method_id": 4708,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:148938",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:4381",
+      "requirement_id": 14,
+      "method_id": 4381,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:149414",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:4395",
+      "requirement_id": 14,
+      "method_id": 4395,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:20011",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:15",
+      "target_node_id": "method:itrust:589",
+      "requirement_id": 15,
+      "method_id": 589,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106337",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:15",
+      "target_node_id": "method:itrust:3128",
+      "requirement_id": 15,
+      "method_id": 3128,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:30416",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:16",
+      "target_node_id": "method:itrust:895",
+      "requirement_id": 16,
+      "method_id": 895,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99096",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:16",
+      "target_node_id": "method:itrust:2915",
+      "requirement_id": 16,
+      "method_id": 2915,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97159",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 17,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106271",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:3126",
+      "requirement_id": 17,
+      "method_id": 3126,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1756",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 18,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18246",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:537",
+      "requirement_id": 18,
+      "method_id": 537,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18314",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:539",
+      "requirement_id": 18,
+      "method_id": 539,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18348",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:540",
+      "requirement_id": 18,
+      "method_id": 540,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101818",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:2995",
+      "requirement_id": 18,
+      "method_id": 2995,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101954",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:2999",
+      "requirement_id": 18,
+      "method_id": 2999,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37627",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1107",
+      "requirement_id": 19,
+      "method_id": 1107,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37661",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1108",
+      "requirement_id": 19,
+      "method_id": 1108,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:38137",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1122",
+      "requirement_id": 19,
+      "method_id": 1122,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:38171",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1123",
+      "requirement_id": 19,
+      "method_id": 1123,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:43543",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1281",
+      "requirement_id": 19,
+      "method_id": 1281,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98589",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2900",
+      "requirement_id": 19,
+      "method_id": 2900,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101819",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2995",
+      "requirement_id": 19,
+      "method_id": 2995,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102193",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:3006",
+      "requirement_id": 19,
+      "method_id": 3006,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105389",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:3100",
+      "requirement_id": 19,
+      "method_id": 3100,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105807",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:20",
+      "target_node_id": "method:itrust:3112",
+      "requirement_id": 20,
+      "method_id": 3112,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98974",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:21",
+      "target_node_id": "method:itrust:2911",
+      "requirement_id": 21,
+      "method_id": 2911,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105978",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:21",
+      "target_node_id": "method:itrust:3117",
+      "requirement_id": 21,
+      "method_id": 3117,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:23223",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:684",
+      "requirement_id": 22,
+      "method_id": 684,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:23291",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:686",
+      "requirement_id": 22,
+      "method_id": 686,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:100369",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:2953",
+      "requirement_id": 22,
+      "method_id": 2953,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1736",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:23",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 23,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101255",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:24",
+      "target_node_id": "method:itrust:2979",
+      "requirement_id": 24,
+      "method_id": 2979,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:25538",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:752",
+      "requirement_id": 25,
+      "method_id": 752,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99590",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:2930",
+      "requirement_id": 25,
+      "method_id": 2930,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102888",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:3027",
+      "requirement_id": 25,
+      "method_id": 3027,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19657",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 26,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:36317",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:1069",
+      "requirement_id": 26,
+      "method_id": 1069,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:34958",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:27",
+      "target_node_id": "method:itrust:1029",
+      "requirement_id": 27,
+      "method_id": 1029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102959",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:28",
+      "target_node_id": "method:itrust:3029",
+      "requirement_id": 28,
+      "method_id": 3029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101770",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:2994",
+      "requirement_id": 29,
+      "method_id": 2994,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102790",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3024",
+      "requirement_id": 29,
+      "method_id": 3024,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:104286",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3068",
+      "requirement_id": 29,
+      "method_id": 3068,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:17247",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:508",
+      "requirement_id": 30,
+      "method_id": 508,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97147",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 30,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102009",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 30,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102213",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3007",
+      "requirement_id": 30,
+      "method_id": 3007,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:104933",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3087",
+      "requirement_id": 30,
+      "method_id": 3087,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105205",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3095",
+      "requirement_id": 30,
+      "method_id": 3095,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27040",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:796",
+      "requirement_id": 31,
+      "method_id": 796,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:95754",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:2817",
+      "requirement_id": 31,
+      "method_id": 2817,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102078",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:3003",
+      "requirement_id": 31,
+      "method_id": 3003,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:25036",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:737",
+      "requirement_id": 32,
+      "method_id": 737,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:25104",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:739",
+      "requirement_id": 32,
+      "method_id": 739,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:25138",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:740",
+      "requirement_id": 32,
+      "method_id": 740,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101978",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:3000",
+      "requirement_id": 32,
+      "method_id": 3000,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1748",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:33",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 33,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:7972",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:34",
+      "target_node_id": "method:itrust:235",
+      "requirement_id": 34,
+      "method_id": 235,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98174",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:34",
+      "target_node_id": "method:itrust:2888",
+      "requirement_id": 34,
+      "method_id": 2888,
+      "trace_label": "T",
+      "is_gold": true
+    }
+  ],
+  "observed_gold_edges": [
+    {
+      "edge_id": "itrust:req-method:5226",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:154",
+      "requirement_id": 1,
+      "method_id": 154,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96924",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:2851",
+      "requirement_id": 1,
+      "method_id": 2851,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101514",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:2986",
+      "requirement_id": 1,
+      "method_id": 2986,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106240",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:3125",
+      "requirement_id": 1,
+      "method_id": 3125,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106274",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:1",
+      "target_node_id": "method:itrust:3126",
+      "requirement_id": 1,
+      "method_id": 3126,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:6519",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:192",
+      "requirement_id": 2,
+      "method_id": 192,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96925",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:2851",
+      "requirement_id": 2,
+      "method_id": 2851,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102705",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:3021",
+      "requirement_id": 2,
+      "method_id": 3021,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102773",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:3023",
+      "requirement_id": 2,
+      "method_id": 3023,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106241",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:3125",
+      "requirement_id": 2,
+      "method_id": 3125,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106275",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:2",
+      "target_node_id": "method:itrust:3126",
+      "requirement_id": 2,
+      "method_id": 3126,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1760",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 3,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:6894",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:203",
+      "requirement_id": 3,
+      "method_id": 203,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27430",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:807",
+      "requirement_id": 3,
+      "method_id": 807,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27532",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:810",
+      "requirement_id": 3,
+      "method_id": 810,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27634",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:813",
+      "requirement_id": 3,
+      "method_id": 813,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:95702",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2815",
+      "requirement_id": 3,
+      "method_id": 2815,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97062",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2855",
+      "requirement_id": 3,
+      "method_id": 2855,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97198",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2859",
+      "requirement_id": 3,
+      "method_id": 2859,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97334",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2863",
+      "requirement_id": 3,
+      "method_id": 2863,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99884",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2938",
+      "requirement_id": 3,
+      "method_id": 2938,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99952",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2940",
+      "requirement_id": 3,
+      "method_id": 2940,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101278",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:2979",
+      "requirement_id": 3,
+      "method_id": 2979,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105392",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:3100",
+      "requirement_id": 3,
+      "method_id": 3100,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105426",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:3101",
+      "requirement_id": 3,
+      "method_id": 3101,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:153264",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:3",
+      "target_node_id": "method:itrust:4508",
+      "requirement_id": 3,
+      "method_id": 4508,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1761",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 4,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:14035",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:413",
+      "requirement_id": 4,
+      "method_id": 413,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:29573",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:870",
+      "requirement_id": 4,
+      "method_id": 870,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97437",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:2866",
+      "requirement_id": 4,
+      "method_id": 2866,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101721",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:2992",
+      "requirement_id": 4,
+      "method_id": 2992,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102401",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:3012",
+      "requirement_id": 4,
+      "method_id": 3012,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102775",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:3023",
+      "requirement_id": 4,
+      "method_id": 3023,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106243",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:3125",
+      "requirement_id": 4,
+      "method_id": 3125,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:160337",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:4716",
+      "requirement_id": 4,
+      "method_id": 4716,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:160405",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:4",
+      "target_node_id": "method:itrust:4718",
+      "requirement_id": 4,
+      "method_id": 4718,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106278",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:5",
+      "target_node_id": "method:itrust:3126",
+      "requirement_id": 5,
+      "method_id": 3126,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:7373",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:217",
+      "requirement_id": 6,
+      "method_id": 217,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:7441",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:219",
+      "requirement_id": 6,
+      "method_id": 219,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:44671",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:1314",
+      "requirement_id": 6,
+      "method_id": 1314,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:44705",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:1315",
+      "requirement_id": 6,
+      "method_id": 1315,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:44909",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:1321",
+      "requirement_id": 6,
+      "method_id": 1321,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101689",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:2991",
+      "requirement_id": 6,
+      "method_id": 2991,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101859",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:2996",
+      "requirement_id": 6,
+      "method_id": 2996,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102437",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:6",
+      "target_node_id": "method:itrust:3013",
+      "requirement_id": 6,
+      "method_id": 3013,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106076",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:7",
+      "target_node_id": "method:itrust:3120",
+      "requirement_id": 7,
+      "method_id": 3120,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37601",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:1106",
+      "requirement_id": 8,
+      "method_id": 1106,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37669",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:1108",
+      "requirement_id": 8,
+      "method_id": 1108,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37839",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:1113",
+      "requirement_id": 8,
+      "method_id": 1113,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37907",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:1115",
+      "requirement_id": 8,
+      "method_id": 1115,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98699",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:2903",
+      "requirement_id": 8,
+      "method_id": 2903,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99923",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:2939",
+      "requirement_id": 8,
+      "method_id": 2939,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101215",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:8",
+      "target_node_id": "method:itrust:2977",
+      "requirement_id": 8,
+      "method_id": 2977,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:9620",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:283",
+      "requirement_id": 9,
+      "method_id": 283,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:9654",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:284",
+      "requirement_id": 9,
+      "method_id": 284,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:9688",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:285",
+      "requirement_id": 9,
+      "method_id": 285,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:12986",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:382",
+      "requirement_id": 9,
+      "method_id": 382,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:13326",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:392",
+      "requirement_id": 9,
+      "method_id": 392,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97170",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 9,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98598",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:2900",
+      "requirement_id": 9,
+      "method_id": 2900,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98666",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:2902",
+      "requirement_id": 9,
+      "method_id": 2902,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98700",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:2903",
+      "requirement_id": 9,
+      "method_id": 2903,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101216",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:9",
+      "target_node_id": "method:itrust:2977",
+      "requirement_id": 9,
+      "method_id": 2977,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:12217",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:360",
+      "requirement_id": 10,
+      "method_id": 360,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19663",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 10,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96129",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:2828",
+      "requirement_id": 10,
+      "method_id": 2828,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97149",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 10,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101297",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:2980",
+      "requirement_id": 10,
+      "method_id": 2980,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101433",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:10",
+      "target_node_id": "method:itrust:2984",
+      "requirement_id": 10,
+      "method_id": 2984,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106127",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:11",
+      "target_node_id": "method:itrust:3122",
+      "requirement_id": 11,
+      "method_id": 3122,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:17219",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:507",
+      "requirement_id": 12,
+      "method_id": 507,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:17287",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:509",
+      "requirement_id": 12,
+      "method_id": 509,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19667",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 12,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97153",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 12,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102321",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:12",
+      "target_node_id": "method:itrust:3010",
+      "requirement_id": 12,
+      "method_id": 3010,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:30005",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:883",
+      "requirement_id": 13,
+      "method_id": 883,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:30991",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:912",
+      "requirement_id": 13,
+      "method_id": 912,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:31399",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:924",
+      "requirement_id": 13,
+      "method_id": 924,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:31501",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:927",
+      "requirement_id": 13,
+      "method_id": 927,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:32181",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:947",
+      "requirement_id": 13,
+      "method_id": 947,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97563",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2870",
+      "requirement_id": 13,
+      "method_id": 2870,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97597",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2871",
+      "requirement_id": 13,
+      "method_id": 2871,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99263",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2920",
+      "requirement_id": 13,
+      "method_id": 2920,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99331",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2922",
+      "requirement_id": 13,
+      "method_id": 2922,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99365",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2923",
+      "requirement_id": 13,
+      "method_id": 2923,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99433",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2925",
+      "requirement_id": 13,
+      "method_id": 2925,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:100929",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2969",
+      "requirement_id": 13,
+      "method_id": 2969,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:100963",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2970",
+      "requirement_id": 13,
+      "method_id": 2970,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101065",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:2973",
+      "requirement_id": 13,
+      "method_id": 2973,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:159375",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:4688",
+      "requirement_id": 13,
+      "method_id": 4688,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:160463",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:13",
+      "target_node_id": "method:itrust:4720",
+      "requirement_id": 13,
+      "method_id": 4720,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:7124",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:210",
+      "requirement_id": 14,
+      "method_id": 210,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:7158",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:211",
+      "requirement_id": 14,
+      "method_id": 211,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98788",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:2906",
+      "requirement_id": 14,
+      "method_id": 2906,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:149312",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:4392",
+      "requirement_id": 14,
+      "method_id": 4392,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:149720",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:14",
+      "target_node_id": "method:itrust:4404",
+      "requirement_id": 14,
+      "method_id": 4404,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:20045",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:15",
+      "target_node_id": "method:itrust:590",
+      "requirement_id": 15,
+      "method_id": 590,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106371",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:15",
+      "target_node_id": "method:itrust:3129",
+      "requirement_id": 15,
+      "method_id": 3129,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106405",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:15",
+      "target_node_id": "method:itrust:3130",
+      "requirement_id": 15,
+      "method_id": 3130,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:30450",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:16",
+      "target_node_id": "method:itrust:896",
+      "requirement_id": 16,
+      "method_id": 896,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:30484",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:16",
+      "target_node_id": "method:itrust:897",
+      "requirement_id": 16,
+      "method_id": 897,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98858",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:16",
+      "target_node_id": "method:itrust:2908",
+      "requirement_id": 16,
+      "method_id": 2908,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:159786",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:16",
+      "target_node_id": "method:itrust:4700",
+      "requirement_id": 16,
+      "method_id": 4700,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1755",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 17,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19673",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 17,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:42487",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:1250",
+      "requirement_id": 17,
+      "method_id": 1250,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102089",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:3003",
+      "requirement_id": 17,
+      "method_id": 3003,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:106237",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:17",
+      "target_node_id": "method:itrust:3125",
+      "requirement_id": 17,
+      "method_id": 3125,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18280",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:538",
+      "requirement_id": 18,
+      "method_id": 538,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18382",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:541",
+      "requirement_id": 18,
+      "method_id": 541,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18450",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:543",
+      "requirement_id": 18,
+      "method_id": 543,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:18484",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:544",
+      "requirement_id": 18,
+      "method_id": 544,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19674",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 18,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:38102",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:1121",
+      "requirement_id": 18,
+      "method_id": 1121,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96140",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:2828",
+      "requirement_id": 18,
+      "method_id": 2828,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97160",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 18,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101886",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:2997",
+      "requirement_id": 18,
+      "method_id": 2997,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102022",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 18,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102804",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:3024",
+      "requirement_id": 18,
+      "method_id": 3024,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105320",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:3098",
+      "requirement_id": 18,
+      "method_id": 3098,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105354",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:18",
+      "target_node_id": "method:itrust:3099",
+      "requirement_id": 18,
+      "method_id": 3099,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19675",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 19,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37593",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1106",
+      "requirement_id": 19,
+      "method_id": 1106,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37763",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1111",
+      "requirement_id": 19,
+      "method_id": 1111,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37933",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1116",
+      "requirement_id": 19,
+      "method_id": 1116,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37967",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1117",
+      "requirement_id": 19,
+      "method_id": 1117,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39837",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1172",
+      "requirement_id": 19,
+      "method_id": 1172,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39905",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1174",
+      "requirement_id": 19,
+      "method_id": 1174,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:43509",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1280",
+      "requirement_id": 19,
+      "method_id": 1280,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:43645",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1284",
+      "requirement_id": 19,
+      "method_id": 1284,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:43679",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:1285",
+      "requirement_id": 19,
+      "method_id": 1285,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96141",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2828",
+      "requirement_id": 19,
+      "method_id": 2828,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97161",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 19,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98657",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2902",
+      "requirement_id": 19,
+      "method_id": 2902,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98691",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2903",
+      "requirement_id": 19,
+      "method_id": 2903,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101207",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2977",
+      "requirement_id": 19,
+      "method_id": 2977,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101853",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2996",
+      "requirement_id": 19,
+      "method_id": 2996,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101887",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:2997",
+      "requirement_id": 19,
+      "method_id": 2997,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102023",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 19,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102125",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:3004",
+      "requirement_id": 19,
+      "method_id": 3004,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102227",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:3007",
+      "requirement_id": 19,
+      "method_id": 3007,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105423",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:19",
+      "target_node_id": "method:itrust:3101",
+      "requirement_id": 19,
+      "method_id": 3101,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:29851",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:20",
+      "target_node_id": "method:itrust:878",
+      "requirement_id": 20,
+      "method_id": 878,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:44370",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:21",
+      "target_node_id": "method:itrust:1305",
+      "requirement_id": 21,
+      "method_id": 1305,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:44404",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:21",
+      "target_node_id": "method:itrust:1306",
+      "requirement_id": 21,
+      "method_id": 1306,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105944",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:21",
+      "target_node_id": "method:itrust:3116",
+      "requirement_id": 21,
+      "method_id": 3116,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19653",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 22,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37877",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:1115",
+      "requirement_id": 22,
+      "method_id": 1115,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97139",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 22,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99553",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:2929",
+      "requirement_id": 22,
+      "method_id": 2929,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99893",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:2939",
+      "requirement_id": 22,
+      "method_id": 2939,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99927",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:2940",
+      "requirement_id": 22,
+      "method_id": 2940,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102001",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:22",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 22,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:23224",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:23",
+      "target_node_id": "method:itrust:684",
+      "requirement_id": 23,
+      "method_id": 684,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27610",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:23",
+      "target_node_id": "method:itrust:813",
+      "requirement_id": 23,
+      "method_id": 813,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:41381",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:24",
+      "target_node_id": "method:itrust:1218",
+      "requirement_id": 24,
+      "method_id": 1218,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102003",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:24",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 24,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:25572",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:753",
+      "requirement_id": 25,
+      "method_id": 753,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:99624",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:2931",
+      "requirement_id": 25,
+      "method_id": 2931,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101222",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:2978",
+      "requirement_id": 25,
+      "method_id": 2978,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101868",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:2997",
+      "requirement_id": 25,
+      "method_id": 2997,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102004",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 25,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102956",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:25",
+      "target_node_id": "method:itrust:3029",
+      "requirement_id": 25,
+      "method_id": 3029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1739",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 26,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:29109",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:857",
+      "requirement_id": 26,
+      "method_id": 857,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:97143",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:2858",
+      "requirement_id": 26,
+      "method_id": 2858,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:100475",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:2956",
+      "requirement_id": 26,
+      "method_id": 2956,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:100577",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:26",
+      "target_node_id": "method:itrust:2959",
+      "requirement_id": 26,
+      "method_id": 2959,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101904",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:27",
+      "target_node_id": "method:itrust:2998",
+      "requirement_id": 27,
+      "method_id": 2998,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102006",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:27",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 27,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102788",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:27",
+      "target_node_id": "method:itrust:3024",
+      "requirement_id": 27,
+      "method_id": 3024,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:42779",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:28",
+      "target_node_id": "method:itrust:1259",
+      "requirement_id": 28,
+      "method_id": 1259,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102143",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:28",
+      "target_node_id": "method:itrust:3005",
+      "requirement_id": 28,
+      "method_id": 3005,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101600",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:2989",
+      "requirement_id": 29,
+      "method_id": 2989,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102008",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 29,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102960",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3029",
+      "requirement_id": 29,
+      "method_id": 3029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:103946",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3058",
+      "requirement_id": 29,
+      "method_id": 3058,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:103980",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3059",
+      "requirement_id": 29,
+      "method_id": 3059,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:104320",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:29",
+      "target_node_id": "method:itrust:3069",
+      "requirement_id": 29,
+      "method_id": 3069,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:5789",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:171",
+      "requirement_id": 30,
+      "method_id": 171,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:11331",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:334",
+      "requirement_id": 30,
+      "method_id": 334,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:11365",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:335",
+      "requirement_id": 30,
+      "method_id": 335,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:19661",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:579",
+      "requirement_id": 30,
+      "method_id": 579,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39347",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:1158",
+      "requirement_id": 30,
+      "method_id": 1158,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39415",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:1160",
+      "requirement_id": 30,
+      "method_id": 1160,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39449",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:1161",
+      "requirement_id": 30,
+      "method_id": 1161,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:39483",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:1162",
+      "requirement_id": 30,
+      "method_id": 1162,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102179",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3006",
+      "requirement_id": 30,
+      "method_id": 3006,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105001",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3089",
+      "requirement_id": 30,
+      "method_id": 3089,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105035",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3090",
+      "requirement_id": 30,
+      "method_id": 3090,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:105103",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:3092",
+      "requirement_id": 30,
+      "method_id": 3092,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:160591",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:30",
+      "target_node_id": "method:itrust:4724",
+      "requirement_id": 30,
+      "method_id": 4724,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1744",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 31,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27006",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:795",
+      "requirement_id": 31,
+      "method_id": 795,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:27074",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:797",
+      "requirement_id": 31,
+      "method_id": 797,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:37682",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:1109",
+      "requirement_id": 31,
+      "method_id": 1109,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:42476",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:1250",
+      "requirement_id": 31,
+      "method_id": 1250,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:101296",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:31",
+      "target_node_id": "method:itrust:2980",
+      "requirement_id": 31,
+      "method_id": 2980,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:1746",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:52",
+      "requirement_id": 32,
+      "method_id": 52,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:25070",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:738",
+      "requirement_id": 32,
+      "method_id": 738,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:29116",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:857",
+      "requirement_id": 32,
+      "method_id": 857,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:95790",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:2818",
+      "requirement_id": 32,
+      "method_id": 2818,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:95892",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:2821",
+      "requirement_id": 32,
+      "method_id": 2821,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96028",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:2825",
+      "requirement_id": 32,
+      "method_id": 2825,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:100482",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:2956",
+      "requirement_id": 32,
+      "method_id": 2956,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102964",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:32",
+      "target_node_id": "method:itrust:3029",
+      "requirement_id": 32,
+      "method_id": 3029,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:96132",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:33",
+      "target_node_id": "method:itrust:2828",
+      "requirement_id": 33,
+      "method_id": 2828,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98138",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:33",
+      "target_node_id": "method:itrust:2887",
+      "requirement_id": 33,
+      "method_id": 2887,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:102014",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:33",
+      "target_node_id": "method:itrust:3001",
+      "requirement_id": 33,
+      "method_id": 3001,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:7904",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:34",
+      "target_node_id": "method:itrust:233",
+      "requirement_id": 34,
+      "method_id": 233,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98106",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:34",
+      "target_node_id": "method:itrust:2886",
+      "requirement_id": 34,
+      "method_id": 2886,
+      "trace_label": "T",
+      "is_gold": true
+    },
+    {
+      "edge_id": "itrust:req-method:98140",
+      "system": "itrust",
+      "edge_type": "requirement_to_method",
+      "source_node_id": "requirement:itrust:34",
+      "target_node_id": "method:itrust:2887",
+      "requirement_id": 34,
+      "method_id": 2887,
+      "trace_label": "T",
+      "is_gold": true
+    }
+  ],
+  "per_requirement": [
+    {
+      "requirement_id": 1,
+      "gold_count": 7,
+      "held_out_count": 2,
+      "observed_count": 5,
+      "held_out_edge_ids": [
+        "itrust:req-method:101718",
+        "itrust:req-method:158260"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:5226",
+        "itrust:req-method:96924",
+        "itrust:req-method:101514",
+        "itrust:req-method:106240",
+        "itrust:req-method:106274"
+      ]
+    },
+    {
+      "requirement_id": 2,
+      "gold_count": 8,
+      "held_out_count": 2,
+      "observed_count": 6,
+      "held_out_edge_ids": [
+        "itrust:req-method:4411",
+        "itrust:req-method:158329"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:6519",
+        "itrust:req-method:96925",
+        "itrust:req-method:102705",
+        "itrust:req-method:102773",
+        "itrust:req-method:106241",
+        "itrust:req-method:106275"
+      ]
+    },
+    {
+      "requirement_id": 3,
+      "gold_count": 21,
+      "held_out_count": 6,
+      "observed_count": 15,
+      "held_out_edge_ids": [
+        "itrust:req-method:22160",
+        "itrust:req-method:27464",
+        "itrust:req-method:27498",
+        "itrust:req-method:27566",
+        "itrust:req-method:39874",
+        "itrust:req-method:97402"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:1760",
+        "itrust:req-method:6894",
+        "itrust:req-method:27430",
+        "itrust:req-method:27532",
+        "itrust:req-method:27634",
+        "itrust:req-method:95702",
+        "itrust:req-method:97062",
+        "itrust:req-method:97198",
+        "itrust:req-method:97334",
+        "itrust:req-method:99884",
+        "itrust:req-method:99952",
+        "itrust:req-method:101278",
+        "itrust:req-method:105392",
+        "itrust:req-method:105426",
+        "itrust:req-method:153264"
+      ]
+    },
+    {
+      "requirement_id": 4,
+      "gold_count": 14,
+      "held_out_count": 4,
+      "observed_count": 10,
+      "held_out_edge_ids": [
+        "itrust:req-method:14953",
+        "itrust:req-method:28315",
+        "itrust:req-method:106277",
+        "itrust:req-method:160677"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:1761",
+        "itrust:req-method:14035",
+        "itrust:req-method:29573",
+        "itrust:req-method:97437",
+        "itrust:req-method:101721",
+        "itrust:req-method:102401",
+        "itrust:req-method:102775",
+        "itrust:req-method:106243",
+        "itrust:req-method:160337",
+        "itrust:req-method:160405"
+      ]
+    },
+    {
+      "requirement_id": 5,
+      "gold_count": 2,
+      "held_out_count": 1,
+      "observed_count": 1,
+      "held_out_edge_ids": [
+        "itrust:req-method:106244"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:106278"
+      ]
+    },
+    {
+      "requirement_id": 6,
+      "gold_count": 12,
+      "held_out_count": 4,
+      "observed_count": 8,
+      "held_out_edge_ids": [
+        "itrust:req-method:44807",
+        "itrust:req-method:101621",
+        "itrust:req-method:102811",
+        "itrust:req-method:102981"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:7373",
+        "itrust:req-method:7441",
+        "itrust:req-method:44671",
+        "itrust:req-method:44705",
+        "itrust:req-method:44909",
+        "itrust:req-method:101689",
+        "itrust:req-method:101859",
+        "itrust:req-method:102437"
+      ]
+    },
+    {
+      "requirement_id": 7,
+      "gold_count": 2,
+      "held_out_count": 1,
+      "observed_count": 1,
+      "held_out_edge_ids": [
+        "itrust:req-method:35254"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:106076"
+      ]
+    },
+    {
+      "requirement_id": 8,
+      "gold_count": 10,
+      "held_out_count": 3,
+      "observed_count": 7,
+      "held_out_edge_ids": [
+        "itrust:req-method:37635",
+        "itrust:req-method:96149",
+        "itrust:req-method:98665"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:37601",
+        "itrust:req-method:37669",
+        "itrust:req-method:37839",
+        "itrust:req-method:37907",
+        "itrust:req-method:98699",
+        "itrust:req-method:99923",
+        "itrust:req-method:101215"
+      ]
+    },
+    {
+      "requirement_id": 9,
+      "gold_count": 14,
+      "held_out_count": 4,
+      "observed_count": 10,
+      "held_out_edge_ids": [
+        "itrust:req-method:13122",
+        "itrust:req-method:13190",
+        "itrust:req-method:19684",
+        "itrust:req-method:102984"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:9620",
+        "itrust:req-method:9654",
+        "itrust:req-method:9688",
+        "itrust:req-method:12986",
+        "itrust:req-method:13326",
+        "itrust:req-method:97170",
+        "itrust:req-method:98598",
+        "itrust:req-method:98666",
+        "itrust:req-method:98700",
+        "itrust:req-method:101216"
+      ]
+    },
+    {
+      "requirement_id": 10,
+      "gold_count": 8,
+      "held_out_count": 2,
+      "observed_count": 6,
+      "held_out_edge_ids": [
+        "itrust:req-method:11809",
+        "itrust:req-method:12251"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:12217",
+        "itrust:req-method:19663",
+        "itrust:req-method:96129",
+        "itrust:req-method:97149",
+        "itrust:req-method:101297",
+        "itrust:req-method:101433"
+      ]
+    },
+    {
+      "requirement_id": 11,
+      "gold_count": 1,
+      "held_out_count": 0,
+      "observed_count": 1,
+      "held_out_edge_ids": [],
+      "observed_edge_ids": [
+        "itrust:req-method:106127"
+      ]
+    },
+    {
+      "requirement_id": 12,
+      "gold_count": 7,
+      "held_out_count": 2,
+      "observed_count": 5,
+      "held_out_edge_ids": [
+        "itrust:req-method:97187",
+        "itrust:req-method:101573"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:17219",
+        "itrust:req-method:17287",
+        "itrust:req-method:19667",
+        "itrust:req-method:97153",
+        "itrust:req-method:102321"
+      ]
+    },
+    {
+      "requirement_id": 13,
+      "gold_count": 23,
+      "held_out_count": 7,
+      "observed_count": 16,
+      "held_out_edge_ids": [
+        "itrust:req-method:31025",
+        "itrust:req-method:32079",
+        "itrust:req-method:97733",
+        "itrust:req-method:99161",
+        "itrust:req-method:99195",
+        "itrust:req-method:159851",
+        "itrust:req-method:160055"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:30005",
+        "itrust:req-method:30991",
+        "itrust:req-method:31399",
+        "itrust:req-method:31501",
+        "itrust:req-method:32181",
+        "itrust:req-method:97563",
+        "itrust:req-method:97597",
+        "itrust:req-method:99263",
+        "itrust:req-method:99331",
+        "itrust:req-method:99365",
+        "itrust:req-method:99433",
+        "itrust:req-method:100929",
+        "itrust:req-method:100963",
+        "itrust:req-method:101065",
+        "itrust:req-method:159375",
+        "itrust:req-method:160463"
+      ]
+    },
+    {
+      "requirement_id": 14,
+      "gold_count": 7,
+      "held_out_count": 2,
+      "observed_count": 5,
+      "held_out_edge_ids": [
+        "itrust:req-method:148938",
+        "itrust:req-method:149414"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:7124",
+        "itrust:req-method:7158",
+        "itrust:req-method:98788",
+        "itrust:req-method:149312",
+        "itrust:req-method:149720"
+      ]
+    },
+    {
+      "requirement_id": 15,
+      "gold_count": 5,
+      "held_out_count": 2,
+      "observed_count": 3,
+      "held_out_edge_ids": [
+        "itrust:req-method:20011",
+        "itrust:req-method:106337"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:20045",
+        "itrust:req-method:106371",
+        "itrust:req-method:106405"
+      ]
+    },
+    {
+      "requirement_id": 16,
+      "gold_count": 6,
+      "held_out_count": 2,
+      "observed_count": 4,
+      "held_out_edge_ids": [
+        "itrust:req-method:30416",
+        "itrust:req-method:99096"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:30450",
+        "itrust:req-method:30484",
+        "itrust:req-method:98858",
+        "itrust:req-method:159786"
+      ]
+    },
+    {
+      "requirement_id": 17,
+      "gold_count": 7,
+      "held_out_count": 2,
+      "observed_count": 5,
+      "held_out_edge_ids": [
+        "itrust:req-method:97159",
+        "itrust:req-method:106271"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:1755",
+        "itrust:req-method:19673",
+        "itrust:req-method:42487",
+        "itrust:req-method:102089",
+        "itrust:req-method:106237"
+      ]
+    },
+    {
+      "requirement_id": 18,
+      "gold_count": 19,
+      "held_out_count": 6,
+      "observed_count": 13,
+      "held_out_edge_ids": [
+        "itrust:req-method:1756",
+        "itrust:req-method:18246",
+        "itrust:req-method:18314",
+        "itrust:req-method:18348",
+        "itrust:req-method:101818",
+        "itrust:req-method:101954"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:18280",
+        "itrust:req-method:18382",
+        "itrust:req-method:18450",
+        "itrust:req-method:18484",
+        "itrust:req-method:19674",
+        "itrust:req-method:38102",
+        "itrust:req-method:96140",
+        "itrust:req-method:97160",
+        "itrust:req-method:101886",
+        "itrust:req-method:102022",
+        "itrust:req-method:102804",
+        "itrust:req-method:105320",
+        "itrust:req-method:105354"
+      ]
+    },
+    {
+      "requirement_id": 19,
+      "gold_count": 30,
+      "held_out_count": 9,
+      "observed_count": 21,
+      "held_out_edge_ids": [
+        "itrust:req-method:37627",
+        "itrust:req-method:37661",
+        "itrust:req-method:38137",
+        "itrust:req-method:38171",
+        "itrust:req-method:43543",
+        "itrust:req-method:98589",
+        "itrust:req-method:101819",
+        "itrust:req-method:102193",
+        "itrust:req-method:105389"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:19675",
+        "itrust:req-method:37593",
+        "itrust:req-method:37763",
+        "itrust:req-method:37933",
+        "itrust:req-method:37967",
+        "itrust:req-method:39837",
+        "itrust:req-method:39905",
+        "itrust:req-method:43509",
+        "itrust:req-method:43645",
+        "itrust:req-method:43679",
+        "itrust:req-method:96141",
+        "itrust:req-method:97161",
+        "itrust:req-method:98657",
+        "itrust:req-method:98691",
+        "itrust:req-method:101207",
+        "itrust:req-method:101853",
+        "itrust:req-method:101887",
+        "itrust:req-method:102023",
+        "itrust:req-method:102125",
+        "itrust:req-method:102227",
+        "itrust:req-method:105423"
+      ]
+    },
+    {
+      "requirement_id": 20,
+      "gold_count": 2,
+      "held_out_count": 1,
+      "observed_count": 1,
+      "held_out_edge_ids": [
+        "itrust:req-method:105807"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:29851"
+      ]
+    },
+    {
+      "requirement_id": 21,
+      "gold_count": 5,
+      "held_out_count": 2,
+      "observed_count": 3,
+      "held_out_edge_ids": [
+        "itrust:req-method:98974",
+        "itrust:req-method:105978"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:44370",
+        "itrust:req-method:44404",
+        "itrust:req-method:105944"
+      ]
+    },
+    {
+      "requirement_id": 22,
+      "gold_count": 10,
+      "held_out_count": 3,
+      "observed_count": 7,
+      "held_out_edge_ids": [
+        "itrust:req-method:23223",
+        "itrust:req-method:23291",
+        "itrust:req-method:100369"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:19653",
+        "itrust:req-method:37877",
+        "itrust:req-method:97139",
+        "itrust:req-method:99553",
+        "itrust:req-method:99893",
+        "itrust:req-method:99927",
+        "itrust:req-method:102001"
+      ]
+    },
+    {
+      "requirement_id": 23,
+      "gold_count": 3,
+      "held_out_count": 1,
+      "observed_count": 2,
+      "held_out_edge_ids": [
+        "itrust:req-method:1736"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:23224",
+        "itrust:req-method:27610"
+      ]
+    },
+    {
+      "requirement_id": 24,
+      "gold_count": 3,
+      "held_out_count": 1,
+      "observed_count": 2,
+      "held_out_edge_ids": [
+        "itrust:req-method:101255"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:41381",
+        "itrust:req-method:102003"
+      ]
+    },
+    {
+      "requirement_id": 25,
+      "gold_count": 9,
+      "held_out_count": 3,
+      "observed_count": 6,
+      "held_out_edge_ids": [
+        "itrust:req-method:25538",
+        "itrust:req-method:99590",
+        "itrust:req-method:102888"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:25572",
+        "itrust:req-method:99624",
+        "itrust:req-method:101222",
+        "itrust:req-method:101868",
+        "itrust:req-method:102004",
+        "itrust:req-method:102956"
+      ]
+    },
+    {
+      "requirement_id": 26,
+      "gold_count": 7,
+      "held_out_count": 2,
+      "observed_count": 5,
+      "held_out_edge_ids": [
+        "itrust:req-method:19657",
+        "itrust:req-method:36317"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:1739",
+        "itrust:req-method:29109",
+        "itrust:req-method:97143",
+        "itrust:req-method:100475",
+        "itrust:req-method:100577"
+      ]
+    },
+    {
+      "requirement_id": 27,
+      "gold_count": 4,
+      "held_out_count": 1,
+      "observed_count": 3,
+      "held_out_edge_ids": [
+        "itrust:req-method:34958"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:101904",
+        "itrust:req-method:102006",
+        "itrust:req-method:102788"
+      ]
+    },
+    {
+      "requirement_id": 28,
+      "gold_count": 3,
+      "held_out_count": 1,
+      "observed_count": 2,
+      "held_out_edge_ids": [
+        "itrust:req-method:102959"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:42779",
+        "itrust:req-method:102143"
+      ]
+    },
+    {
+      "requirement_id": 29,
+      "gold_count": 9,
+      "held_out_count": 3,
+      "observed_count": 6,
+      "held_out_edge_ids": [
+        "itrust:req-method:101770",
+        "itrust:req-method:102790",
+        "itrust:req-method:104286"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:101600",
+        "itrust:req-method:102008",
+        "itrust:req-method:102960",
+        "itrust:req-method:103946",
+        "itrust:req-method:103980",
+        "itrust:req-method:104320"
+      ]
+    },
+    {
+      "requirement_id": 30,
+      "gold_count": 19,
+      "held_out_count": 6,
+      "observed_count": 13,
+      "held_out_edge_ids": [
+        "itrust:req-method:17247",
+        "itrust:req-method:97147",
+        "itrust:req-method:102009",
+        "itrust:req-method:102213",
+        "itrust:req-method:104933",
+        "itrust:req-method:105205"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:5789",
+        "itrust:req-method:11331",
+        "itrust:req-method:11365",
+        "itrust:req-method:19661",
+        "itrust:req-method:39347",
+        "itrust:req-method:39415",
+        "itrust:req-method:39449",
+        "itrust:req-method:39483",
+        "itrust:req-method:102179",
+        "itrust:req-method:105001",
+        "itrust:req-method:105035",
+        "itrust:req-method:105103",
+        "itrust:req-method:160591"
+      ]
+    },
+    {
+      "requirement_id": 31,
+      "gold_count": 9,
+      "held_out_count": 3,
+      "observed_count": 6,
+      "held_out_edge_ids": [
+        "itrust:req-method:27040",
+        "itrust:req-method:95754",
+        "itrust:req-method:102078"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:1744",
+        "itrust:req-method:27006",
+        "itrust:req-method:27074",
+        "itrust:req-method:37682",
+        "itrust:req-method:42476",
+        "itrust:req-method:101296"
+      ]
+    },
+    {
+      "requirement_id": 32,
+      "gold_count": 12,
+      "held_out_count": 4,
+      "observed_count": 8,
+      "held_out_edge_ids": [
+        "itrust:req-method:25036",
+        "itrust:req-method:25104",
+        "itrust:req-method:25138",
+        "itrust:req-method:101978"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:1746",
+        "itrust:req-method:25070",
+        "itrust:req-method:29116",
+        "itrust:req-method:95790",
+        "itrust:req-method:95892",
+        "itrust:req-method:96028",
+        "itrust:req-method:100482",
+        "itrust:req-method:102964"
+      ]
+    },
+    {
+      "requirement_id": 33,
+      "gold_count": 4,
+      "held_out_count": 1,
+      "observed_count": 3,
+      "held_out_edge_ids": [
+        "itrust:req-method:1748"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:96132",
+        "itrust:req-method:98138",
+        "itrust:req-method:102014"
+      ]
+    },
+    {
+      "requirement_id": 34,
+      "gold_count": 5,
+      "held_out_count": 2,
+      "observed_count": 3,
+      "held_out_edge_ids": [
+        "itrust:req-method:7972",
+        "itrust:req-method:98174"
+      ],
+      "observed_edge_ids": [
+        "itrust:req-method:7904",
+        "itrust:req-method:98106",
+        "itrust:req-method:98140"
+      ]
+    }
+  ],
+  "totals": {
+    "gold_edges": 307,
+    "held_out_gold_edges": 95,
+    "observed_gold_edges": 212
+  }
+}

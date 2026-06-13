@@ -1,0 +1,99 @@
+{
+  "system": "itrust",
+  "source_dir": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-repoloc-pilot/systems/itrust",
+  "generated_requirements_path": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/data/derived/oss-method-repoloc-pilot/systems/itrust/generated_requirements.jsonl",
+  "requirements": 34,
+  "methods": 4907,
+  "classes": 718,
+  "traces": 166838,
+  "gold_traces": 307,
+  "methodcalls": 12134,
+  "parameters": 2197,
+  "fieldclasses": 2048,
+  "fieldmethods": 2786,
+  "interfaces": 5,
+  "superclasses": 135,
+  "requirement_splits": {
+    "train": {
+      "requirement_ids": [
+        26,
+        6,
+        29,
+        33,
+        2,
+        23,
+        28,
+        22,
+        10,
+        19,
+        21,
+        14,
+        1,
+        11,
+        15,
+        12,
+        34,
+        18,
+        25,
+        16,
+        8,
+        31,
+        3,
+        20
+      ],
+      "requirement_count": 24,
+      "gold_trace_count": 207
+    },
+    "validation": {
+      "requirement_ids": [
+        9,
+        13,
+        24,
+        30,
+        27
+      ],
+      "requirement_count": 5,
+      "gold_trace_count": 63
+    },
+    "test": {
+      "requirement_ids": [
+        17,
+        7,
+        4,
+        5,
+        32
+      ],
+      "requirement_count": 5,
+      "gold_trace_count": 37
+    }
+  },
+  "mask_suites": [
+    {
+      "mask_percent": 10,
+      "mask_rate": 0.1,
+      "totals": {
+        "gold_edges": 307,
+        "held_out_gold_edges": 39,
+        "observed_gold_edges": 268
+      }
+    },
+    {
+      "mask_percent": 20,
+      "mask_rate": 0.2,
+      "totals": {
+        "gold_edges": 307,
+        "held_out_gold_edges": 64,
+        "observed_gold_edges": 243
+      }
+    },
+    {
+      "mask_percent": 30,
+      "mask_rate": 0.3,
+      "totals": {
+        "gold_edges": 307,
+        "held_out_gold_edges": 95,
+        "observed_gold_edges": 212
+      }
+    }
+  ]
+}
