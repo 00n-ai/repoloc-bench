@@ -5,6 +5,7 @@ Public research benchmark for structured repository knowledge trees, code locali
 ## Contents
 - `data/derived/oss-method-repoloc-bench/` — current pilot dataset package
 - `data/derived/itrust-traceability-benchmark/` — iTrust requirement-to-code benchmark package
+- `research/benchmark-package-review-100.md` — benchmark review summary
 - `research/scripts/build_repoloc_pilot_dataset.py` — reproducible pilot package builder
 
 ## Claim boundary
