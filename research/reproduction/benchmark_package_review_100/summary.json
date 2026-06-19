@@ -1,0 +1,2226 @@
+{
+  "runs": [
+    {
+      "name": "orig_option1_tfidf",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option1_tfidf",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option1_tfidf_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option1_tfidf_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.08509975770361533,
+          "ci_low": 0.05167886035308693,
+          "ci_high": 0.11974014316555576
+        },
+        "map": {
+          "mean": 0.02844567383963738,
+          "ci_low": 0.01434082028239262,
+          "ci_high": 0.04193271617219122
+        },
+        "hits_at_1": {
+          "mean": 0.025,
+          "ci_low": 0.0,
+          "ci_high": 0.0625
+        },
+        "hits_at_5": {
+          "mean": 0.1625,
+          "ci_low": 0.0625,
+          "ci_high": 0.2375
+        },
+        "hits_at_10": {
+          "mean": 0.2,
+          "ci_low": 0.1309375,
+          "ci_high": 0.30656249999999985
+        },
+        "set_metrics": {
+          "recall_at_1": 8.985084915710973e-05,
+          "recall_at_5": 0.0051941023786107226,
+          "recall_at_10": 0.007730085719022985,
+          "recall_at_50": 0.02014302098517726,
+          "ndcg_at_1": 0.025,
+          "ndcg_at_5": 0.039823046995864066,
+          "ndcg_at_10": 0.041801479809926434,
+          "ndcg_at_50": 0.02929118363574024,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "orig_option2_trace_ranker",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option2_trace_ranker",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option2_trace_ranker_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option2_trace_ranker_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.33275202721529606,
+          "ci_low": 0.272640344228288,
+          "ci_high": 0.4207653064229786
+        },
+        "map": {
+          "mean": 0.0998355125985233,
+          "ci_low": 0.07551019254627936,
+          "ci_high": 0.12084047105578297
+        },
+        "hits_at_1": {
+          "mean": 0.175,
+          "ci_low": 0.1,
+          "ci_high": 0.25062499999999976
+        },
+        "hits_at_5": {
+          "mean": 0.5,
+          "ci_low": 0.4,
+          "ci_high": 0.5875
+        },
+        "hits_at_10": {
+          "mean": 0.575,
+          "ci_low": 0.4625,
+          "ci_high": 0.6690624999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.011194576666200001,
+          "recall_at_5": 0.05462029994032797,
+          "recall_at_10": 0.07869490565831322,
+          "recall_at_50": 0.14381811372868503,
+          "ndcg_at_1": 0.175,
+          "ndcg_at_5": 0.2089391633850273,
+          "ndcg_at_10": 0.18822218113331088,
+          "ndcg_at_50": 0.15483729027701915,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "orig_option3_pairwise",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option3_pairwise_blend0p1",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option3_pairwise_blend0p1_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option3_pairwise_blend0p1_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.4385487148756209,
+          "ci_low": 0.3444864370513746,
+          "ci_high": 0.5399169569515054
+        },
+        "map": {
+          "mean": 0.11734974381099107,
+          "ci_low": 0.08955410532023567,
+          "ci_high": 0.14610230349583736
+        },
+        "hits_at_1": {
+          "mean": 0.3875,
+          "ci_low": 0.275,
+          "ci_high": 0.48749999999999993
+        },
+        "hits_at_5": {
+          "mean": 0.4875,
+          "ci_low": 0.3684375,
+          "ci_high": 0.6
+        },
+        "hits_at_10": {
+          "mean": 0.525,
+          "ci_low": 0.425,
+          "ci_high": 0.625
+        },
+        "set_metrics": {
+          "recall_at_1": 0.02741969189289617,
+          "recall_at_5": 0.06447826122413906,
+          "recall_at_10": 0.08042813994448361,
+          "recall_at_50": 0.11279529128274346,
+          "ndcg_at_1": 0.3875,
+          "ndcg_at_5": 0.29458353453778213,
+          "ndcg_at_10": 0.23223865159382273,
+          "ndcg_at_50": 0.16133116269477402,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "orig_option4_graph_ppr",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option4_graph_ppr",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option4_graph_ppr_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option4_graph_ppr_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.12014125487281394,
+          "ci_low": 0.07689876413848817,
+          "ci_high": 0.15801475622380937
+        },
+        "map": {
+          "mean": 0.058559498070758984,
+          "ci_low": 0.034182510881534095,
+          "ci_high": 0.08331470861013701
+        },
+        "hits_at_1": {
+          "mean": 0.05,
+          "ci_low": 0.0125,
+          "ci_high": 0.1
+        },
+        "hits_at_5": {
+          "mean": 0.2125,
+          "ci_low": 0.1375,
+          "ci_high": 0.3125
+        },
+        "hits_at_10": {
+          "mean": 0.275,
+          "ci_low": 0.1809375,
+          "ci_high": 0.3625
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0010273508491571097,
+          "recall_at_5": 0.01273046630164414,
+          "recall_at_10": 0.024149417968051628,
+          "recall_at_50": 0.06760644494675934,
+          "ndcg_at_1": 0.05,
+          "ndcg_at_5": 0.06188703857038725,
+          "ndcg_at_10": 0.06721082858077285,
+          "ndcg_at_50": 0.06602971701834172,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "orig_option5_euclidean",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option5_euclidean",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option5_euclidean_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option5_euclidean_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.03160170729105463,
+          "ci_low": 0.015286256124071314,
+          "ci_high": 0.05086200867781453
+        },
+        "map": {
+          "mean": 0.023844549237770025,
+          "ci_low": 0.012101800722411462,
+          "ci_high": 0.04006121345362336
+        },
+        "hits_at_1": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "hits_at_5": {
+          "mean": 0.05,
+          "ci_low": 0.0125,
+          "ci_high": 0.1125
+        },
+        "hits_at_10": {
+          "mean": 0.075,
+          "ci_low": 0.018437500000000002,
+          "ci_high": 0.1375
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0,
+          "recall_at_5": 0.0004668658177430107,
+          "recall_at_10": 0.0012487520954340176,
+          "recall_at_50": 0.007115152696701341,
+          "ndcg_at_1": 0.0,
+          "ndcg_at_5": 0.010859936531095727,
+          "ndcg_at_10": 0.013194708432860757,
+          "ndcg_at_50": 0.010363614583152304,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "orig_option5_hyperbolic",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option5_hyperbolic",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option5_hyperbolic_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method/option5_hyperbolic_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.03764579247524857,
+          "ci_low": 0.02110831595878426,
+          "ci_high": 0.057681704340989064
+        },
+        "map": {
+          "mean": 0.025197993635297213,
+          "ci_low": 0.014153366555229304,
+          "ci_high": 0.03764657087216303
+        },
+        "hits_at_1": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "hits_at_5": {
+          "mean": 0.0875,
+          "ci_low": 0.0309375,
+          "ci_high": 0.1375
+        },
+        "hits_at_10": {
+          "mean": 0.1125,
+          "ci_low": 0.043437500000000004,
+          "ci_high": 0.175
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0,
+          "recall_at_5": 0.0008273822600294817,
+          "recall_at_10": 0.0016201802472471931,
+          "recall_at_50": 0.012255470344122412,
+          "ndcg_at_1": 0.0,
+          "ndcg_at_5": 0.01585781183614139,
+          "ndcg_at_10": 0.01549339733371586,
+          "ndcg_at_50": 0.014443176402958991,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option1_tfidf",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option1_tfidf",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option1_tfidf_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option1_tfidf_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.4366850483864639,
+          "ci_low": 0.3403480294547728,
+          "ci_high": 0.5438718559371439
+        },
+        "map": {
+          "mean": 0.1630732299616079,
+          "ci_low": 0.1219301874569767,
+          "ci_high": 0.20090372058297484
+        },
+        "hits_at_1": {
+          "mean": 0.3125,
+          "ci_low": 0.211875,
+          "ci_high": 0.4125
+        },
+        "hits_at_5": {
+          "mean": 0.575,
+          "ci_low": 0.475,
+          "ci_high": 0.6625
+        },
+        "hits_at_10": {
+          "mean": 0.675,
+          "ci_low": 0.5684374999999999,
+          "ci_high": 0.8131249999999998
+        },
+        "set_metrics": {
+          "recall_at_1": 0.05381804680050294,
+          "recall_at_5": 0.13318632597499228,
+          "recall_at_10": 0.17521781066872608,
+          "recall_at_50": 0.22362201549256225,
+          "ndcg_at_1": 0.3125,
+          "ndcg_at_5": 0.2564095610699346,
+          "ndcg_at_10": 0.2459251093295545,
+          "ndcg_at_50": 0.23049968232329326,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.0375,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option2_trace_ranker",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option2_trace_ranker",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option2_trace_ranker_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option2_trace_ranker_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.3872577109877424,
+          "ci_low": 0.3187955269852847,
+          "ci_high": 0.48040097277595006
+        },
+        "map": {
+          "mean": 0.12391612190098947,
+          "ci_low": 0.10349076093833573,
+          "ci_high": 0.14893732476378269
+        },
+        "hits_at_1": {
+          "mean": 0.2,
+          "ci_low": 0.125,
+          "ci_high": 0.30656249999999985
+        },
+        "hits_at_5": {
+          "mean": 0.6375,
+          "ci_low": 0.5434375,
+          "ci_high": 0.7125
+        },
+        "hits_at_10": {
+          "mean": 0.7375,
+          "ci_low": 0.6309374999999999,
+          "ci_high": 0.825
+        },
+        "set_metrics": {
+          "recall_at_1": 0.01673908186859994,
+          "recall_at_5": 0.08331990557756401,
+          "recall_at_10": 0.13149697144898234,
+          "recall_at_50": 0.1956600230282016,
+          "ndcg_at_1": 0.2,
+          "ndcg_at_5": 0.2437878060042232,
+          "ndcg_at_10": 0.22840555934972046,
+          "ndcg_at_50": 0.1979109537645215,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0125,
+          "all_gold_covered_at_50": 0.0125,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option3_pairwise",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option3_pairwise_blend0p1",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option3_pairwise_blend0p1_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option3_pairwise_blend0p1_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5190720562930317,
+          "ci_low": 0.44951108413429364,
+          "ci_high": 0.6175625713768614
+        },
+        "map": {
+          "mean": 0.14599683935352847,
+          "ci_low": 0.11642184062406585,
+          "ci_high": 0.16793469183318604
+        },
+        "hits_at_1": {
+          "mean": 0.4125,
+          "ci_low": 0.325,
+          "ci_high": 0.525
+        },
+        "hits_at_5": {
+          "mean": 0.6375,
+          "ci_low": 0.5125,
+          "ci_high": 0.7315624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.725,
+          "ci_low": 0.6184375,
+          "ci_high": 0.8
+        },
+        "set_metrics": {
+          "recall_at_1": 0.028099953152104798,
+          "recall_at_5": 0.09561366570214701,
+          "recall_at_10": 0.1480507274573432,
+          "recall_at_50": 0.19085846624604486,
+          "ndcg_at_1": 0.4125,
+          "ndcg_at_5": 0.34108394270043707,
+          "ndcg_at_10": 0.29537266029176046,
+          "ndcg_at_50": 0.22242287727212073,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0125,
+          "all_gold_covered_at_50": 0.0125,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option4_graph_ppr",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option4_graph_ppr",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option4_graph_ppr_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option4_graph_ppr_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.39104506927759186,
+          "ci_low": 0.2928183854854363,
+          "ci_high": 0.47043069776998625
+        },
+        "map": {
+          "mean": 0.19355676521900989,
+          "ci_low": 0.15487348249558552,
+          "ci_high": 0.23233347214016806
+        },
+        "hits_at_1": {
+          "mean": 0.2625,
+          "ci_low": 0.1875,
+          "ci_high": 0.3375
+        },
+        "hits_at_5": {
+          "mean": 0.55,
+          "ci_low": 0.4375,
+          "ci_high": 0.6625
+        },
+        "hits_at_10": {
+          "mean": 0.6625,
+          "ci_low": 0.5625,
+          "ci_high": 0.7625
+        },
+        "set_metrics": {
+          "recall_at_1": 0.04282167987512498,
+          "recall_at_5": 0.11909264499286737,
+          "recall_at_10": 0.1798378901229809,
+          "recall_at_50": 0.2898223826728696,
+          "ndcg_at_1": 0.2625,
+          "ndcg_at_5": 0.22864700673734564,
+          "ndcg_at_10": 0.23259007086401848,
+          "ndcg_at_50": 0.2529537411566397,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.0625,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option5_euclidean",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option5_euclidean",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option5_euclidean_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option5_euclidean_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.05869594297210847,
+          "ci_low": 0.022434751211394127,
+          "ci_high": 0.10708201644242847
+        },
+        "map": {
+          "mean": 0.030736573649508867,
+          "ci_low": 0.016929136012202896,
+          "ci_high": 0.05060387946627591
+        },
+        "hits_at_1": {
+          "mean": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.075
+        },
+        "hits_at_5": {
+          "mean": 0.0625,
+          "ci_low": 0.0125,
+          "ci_high": 0.1190624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.0875,
+          "ci_low": 0.025,
+          "ci_high": 0.15656249999999988
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0005669265756985055,
+          "recall_at_5": 0.0013658417523409953,
+          "recall_at_10": 0.008601977583061114,
+          "recall_at_50": 0.015184745026546341,
+          "ndcg_at_1": 0.0375,
+          "ndcg_at_5": 0.026564674256738606,
+          "ndcg_at_10": 0.025498857893114974,
+          "ndcg_at_50": 0.019852532594567835,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option5_hyperbolic",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option5_hyperbolic",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option5_hyperbolic_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/eval_options_1_5/option5_hyperbolic_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.062340862020001685,
+          "ci_low": 0.03307064903147772,
+          "ci_high": 0.10569989253482351
+        },
+        "map": {
+          "mean": 0.03302945910372552,
+          "ci_low": 0.01956931448463696,
+          "ci_high": 0.057569884793643125
+        },
+        "hits_at_1": {
+          "mean": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.075
+        },
+        "hits_at_5": {
+          "mean": 0.0625,
+          "ci_low": 0.0125,
+          "ci_high": 0.1190624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.125,
+          "ci_low": 0.05,
+          "ci_high": 0.2
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0005669265756985055,
+          "recall_at_5": 0.0013658417523409953,
+          "recall_at_10": 0.010039114540183202,
+          "recall_at_50": 0.0318895119944712,
+          "ndcg_at_1": 0.0375,
+          "ndcg_at_5": 0.026270777346812338,
+          "ndcg_at_10": 0.03178493866776987,
+          "ndcg_at_50": 0.02681378773103757,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0125,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option7_best",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option7_hybrid_evidence/option7_text_blend0p5",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option7_hybrid_evidence/option7_text_blend0p5_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option7_hybrid_evidence/option7_text_blend0p5_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5525673211536354,
+          "ci_low": 0.4489490127889277,
+          "ci_high": 0.6451199959163054
+        },
+        "map": {
+          "mean": 0.2093584413423287,
+          "ci_low": 0.1680573973200188,
+          "ci_high": 0.256971289184099
+        },
+        "hits_at_1": {
+          "mean": 0.4375,
+          "ci_low": 0.3375,
+          "ci_high": 0.5315624999999999
+        },
+        "hits_at_5": {
+          "mean": 0.675,
+          "ci_low": 0.5559375,
+          "ci_high": 0.7815624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.725,
+          "ci_low": 0.649375,
+          "ci_high": 0.8190624999999998
+        },
+        "set_metrics": {
+          "recall_at_1": 0.05774271332933921,
+          "recall_at_5": 0.168969357872222,
+          "recall_at_10": 0.21592525342848834,
+          "recall_at_50": 0.29325360495355,
+          "ndcg_at_1": 0.4375,
+          "ndcg_at_5": 0.34735197553724245,
+          "ndcg_at_10": 0.3159540563804912,
+          "ndcg_at_50": 0.2951809925016928,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.0375,
+          "all_gold_covered_at_50": 0.0875,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option8_best",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option8_poincare_hybrid/option8_text0p5_evidence0p35_poincare0p15",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option8_poincare_hybrid/option8_text0p5_evidence0p35_poincare0p15_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option8_poincare_hybrid/option8_text0p5_evidence0p35_poincare0p15_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5417723093773161,
+          "ci_low": 0.4595159210693642,
+          "ci_high": 0.6353663814137633
+        },
+        "map": {
+          "mean": 0.21078885930687763,
+          "ci_low": 0.17176123231603613,
+          "ci_high": 0.26202803546994946
+        },
+        "hits_at_1": {
+          "mean": 0.425,
+          "ci_low": 0.3309375,
+          "ci_high": 0.5190624999999999
+        },
+        "hits_at_5": {
+          "mean": 0.65,
+          "ci_low": 0.5559375,
+          "ci_high": 0.7440624999999998
+        },
+        "hits_at_10": {
+          "mean": 0.7375,
+          "ci_low": 0.6375,
+          "ci_high": 0.825
+        },
+        "set_metrics": {
+          "recall_at_1": 0.05946144215962411,
+          "recall_at_5": 0.17191815593761597,
+          "recall_at_10": 0.20971207276574627,
+          "recall_at_50": 0.2894746456822115,
+          "ndcg_at_1": 0.425,
+          "ndcg_at_5": 0.34734147755067324,
+          "ndcg_at_10": 0.3129959561297144,
+          "ndcg_at_50": 0.29369981824180186,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.0875,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option9_best",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option9_cone_order/option9_text0p5_evidence0p35_cone0p15",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option9_cone_order/option9_text0p5_evidence0p35_cone0p15_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option9_cone_order/option9_text0p5_evidence0p35_cone0p15_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5196686772423583,
+          "ci_low": 0.440655824759445,
+          "ci_high": 0.59559063771176
+        },
+        "map": {
+          "mean": 0.19836880555311645,
+          "ci_low": 0.156949009327826,
+          "ci_high": 0.23697625260687644
+        },
+        "hits_at_1": {
+          "mean": 0.375,
+          "ci_low": 0.28093749999999995,
+          "ci_high": 0.4690624999999999
+        },
+        "hits_at_5": {
+          "mean": 0.675,
+          "ci_low": 0.575,
+          "ci_high": 0.775
+        },
+        "hits_at_10": {
+          "mean": 0.7,
+          "ci_low": 0.6,
+          "ci_high": 0.8
+        },
+        "set_metrics": {
+          "recall_at_1": 0.05449942188676933,
+          "recall_at_5": 0.16054875824668105,
+          "recall_at_10": 0.20958529280075172,
+          "recall_at_50": 0.2789762546895975,
+          "ndcg_at_1": 0.375,
+          "ndcg_at_5": 0.31922362335218846,
+          "ndcg_at_10": 0.29701084250831633,
+          "ndcg_at_50": 0.27770278586606606,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.0375,
+          "all_gold_covered_at_50": 0.0875,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option10_best",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option10_directed_order/option10_text0p5_evidence0p35_order0p15",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option10_directed_order/option10_text0p5_evidence0p35_order0p15_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option10_directed_order/option10_text0p5_evidence0p35_order0p15_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5326827110493193,
+          "ci_low": 0.4187560255154699,
+          "ci_high": 0.611016583987636
+        },
+        "map": {
+          "mean": 0.19686350387544665,
+          "ci_low": 0.14806842162312836,
+          "ci_high": 0.24191754449991945
+        },
+        "hits_at_1": {
+          "mean": 0.4125,
+          "ci_low": 0.3125,
+          "ci_high": 0.5125
+        },
+        "hits_at_5": {
+          "mean": 0.65,
+          "ci_low": 0.5434375,
+          "ci_high": 0.7440624999999998
+        },
+        "hits_at_10": {
+          "mean": 0.7375,
+          "ci_low": 0.6434375,
+          "ci_high": 0.8125
+        },
+        "set_metrics": {
+          "recall_at_1": 0.05533816356623682,
+          "recall_at_5": 0.16481641885096754,
+          "recall_at_10": 0.21002572703150882,
+          "recall_at_50": 0.2776436784921702,
+          "ndcg_at_1": 0.4125,
+          "ndcg_at_5": 0.3317474063120917,
+          "ndcg_at_10": 0.29898563277479195,
+          "ndcg_at_50": 0.27775948061464417,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.0375,
+          "all_gold_covered_at_50": 0.0875,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option11_context_only",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option11_contextual_directed_features/option11_contextual_directed",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option11_contextual_directed_features/option11_contextual_directed_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option11_contextual_directed_features/option11_contextual_directed_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.34748989209087744,
+          "ci_low": 0.2706948911043017,
+          "ci_high": 0.4227355411715935
+        },
+        "map": {
+          "mean": 0.1202170192837176,
+          "ci_low": 0.09317856726021286,
+          "ci_high": 0.159334067676763
+        },
+        "hits_at_1": {
+          "mean": 0.225,
+          "ci_low": 0.136875,
+          "ci_high": 0.30656249999999985
+        },
+        "hits_at_5": {
+          "mean": 0.4875,
+          "ci_low": 0.3875,
+          "ci_high": 0.575
+        },
+        "hits_at_10": {
+          "mean": 0.5875,
+          "ci_low": 0.5059374999999999,
+          "ci_high": 0.6940624999999998
+        },
+        "set_metrics": {
+          "recall_at_1": 0.025372649817502757,
+          "recall_at_5": 0.0776513274996425,
+          "recall_at_10": 0.12533321961685157,
+          "recall_at_50": 0.22391465437003016,
+          "ndcg_at_1": 0.225,
+          "ndcg_at_5": 0.18847121209265236,
+          "ndcg_at_10": 0.18190323631984565,
+          "ndcg_at_50": 0.18776563103049182,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.0375,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option11_best",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option11_contextual_directed_features/option11_text_blend0p5",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option11_contextual_directed_features/option11_text_blend0p5_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option11_contextual_directed_features/option11_text_blend0p5_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5949652903890401,
+          "ci_low": 0.5261778926877191,
+          "ci_high": 0.7041800543344334
+        },
+        "map": {
+          "mean": 0.21706147120882885,
+          "ci_low": 0.1696116269276382,
+          "ci_high": 0.27015441520831307
+        },
+        "hits_at_1": {
+          "mean": 0.5125,
+          "ci_low": 0.386875,
+          "ci_high": 0.5940624999999999
+        },
+        "hits_at_5": {
+          "mean": 0.6875,
+          "ci_low": 0.5875,
+          "ci_high": 0.7940624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.725,
+          "ci_low": 0.6184375,
+          "ci_high": 0.8125
+        },
+        "set_metrics": {
+          "recall_at_1": 0.07025606109268698,
+          "recall_at_5": 0.17464567887402732,
+          "recall_at_10": 0.212716910072918,
+          "recall_at_50": 0.2866371795167428,
+          "ndcg_at_1": 0.5125,
+          "ndcg_at_5": 0.36036844329414075,
+          "ndcg_at_10": 0.3227211607657441,
+          "ndcg_at_50": 0.30045897970906876,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.075,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option12_graph_only",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option12_typed_directed_graph_embedding/option12_typed_graph",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option12_typed_directed_graph_embedding/option12_typed_graph_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option12_typed_directed_graph_embedding/option12_typed_graph_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.47368405839519295,
+          "ci_low": 0.3883941911018419,
+          "ci_high": 0.5689999651543262
+        },
+        "map": {
+          "mean": 0.13251348656312145,
+          "ci_low": 0.0996803841351937,
+          "ci_high": 0.16197113662791995
+        },
+        "hits_at_1": {
+          "mean": 0.3875,
+          "ci_low": 0.2934375,
+          "ci_high": 0.5065624999999998
+        },
+        "hits_at_5": {
+          "mean": 0.55,
+          "ci_low": 0.45,
+          "ci_high": 0.6690624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.6625,
+          "ci_low": 0.5684374999999999,
+          "ci_high": 0.775
+        },
+        "set_metrics": {
+          "recall_at_1": 0.028187190922456605,
+          "recall_at_5": 0.07159139371934123,
+          "recall_at_10": 0.1179969653306839,
+          "recall_at_50": 0.1701312478204922,
+          "ndcg_at_1": 0.3875,
+          "ndcg_at_5": 0.2875267374478821,
+          "ndcg_at_10": 0.263384493348089,
+          "ndcg_at_50": 0.20244662494920204,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0125,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "llm_option12_best_hits10",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option12_typed_directed_graph_embedding/option12_text0p5_context0p40_graph0p1",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option12_typed_directed_graph_embedding/option12_text0p5_context0p40_graph0p1_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_llm_requirements/option12_typed_directed_graph_embedding/option12_text0p5_context0p40_graph0p1_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.5772306016609849,
+          "ci_low": 0.5118394301827944,
+          "ci_high": 0.6718166317433457
+        },
+        "map": {
+          "mean": 0.2150578358742635,
+          "ci_low": 0.17046009118551372,
+          "ci_high": 0.2592859637420891
+        },
+        "hits_at_1": {
+          "mean": 0.475,
+          "ci_low": 0.375,
+          "ci_high": 0.55
+        },
+        "hits_at_5": {
+          "mean": 0.65,
+          "ci_low": 0.55,
+          "ci_high": 0.7440624999999998
+        },
+        "hits_at_10": {
+          "mean": 0.75,
+          "ci_low": 0.6684375,
+          "ci_high": 0.8440624999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.06300759719099727,
+          "recall_at_5": 0.17149475968693784,
+          "recall_at_10": 0.21739035360024522,
+          "recall_at_50": 0.29006919034887835,
+          "ndcg_at_1": 0.475,
+          "ndcg_at_5": 0.3460357044267811,
+          "ndcg_at_10": 0.3217573661755636,
+          "ndcg_at_50": 0.29800174556662057,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.0375,
+          "all_gold_covered_at_50": 0.075,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_original_option1_tfidf",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option1_tfidf",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option1_tfidf_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option1_tfidf_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.07993694719940271,
+          "ci_low": 0.04808806171524849,
+          "ci_high": 0.12231345243405659
+        },
+        "map": {
+          "mean": 0.029487954824666065,
+          "ci_low": 0.01691445142566758,
+          "ci_high": 0.04539892062378225
+        },
+        "hits_at_1": {
+          "mean": 0.0125,
+          "ci_low": 0.0,
+          "ci_high": 0.0375
+        },
+        "hits_at_5": {
+          "mean": 0.15,
+          "ci_low": 0.075,
+          "ci_high": 0.2315624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.2125,
+          "ci_low": 0.1309375,
+          "ci_high": 0.30656249999999985
+        },
+        "set_metrics": {
+          "recall_at_1": 7.716049382716049e-05,
+          "recall_at_5": 0.004909562153598969,
+          "recall_at_10": 0.01182365778296775,
+          "recall_at_50": 0.023169492016627817,
+          "ndcg_at_1": 0.0125,
+          "ndcg_at_5": 0.036987595392313125,
+          "ndcg_at_10": 0.04528040919117335,
+          "ndcg_at_50": 0.03149516731220163,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_original_option2_trace_ranker",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option2_trace_ranker",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option2_trace_ranker_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option2_trace_ranker_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.055231231625176735,
+          "ci_low": 0.019009206424718893,
+          "ci_high": 0.09598568962435293
+        },
+        "map": {
+          "mean": 0.020488400029991263,
+          "ci_low": 0.010116588827274328,
+          "ci_high": 0.0313719712704935
+        },
+        "hits_at_1": {
+          "mean": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.08812499999999979
+        },
+        "hits_at_5": {
+          "mean": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.0875
+        },
+        "hits_at_10": {
+          "mean": 0.075,
+          "ci_low": 0.025,
+          "ci_high": 0.125
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0014787397380459986,
+          "recall_at_5": 0.0016457510810302689,
+          "recall_at_10": 0.002511326765657071,
+          "recall_at_50": 0.008598269842454279,
+          "ndcg_at_1": 0.0375,
+          "ndcg_at_5": 0.018859253848880302,
+          "ndcg_at_10": 0.017559998822227627,
+          "ndcg_at_50": 0.015117608201796051,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_original_option3_pairwise",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option3_pairwise",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option3_pairwise_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option3_pairwise_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.03635365315678886,
+          "ci_low": 0.015789904563260605,
+          "ci_high": 0.06337129573711237
+        },
+        "map": {
+          "mean": 0.019169335403495056,
+          "ci_low": 0.010437750037868803,
+          "ci_high": 0.029401123317899694
+        },
+        "hits_at_1": {
+          "mean": 0.0125,
+          "ci_low": 0.0,
+          "ci_high": 0.0375
+        },
+        "hits_at_5": {
+          "mean": 0.0375,
+          "ci_low": 0.0125,
+          "ci_high": 0.08156249999999989
+        },
+        "hits_at_10": {
+          "mean": 0.075,
+          "ci_low": 0.025,
+          "ci_high": 0.1375
+        },
+        "set_metrics": {
+          "recall_at_1": 1.269035532994924e-05,
+          "recall_at_5": 0.0014914300933759478,
+          "recall_at_10": 0.0024341662718299103,
+          "recall_at_50": 0.006464705317850276,
+          "ndcg_at_1": 0.0125,
+          "ndcg_at_5": 0.011229222653187662,
+          "ndcg_at_10": 0.013595787317826123,
+          "ndcg_at_50": 0.011993656083159956,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_original_option11_context",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option11_context",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option11_context_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/original_loso_option11_context_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.08680164838785152,
+          "ci_low": 0.04764703019155893,
+          "ci_high": 0.13030376724123655
+        },
+        "map": {
+          "mean": 0.030486123227538478,
+          "ci_low": 0.01657935475075242,
+          "ci_high": 0.043540689553497325
+        },
+        "hits_at_1": {
+          "mean": 0.05,
+          "ci_low": 0.0,
+          "ci_high": 0.1
+        },
+        "hits_at_5": {
+          "mean": 0.1,
+          "ci_low": 0.043437500000000004,
+          "ci_high": 0.1690624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.1625,
+          "ci_low": 0.0875,
+          "ci_high": 0.2315624999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0028676286269348874,
+          "recall_at_5": 0.0047242316661851485,
+          "recall_at_10": 0.00828272991299692,
+          "recall_at_50": 0.020154737563987942,
+          "ndcg_at_1": 0.05,
+          "ndcg_at_5": 0.03215034338163681,
+          "ndcg_at_10": 0.03202683250889223,
+          "ndcg_at_50": 0.02992935081373893,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_llm_option1_tfidf",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option1_tfidf",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option1_tfidf_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option1_tfidf_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.462365699839282,
+          "ci_low": 0.3674571874303929,
+          "ci_high": 0.5425297633562238
+        },
+        "map": {
+          "mean": 0.1696777208373341,
+          "ci_low": 0.125555123922709,
+          "ci_high": 0.215570918945045
+        },
+        "hits_at_1": {
+          "mean": 0.35,
+          "ci_low": 0.2625,
+          "ci_high": 0.425
+        },
+        "hits_at_5": {
+          "mean": 0.5875,
+          "ci_low": 0.4934375,
+          "ci_high": 0.7131249999999998
+        },
+        "hits_at_10": {
+          "mean": 0.7,
+          "ci_low": 0.6309374999999999,
+          "ci_high": 0.7881249999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0566766297498117,
+          "recall_at_5": 0.13657020674589979,
+          "recall_at_10": 0.1735521709556373,
+          "recall_at_50": 0.23655209573556296,
+          "ndcg_at_1": 0.35,
+          "ndcg_at_5": 0.26365862279177155,
+          "ndcg_at_10": 0.25111351472213356,
+          "ndcg_at_50": 0.24093404613760874,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.05,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_llm_option2_trace_ranker",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option2_trace_ranker",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option2_trace_ranker_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option2_trace_ranker_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.20676631164691867,
+          "ci_low": 0.13569458156766934,
+          "ci_high": 0.29096665925187104
+        },
+        "map": {
+          "mean": 0.06331478818675795,
+          "ci_low": 0.042510325377485156,
+          "ci_high": 0.09194469359197865
+        },
+        "hits_at_1": {
+          "mean": 0.1375,
+          "ci_low": 0.05,
+          "ci_high": 0.2131249999999998
+        },
+        "hits_at_5": {
+          "mean": 0.2625,
+          "ci_low": 0.1875,
+          "ci_high": 0.3631249999999998
+        },
+        "hits_at_10": {
+          "mean": 0.35,
+          "ci_low": 0.2434375,
+          "ci_high": 0.4690624999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.016772734656506586,
+          "recall_at_5": 0.04015960593307089,
+          "recall_at_10": 0.05557997847788128,
+          "recall_at_50": 0.07934269444759974,
+          "ndcg_at_1": 0.1375,
+          "ndcg_at_5": 0.11004832580173021,
+          "ndcg_at_10": 0.09981810807226177,
+          "ndcg_at_50": 0.08812328714259939,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0125,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_llm_option3_pairwise",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option3_pairwise",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option3_pairwise_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option3_pairwise_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.19792522743591806,
+          "ci_low": 0.10911220179238654,
+          "ci_high": 0.25975034164860267
+        },
+        "map": {
+          "mean": 0.06404749590217494,
+          "ci_low": 0.04065289589144798,
+          "ci_high": 0.09642794533707028
+        },
+        "hits_at_1": {
+          "mean": 0.1375,
+          "ci_low": 0.075,
+          "ci_high": 0.21906249999999988
+        },
+        "hits_at_5": {
+          "mean": 0.2375,
+          "ci_low": 0.15,
+          "ci_high": 0.325
+        },
+        "hits_at_10": {
+          "mean": 0.275,
+          "ci_low": 0.2,
+          "ci_high": 0.3565624999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.016772734656506586,
+          "recall_at_5": 0.03961579456094217,
+          "recall_at_10": 0.05308413266358653,
+          "recall_at_50": 0.08354151619443966,
+          "ndcg_at_1": 0.1375,
+          "ndcg_at_5": 0.10293069921372446,
+          "ndcg_at_10": 0.09337727457225417,
+          "ndcg_at_50": 0.08916650296447204,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0125,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_llm_option11_context",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option11_context",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option11_context_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso/llm_loso_option11_context_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.4272943978019683,
+          "ci_low": 0.3528812511358467,
+          "ci_high": 0.5310177747390759
+        },
+        "map": {
+          "mean": 0.15746663227154986,
+          "ci_low": 0.12753242357474642,
+          "ci_high": 0.19769346881525046
+        },
+        "hits_at_1": {
+          "mean": 0.3,
+          "ci_low": 0.1934375,
+          "ci_high": 0.4
+        },
+        "hits_at_5": {
+          "mean": 0.5875,
+          "ci_low": 0.4809375,
+          "ci_high": 0.7006249999999998
+        },
+        "hits_at_10": {
+          "mean": 0.6375,
+          "ci_low": 0.536875,
+          "ci_high": 0.725
+        },
+        "set_metrics": {
+          "recall_at_1": 0.03372885911620656,
+          "recall_at_5": 0.1371535941939966,
+          "recall_at_10": 0.17275790957406184,
+          "recall_at_50": 0.22773791343511554,
+          "ndcg_at_1": 0.3,
+          "ndcg_at_5": 0.262216543542904,
+          "ndcg_at_10": 0.23822366874776885,
+          "ndcg_at_50": 0.224983675215826,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.0375,
+          "all_gold_covered_at_50": 0.0375,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_original_option11_static_counts",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/original_loso_option11_ablate_static_counts",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/original_loso_option11_ablate_static_counts_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/original_loso_option11_ablate_static_counts_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.08937558125434959,
+          "ci_low": 0.05525695583211386,
+          "ci_high": 0.14419037088710882
+        },
+        "map": {
+          "mean": 0.030550001149947617,
+          "ci_low": 0.019464963931269983,
+          "ci_high": 0.04787959619998205
+        },
+        "hits_at_1": {
+          "mean": 0.05,
+          "ci_low": 0.0125,
+          "ci_high": 0.0875
+        },
+        "hits_at_5": {
+          "mean": 0.125,
+          "ci_low": 0.05,
+          "ci_high": 0.19406249999999992
+        },
+        "hits_at_10": {
+          "mean": 0.1875,
+          "ci_low": 0.1125,
+          "ci_high": 0.2690624999999999
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0028676286269348874,
+          "recall_at_5": 0.005572700970416491,
+          "recall_at_10": 0.00818123824518551,
+          "recall_at_50": 0.020326388090986715,
+          "ndcg_at_1": 0.05,
+          "ndcg_at_5": 0.03591015813350119,
+          "ndcg_at_10": 0.03401429899227793,
+          "ndcg_at_50": 0.030802047012488704,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_original_option11_no_interactions",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/original_loso_option11_ablate_no_interactions",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/original_loso_option11_ablate_no_interactions_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/original_loso_option11_ablate_no_interactions_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.08850663056325266,
+          "ci_low": 0.048643654083584995,
+          "ci_high": 0.12884305531323828
+        },
+        "map": {
+          "mean": 0.03039317979524163,
+          "ci_low": 0.018144684521769074,
+          "ci_high": 0.04472296353374159
+        },
+        "hits_at_1": {
+          "mean": 0.0375,
+          "ci_low": 0.005937500000000002,
+          "ci_high": 0.08156249999999989
+        },
+        "hits_at_5": {
+          "mean": 0.1375,
+          "ci_low": 0.0684375,
+          "ci_high": 0.2315624999999999
+        },
+        "hits_at_10": {
+          "mean": 0.2125,
+          "ci_low": 0.1375,
+          "ci_high": 0.30656249999999985
+        },
+        "set_metrics": {
+          "recall_at_1": 0.0014787397380459986,
+          "recall_at_5": 0.004781813533242822,
+          "recall_at_10": 0.009715326517212377,
+          "recall_at_50": 0.021219920299307252,
+          "ndcg_at_1": 0.0375,
+          "ndcg_at_5": 0.036759132069648946,
+          "ndcg_at_10": 0.035649884263335166,
+          "ndcg_at_50": 0.030566957972998073,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.0,
+          "all_gold_covered_at_10": 0.0,
+          "all_gold_covered_at_50": 0.0,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_llm_option11_static_counts",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/llm_loso_option11_ablate_static_counts",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/llm_loso_option11_ablate_static_counts_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/llm_loso_option11_ablate_static_counts_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.4607359229613334,
+          "ci_low": 0.38073382239064224,
+          "ci_high": 0.5411302741386061
+        },
+        "map": {
+          "mean": 0.16255675587269477,
+          "ci_low": 0.12463704895449107,
+          "ci_high": 0.21441979073797146
+        },
+        "hits_at_1": {
+          "mean": 0.375,
+          "ci_low": 0.2875,
+          "ci_high": 0.475
+        },
+        "hits_at_5": {
+          "mean": 0.575,
+          "ci_low": 0.4809375,
+          "ci_high": 0.6815624999999998
+        },
+        "hits_at_10": {
+          "mean": 0.6625,
+          "ci_low": 0.5809375,
+          "ci_high": 0.75
+        },
+        "set_metrics": {
+          "recall_at_1": 0.05776574293131618,
+          "recall_at_5": 0.13362486668217335,
+          "recall_at_10": 0.1651098547659332,
+          "recall_at_50": 0.2118548066827433,
+          "ndcg_at_1": 0.375,
+          "ndcg_at_5": 0.26254325231209574,
+          "ndcg_at_10": 0.2415081313577227,
+          "ndcg_at_50": 0.22822062693519307,
+          "all_gold_covered_at_1": 0.0125,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.025,
+          "all_gold_covered_at_50": 0.025,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    },
+    {
+      "name": "loso_llm_option11_no_interactions",
+      "prefix": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/llm_loso_option11_ablate_no_interactions",
+      "available": true,
+      "per_requirement_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/llm_loso_option11_ablate_no_interactions_per_requirement.csv",
+      "rankings_csv": "/home/sheraz/.openclaw/workspace/projects/state-estimation-traceability/experiments/oss_method_loso_context_ablation/llm_loso_option11_ablate_no_interactions_rankings.csv",
+      "metrics": {
+        "requirements_with_gold": 80,
+        "mrr": {
+          "mean": 0.4345972921701079,
+          "ci_low": 0.35533079312696436,
+          "ci_high": 0.5479508835207212
+        },
+        "map": {
+          "mean": 0.1559281320236175,
+          "ci_low": 0.12271481772527919,
+          "ci_high": 0.19334331138772193
+        },
+        "hits_at_1": {
+          "mean": 0.3125,
+          "ci_low": 0.225,
+          "ci_high": 0.4
+        },
+        "hits_at_5": {
+          "mean": 0.6,
+          "ci_low": 0.4809375,
+          "ci_high": 0.7
+        },
+        "hits_at_10": {
+          "mean": 0.65,
+          "ci_low": 0.5309375000000001,
+          "ci_high": 0.7565624999999998
+        },
+        "set_metrics": {
+          "recall_at_1": 0.03374154947153651,
+          "recall_at_5": 0.13215359419399658,
+          "recall_at_10": 0.17159575519618164,
+          "recall_at_50": 0.22550929053105404,
+          "ndcg_at_1": 0.3125,
+          "ndcg_at_5": 0.2593168048977999,
+          "ndcg_at_10": 0.2368276397843557,
+          "ndcg_at_50": 0.22416597024841953,
+          "all_gold_covered_at_1": 0.0,
+          "all_gold_covered_at_5": 0.025,
+          "all_gold_covered_at_10": 0.0375,
+          "all_gold_covered_at_50": 0.0375,
+          "ranked_candidates_mean": 25.0,
+          "ranked_candidates_median": 25.0
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "a": "llm_option11_best",
+      "b": "llm_option7_best",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.04239796923540475,
+          "ci_low": 0.010213258163721942,
+          "ci_high": 0.08548151300109189,
+          "p_value": 0.0594059405940594,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.007703029866500159,
+          "ci_low": -0.0031917317297596765,
+          "ci_high": 0.017656153904453277,
+          "p_value": 0.2376237623762376,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.075,
+          "ci_low": 0.0125,
+          "ci_high": 0.13156249999999992,
+          "p_value": 0.039603960396039604,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.0125,
+          "ci_low": -0.0125,
+          "ci_high": 0.05656249999999989,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": 0.0,
+          "ci_low": -0.0690625,
+          "ci_high": 0.05,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "llm_option11_best",
+      "b": "llm_option8_best",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.05319298101172397,
+          "ci_low": 0.014700470368783719,
+          "ci_high": 0.09241350214790685,
+          "p_value": 0.0594059405940594,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.0062726119019512186,
+          "ci_low": -0.010716628177479978,
+          "ci_high": 0.02813711139806826,
+          "p_value": 0.5445544554455446,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.0875,
+          "ci_low": 0.0125,
+          "ci_high": 0.1875,
+          "p_value": 0.1188118811881188,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.0940624999999999,
+          "p_value": 0.16831683168316833,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.0125,
+          "ci_low": -0.0875,
+          "ci_high": 0.04406249999999989,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "llm_option11_best",
+      "b": "llm_option10_best",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.06228257933972087,
+          "ci_low": 0.029441509086382652,
+          "ci_high": 0.10426488126565145,
+          "p_value": 0.019801980198019802,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.0201979673333822,
+          "ci_low": -0.0013023886407461057,
+          "ci_high": 0.037421285812868466,
+          "p_value": 0.07920792079207921,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.1,
+          "ci_low": 0.018437500000000002,
+          "ci_high": 0.1690624999999999,
+          "p_value": 0.039603960396039604,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.0875,
+          "p_value": 0.21782178217821782,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.0125,
+          "ci_low": -0.075,
+          "ci_high": 0.05,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "llm_option11_best",
+      "b": "llm_option12_best_hits10",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.017734688728055184,
+          "ci_low": -0.003110789392106398,
+          "ci_high": 0.03928735061279126,
+          "p_value": 0.12871287128712872,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.0020036353345653556,
+          "ci_low": -0.0069377767543408,
+          "ci_high": 0.01025900423898959,
+          "p_value": 0.6633663366336634,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.0875,
+          "p_value": 0.37623762376237624,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.0375,
+          "ci_low": 0.005937500000000002,
+          "ci_high": 0.0625,
+          "p_value": 0.24752475247524752,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.025,
+          "ci_low": -0.0565625,
+          "ci_high": 0.0,
+          "p_value": 0.46534653465346537,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "llm_option11_best",
+      "b": "llm_option12_graph_only",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.12128123199384716,
+          "ci_low": -0.038305064666671884,
+          "ci_high": 0.28535203478196075,
+          "p_value": 0.1188118811881188,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.08454798464570741,
+          "ci_low": 0.028953095550498537,
+          "ci_high": 0.14353906717397238,
+          "p_value": 0.0297029702970297,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.125,
+          "ci_low": -0.025,
+          "ci_high": 0.30656249999999985,
+          "p_value": 0.2079207920792079,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.1375,
+          "ci_low": -0.025625,
+          "ci_high": 0.2875,
+          "p_value": 0.1188118811881188,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": 0.0625,
+          "ci_low": -0.0875,
+          "ci_high": 0.21906249999999988,
+          "p_value": 0.5742574257425742,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "llm_option11_best",
+      "b": "llm_option3_pairwise",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.07589323409600852,
+          "ci_low": -0.07885804564857485,
+          "ci_high": 0.18272341188814045,
+          "p_value": 0.36633663366336633,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.07106463185530039,
+          "ci_low": 0.012897520560570287,
+          "ci_high": 0.13861237857634706,
+          "p_value": 0.039603960396039604,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.1,
+          "ci_low": -0.0565625,
+          "ci_high": 0.2815624999999999,
+          "p_value": 0.38613861386138615,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.05,
+          "ci_low": -0.088125,
+          "ci_high": 0.23218749999999966,
+          "p_value": 0.6237623762376238,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": 0.0,
+          "ci_low": -0.1125,
+          "ci_high": 0.1375,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "llm_option7_best",
+      "b": "llm_option3_pairwise",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.033495264860603766,
+          "ci_low": -0.08431100626745769,
+          "ci_high": 0.1515592039294814,
+          "p_value": 0.6138613861386139,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.06336160198880024,
+          "ci_low": 0.01822592061059276,
+          "ci_high": 0.11718503641765807,
+          "p_value": 0.0297029702970297,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.025,
+          "ci_low": -0.1315625,
+          "ci_high": 0.1815624999999999,
+          "p_value": 0.8712871287128713,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.0375,
+          "ci_low": -0.1190625,
+          "ci_high": 0.1821874999999997,
+          "p_value": 0.801980198019802,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": 0.0,
+          "ci_low": -0.1571875,
+          "ci_high": 0.1190624999999999,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "loso_original_option11_context",
+      "b": "loso_original_option1_tfidf",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.006864701188448819,
+          "ci_low": -0.029913231857704718,
+          "ci_high": 0.04797618519077096,
+          "p_value": 0.693069306930693,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.0009981684028724145,
+          "ci_low": -0.004095716225637929,
+          "ci_high": 0.005965137992096107,
+          "p_value": 0.7128712871287128,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.06906249999999989,
+          "p_value": 0.32673267326732675,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": -0.05,
+          "ci_low": -0.1315625,
+          "ci_high": 0.0,
+          "p_value": 0.297029702970297,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.05,
+          "ci_low": -0.1,
+          "ci_high": 0.031562499999999896,
+          "p_value": 0.37623762376237624,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "loso_llm_option11_context",
+      "b": "loso_llm_option1_tfidf",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": -0.03507130203731369,
+          "ci_low": -0.07311956777381981,
+          "ci_high": 0.011827359442419546,
+          "p_value": 0.18811881188118812,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": -0.012211088565784246,
+          "ci_low": -0.03351729860662364,
+          "ci_high": 0.0028033109502547146,
+          "p_value": 0.26732673267326734,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": -0.05,
+          "ci_low": -0.1190625,
+          "ci_high": 0.0375,
+          "p_value": 0.44554455445544555,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.0,
+          "ci_low": -0.05,
+          "ci_high": 0.075,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.0625,
+          "ci_low": -0.125,
+          "ci_high": 0.0,
+          "p_value": 0.15841584158415842,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "loso_llm_option11_context",
+      "b": "loso_llm_option2_trace_ranker",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.22052808615504962,
+          "ci_low": 0.1410884203244093,
+          "ci_high": 0.3118211823021141,
+          "p_value": 0.009900990099009901,
+          "holm_p_value": 0.6930693069306931
+        },
+        "average_precision": {
+          "mean_delta": 0.09415184408479191,
+          "ci_low": 0.0621870164528118,
+          "ci_high": 0.12249904012735155,
+          "p_value": 0.009900990099009901,
+          "holm_p_value": 0.6930693069306931
+        },
+        "hits_at_1": {
+          "mean_delta": 0.1625,
+          "ci_low": 0.075,
+          "ci_high": 0.2375,
+          "p_value": 0.019801980198019802,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.325,
+          "ci_low": 0.225,
+          "ci_high": 0.4375,
+          "p_value": 0.009900990099009901,
+          "holm_p_value": 0.6930693069306931
+        },
+        "hits_at_10": {
+          "mean_delta": 0.2875,
+          "ci_low": 0.161875,
+          "ci_high": 0.4190624999999999,
+          "p_value": 0.009900990099009901,
+          "holm_p_value": 0.6930693069306931
+        }
+      }
+    },
+    {
+      "a": "loso_original_option11_static_counts",
+      "b": "loso_original_option11_context",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.002573932866498069,
+          "ci_low": -0.005286356323714428,
+          "ci_high": 0.007939660546167538,
+          "p_value": 0.42574257425742573,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 6.387792240913674e-05,
+          "ci_low": -0.0005521896257170836,
+          "ci_high": 0.000618831975259465,
+          "p_value": 0.801980198019802,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": 0.025,
+          "ci_low": -0.0125,
+          "ci_high": 0.075,
+          "p_value": 0.594059405940594,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": 0.025,
+          "ci_low": -0.0125,
+          "ci_high": 0.06906249999999989,
+          "p_value": 0.6237623762376238,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "loso_original_option11_static_counts",
+      "b": "loso_original_option1_tfidf",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.009438634054946889,
+          "ci_low": -0.01923325268291852,
+          "ci_high": 0.04184831439312896,
+          "p_value": 0.5742574257425742,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.0010620463252815511,
+          "ci_low": -0.0032796515893128413,
+          "ci_high": 0.006826612097161805,
+          "p_value": 0.693069306930693,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.0375,
+          "ci_low": 0.0,
+          "ci_high": 0.075,
+          "p_value": 0.2376237623762376,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": -0.025,
+          "ci_low": -0.0815625,
+          "ci_high": 0.04406249999999989,
+          "p_value": 0.8217821782178217,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.025,
+          "ci_low": -0.0940625,
+          "ci_high": 0.05656249999999989,
+          "p_value": 0.7920792079207921,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "loso_llm_option11_static_counts",
+      "b": "loso_llm_option11_context",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": 0.033441525159365104,
+          "ci_low": 0.008173679237460256,
+          "ci_high": 0.07429125501188669,
+          "p_value": 0.15841584158415842,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": 0.005090123601144934,
+          "ci_low": -0.012017347160680182,
+          "ci_high": 0.024884982103100882,
+          "p_value": 0.6336633663366337,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.075,
+          "ci_low": 0.018437500000000002,
+          "ci_high": 0.1375,
+          "p_value": 0.04950495049504951,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": -0.0125,
+          "ci_low": -0.0565625,
+          "ci_high": 0.0375,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": 0.025,
+          "ci_low": -0.025,
+          "ci_high": 0.075,
+          "p_value": 0.693069306930693,
+          "holm_p_value": 1.0
+        }
+      }
+    },
+    {
+      "a": "loso_llm_option11_static_counts",
+      "b": "loso_llm_option1_tfidf",
+      "n_common_requirements": 80,
+      "metrics": {
+        "reciprocal_rank": {
+          "mean_delta": -0.0016297768779485835,
+          "ci_low": -0.055332869056767015,
+          "ci_high": 0.049378139970278095,
+          "p_value": 0.9801980198019802,
+          "holm_p_value": 1.0
+        },
+        "average_precision": {
+          "mean_delta": -0.007120964964639312,
+          "ci_low": -0.021113002070098277,
+          "ci_high": 0.009437975246502172,
+          "p_value": 0.49504950495049505,
+          "holm_p_value": 1.0
+        },
+        "hits_at_1": {
+          "mean_delta": 0.025,
+          "ci_low": -0.0440625,
+          "ci_high": 0.125,
+          "p_value": 0.7821782178217822,
+          "holm_p_value": 1.0
+        },
+        "hits_at_5": {
+          "mean_delta": -0.0125,
+          "ci_low": -0.0625,
+          "ci_high": 0.031562499999999896,
+          "p_value": 1.0,
+          "holm_p_value": 1.0
+        },
+        "hits_at_10": {
+          "mean_delta": -0.0375,
+          "ci_low": -0.0940625,
+          "ci_high": 0.0125,
+          "p_value": 0.40594059405940597,
+          "holm_p_value": 1.0
+        }
+      }
+    }
+  ]
+}

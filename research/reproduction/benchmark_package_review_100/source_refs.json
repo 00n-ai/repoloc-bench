@@ -1,0 +1,23 @@
+{
+  "bundle": "benchmark_package_review_100",
+  "repoloc_bench_commit": "f50204e32f7f33aee5dcf93f7e328d2d72ea7c53",
+  "source_repo": "state-estimation-traceability",
+  "source_commit": "477981bb50550d393dbdb1a70855b091b15bc1e6",
+  "seed": 20260523,
+  "iterations": 100,
+  "analyzer": "research/scripts/analyze_benchmark_package.py",
+  "source_inputs": [
+    "experiments/oss_method/*_per_requirement.csv",
+    "experiments/oss_method/*_rankings.csv",
+    "experiments/oss_method_llm_requirements/**/_per_requirement.csv",
+    "experiments/oss_method_llm_requirements/**/_rankings.csv",
+    "experiments/oss_method_loso/**/_per_requirement.csv",
+    "experiments/oss_method_loso/**/_rankings.csv",
+    "experiments/oss_method_loso_context_ablation/**/_per_requirement.csv",
+    "experiments/oss_method_loso_context_ablation/**/_rankings.csv"
+  ],
+  "outputs": {
+    "summary_json": "research/reproduction/benchmark_package_review_100/summary.json",
+    "report_md": "research/reproduction/benchmark_package_review_100/report.md"
+  }
+}
