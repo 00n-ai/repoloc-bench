@@ -1,0 +1,71 @@
+{
+  "dataset_id": "multi-agent-framework-benchmark",
+  "title": "Multi-Agent Framework Benchmark Dataset",
+  "version": "2026-06-23",
+  "created_date": "2026-06-23",
+  "source_project": "projects/multi-agent-framework",
+  "public_page": "https://00n.ai/benchmarks/multi-agent-framework-benchmark/",
+  "description": "Stable 20-question comparison artifacts and a freshness/retrieval stress question pack for direct LLM, search, reflection, and multi-agent answer paths.",
+  "approaches": [
+    "B0 Vanilla LLM",
+    "B1 LLM + Search",
+    "B2 LLM + Search + Self-Reflection",
+    "MA Multi-Agent"
+  ],
+  "stable_runs": [
+    {
+      "run_id": "comparison-v2-06965864",
+      "model": "GPT-4o",
+      "questions": 20,
+      "summary_file": "comparison-v2-06965864-summary.json",
+      "report_file": "comparison-v2-06965864-report.md"
+    },
+    {
+      "run_id": "comparison-v2-219881f7",
+      "model": "Ollama/qwen2.5:7b",
+      "questions": 20,
+      "summary_file": "comparison-v2-219881f7-summary.json",
+      "report_file": "comparison-v2-219881f7-report.md"
+    }
+  ],
+  "freshness_pack": {
+    "file": "freshness-question-pack-2026-06-23.jsonl",
+    "questions": 20,
+    "status": "input pack only; fresh-run results pending review"
+  },
+  "claim_boundary": "Exploratory benchmark artifacts; do not generalize beyond this harness without replication.",
+  "files": [
+    {
+      "path": "EXPERIMENT-RATIONALE-AND-RESULTS.md",
+      "bytes": 6464
+    },
+    {
+      "path": "README.md",
+      "bytes": 2351
+    },
+    {
+      "path": "aggregated-results-2026-06-23.json",
+      "bytes": 11709
+    },
+    {
+      "path": "comparison-v2-06965864-report.md",
+      "bytes": 30625
+    },
+    {
+      "path": "comparison-v2-06965864-summary.json",
+      "bytes": 53898
+    },
+    {
+      "path": "comparison-v2-219881f7-report.md",
+      "bytes": 30538
+    },
+    {
+      "path": "comparison-v2-219881f7-summary.json",
+      "bytes": 53937
+    },
+    {
+      "path": "freshness-question-pack-2026-06-23.jsonl",
+      "bytes": 11965
+    }
+  ]
+}

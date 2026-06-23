@@ -5,6 +5,7 @@ Public research benchmark for structured repository knowledge trees, code locali
 ## Contents
 - `data/derived/oss-method-repoloc-bench/` — current pilot dataset package
 - `data/derived/itrust-traceability-benchmark/` — iTrust requirement-to-code benchmark package
+- `data/derived/multi-agent-framework-benchmark/` — public multi-agent framework benchmark artifacts and freshness question pack
 - `research/benchmark-package-review-100.md` — benchmark review summary
 - `research/reproduction/benchmark_package_review_100/` — fuller reproduction bundle
 - `research/scripts/analyze_benchmark_package.py` — benchmark review analyzer
@@ -19,3 +20,7 @@ Public research benchmark for structured repository knowledge trees, code locali
 ## Use
 Start with the pilot package manifest:
 - `data/derived/oss-method-repoloc-bench/manifest.json`
+
+For the multi-agent framework benchmark, start with:
+- `data/derived/multi-agent-framework-benchmark/README.md`
+- `data/derived/multi-agent-framework-benchmark/manifest.json`

@@ -1,0 +1,50 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "EXPERIMENT-RATIONALE-AND-RESULTS.md",
+      "bytes": 6464,
+      "sha256": "549de4a9c999ddcbf2013d0f06722400c76ec890053ce7bbe42a817a465efee1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2351,
+      "sha256": "77fe678932567b6d06c47f5435dfdac90d6c1fedc1d3bc95a92493d01042aa28"
+    },
+    {
+      "path": "aggregated-results-2026-06-23.json",
+      "bytes": 11709,
+      "sha256": "3d0f6ea91748b6f9f3a4b11bea660ef26dcec6cfceed33262677b3fc4b4475a6"
+    },
+    {
+      "path": "comparison-v2-06965864-report.md",
+      "bytes": 30625,
+      "sha256": "647ace277682674bc70521bfc2d2619b963b40d3760f94f0d7568c1f5066531f"
+    },
+    {
+      "path": "comparison-v2-06965864-summary.json",
+      "bytes": 53898,
+      "sha256": "0afcf16b4323b79f8abaf39129388ff93079e67f928a8c53914a7168d2fbd1bc"
+    },
+    {
+      "path": "comparison-v2-219881f7-report.md",
+      "bytes": 30538,
+      "sha256": "15dbf3e7e1d88d8e61793f9d68fab0c1a3908e032e81f8b0b8fb16989cc5c3a6"
+    },
+    {
+      "path": "comparison-v2-219881f7-summary.json",
+      "bytes": 53937,
+      "sha256": "58084023a2eef4ecccc8a65381e72755b9159886ba9d9499230d2c73779f3264"
+    },
+    {
+      "path": "freshness-question-pack-2026-06-23.jsonl",
+      "bytes": 11965,
+      "sha256": "cec22003a08fea04602754ef38558443d9f3f98019f39d07147b1ce57a128255"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 2045,
+      "sha256": "e5e568ed0f04f6f37bebb2073996a8d6cc71396b85b7b32e41f04add6d43ecc4"
+    }
+  ]
+}

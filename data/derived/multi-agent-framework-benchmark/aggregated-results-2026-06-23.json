@@ -1,0 +1,426 @@
+{
+  "schema": "multi-agent-framework-benchmark-summary-v1",
+  "created_utc": "2026-06-23T13:46:58Z",
+  "runs": [
+    {
+      "comparison_id": "06965864",
+      "model": "gpt-4o",
+      "questions_complete": 20,
+      "unified_grader": "gpt-4o",
+      "approach_averages": {
+        "B0: Vanilla LLM": {
+          "count": 20,
+          "avg_overall_10": 6.5
+        },
+        "B1: LLM + Search": {
+          "count": 20,
+          "avg_overall_10": 5.83
+        },
+        "B2: LLM + Search + Reflection": {
+          "count": 20,
+          "avg_overall_10": 6.34
+        },
+        "MA: Multi-Agent": {
+          "count": 20,
+          "avg_overall_10": 5.54
+        }
+      },
+      "question_scores": [
+        {
+          "question_index": 1,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 7.0,
+            "B2: LLM + Search + Reflection": 6.0,
+            "MA: Multi-Agent": 7.0
+          }
+        },
+        {
+          "question_index": 2,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 7.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 3,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 8.0,
+            "B2: LLM + Search + Reflection": 9.0,
+            "MA: Multi-Agent": 8.0
+          }
+        },
+        {
+          "question_index": 4,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 7.0,
+            "MA: Multi-Agent": 7.0
+          }
+        },
+        {
+          "question_index": 5,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 7.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 6,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 7.0,
+            "B2: LLM + Search + Reflection": 8.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 7,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 7.0,
+            "B2: LLM + Search + Reflection": 7.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 8,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 7.0,
+            "B2: LLM + Search + Reflection": 8.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 9,
+          "approaches": {
+            "B0: Vanilla LLM": 3.0,
+            "B1: LLM + Search": 3.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 3.0
+          }
+        },
+        {
+          "question_index": 10,
+          "approaches": {
+            "B0: Vanilla LLM": 5.0,
+            "B1: LLM + Search": 5.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 3.0
+          }
+        },
+        {
+          "question_index": 11,
+          "approaches": {
+            "B0: Vanilla LLM": 5.0,
+            "B1: LLM + Search": 4.0,
+            "B2: LLM + Search + Reflection": 4.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 12,
+          "approaches": {
+            "B0: Vanilla LLM": 3.0,
+            "B1: LLM + Search": 3.0,
+            "B2: LLM + Search + Reflection": 4.0,
+            "MA: Multi-Agent": 3.0
+          }
+        },
+        {
+          "question_index": 13,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 6.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 14,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 4.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 15,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 7.0,
+            "B2: LLM + Search + Reflection": 8.0,
+            "MA: Multi-Agent": 7.0
+          }
+        },
+        {
+          "question_index": 16,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 5.0,
+            "B2: LLM + Search + Reflection": 6.0,
+            "MA: Multi-Agent": 4.0
+          }
+        },
+        {
+          "question_index": 17,
+          "approaches": {
+            "B0: Vanilla LLM": 6.6,
+            "B1: LLM + Search": 5.4,
+            "B2: LLM + Search + Reflection": 6.6,
+            "MA: Multi-Agent": 8.2
+          }
+        },
+        {
+          "question_index": 18,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 7.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 19,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 6.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 20,
+          "approaches": {
+            "B0: Vanilla LLM": 7.4,
+            "B1: LLM + Search": 6.2,
+            "B2: LLM + Search + Reflection": 7.2,
+            "MA: Multi-Agent": 5.6
+          }
+        }
+      ],
+      "artifacts": {
+        "summary_json": "/benchmarks/multi-agent-framework/comparison-v2-06965864-summary.json",
+        "report_md": "/benchmarks/multi-agent-framework/comparison-v2-06965864-report.md"
+      }
+    },
+    {
+      "comparison_id": "219881f7",
+      "model": "ollama",
+      "questions_complete": 20,
+      "unified_grader": "gpt-4o",
+      "approach_averages": {
+        "B0: Vanilla LLM": {
+          "count": 20,
+          "avg_overall_10": 6.42
+        },
+        "B1: LLM + Search": {
+          "count": 20,
+          "avg_overall_10": 2.21
+        },
+        "B2: LLM + Search + Reflection": {
+          "count": 20,
+          "avg_overall_10": 2.7
+        },
+        "MA: Multi-Agent": {
+          "count": 20,
+          "avg_overall_10": 4.94
+        }
+      },
+      "question_scores": [
+        {
+          "question_index": 1,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 3.0,
+            "B2: LLM + Search + Reflection": 4.0,
+            "MA: Multi-Agent": 8.0
+          }
+        },
+        {
+          "question_index": 2,
+          "approaches": {
+            "B0: Vanilla LLM": 5.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 1.0,
+            "MA: Multi-Agent": 4.0
+          }
+        },
+        {
+          "question_index": 3,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 1.0,
+            "B2: LLM + Search + Reflection": 1.0,
+            "MA: Multi-Agent": 9.0
+          }
+        },
+        {
+          "question_index": 4,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 0.0,
+            "B2: LLM + Search + Reflection": 0.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 5,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 4.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 4.0
+          }
+        },
+        {
+          "question_index": 6,
+          "approaches": {
+            "B0: Vanilla LLM": 8.4,
+            "B1: LLM + Search": 5.2,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 5.8
+          }
+        },
+        {
+          "question_index": 7,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 5.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 9.0
+          }
+        },
+        {
+          "question_index": 8,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 9,
+          "approaches": {
+            "B0: Vanilla LLM": 3.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 2.0,
+            "MA: Multi-Agent": 1.0
+          }
+        },
+        {
+          "question_index": 10,
+          "approaches": {
+            "B0: Vanilla LLM": 4.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 3.0,
+            "MA: Multi-Agent": 3.0
+          }
+        },
+        {
+          "question_index": 11,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 3.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 12,
+          "approaches": {
+            "B0: Vanilla LLM": 5.0,
+            "B1: LLM + Search": 3.0,
+            "B2: LLM + Search + Reflection": 2.0,
+            "MA: Multi-Agent": 4.0
+          }
+        },
+        {
+          "question_index": 13,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 1.0,
+            "B2: LLM + Search + Reflection": 2.0,
+            "MA: Multi-Agent": 1.0
+          }
+        },
+        {
+          "question_index": 14,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 1.0,
+            "B2: LLM + Search + Reflection": 1.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 15,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 3.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 16,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 2.0,
+            "MA: Multi-Agent": 2.0
+          }
+        },
+        {
+          "question_index": 17,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 3.0,
+            "B2: LLM + Search + Reflection": 5.0,
+            "MA: Multi-Agent": 5.0
+          }
+        },
+        {
+          "question_index": 18,
+          "approaches": {
+            "B0: Vanilla LLM": 8.0,
+            "B1: LLM + Search": 1.0,
+            "B2: LLM + Search + Reflection": 1.0,
+            "MA: Multi-Agent": 6.0
+          }
+        },
+        {
+          "question_index": 19,
+          "approaches": {
+            "B0: Vanilla LLM": 7.0,
+            "B1: LLM + Search": 2.0,
+            "B2: LLM + Search + Reflection": 3.0,
+            "MA: Multi-Agent": 4.0
+          }
+        },
+        {
+          "question_index": 20,
+          "approaches": {
+            "B0: Vanilla LLM": 6.0,
+            "B1: LLM + Search": 1.0,
+            "B2: LLM + Search + Reflection": 1.0,
+            "MA: Multi-Agent": 7.0
+          }
+        }
+      ],
+      "artifacts": {
+        "summary_json": "/benchmarks/multi-agent-framework/comparison-v2-219881f7-summary.json",
+        "report_md": "/benchmarks/multi-agent-framework/comparison-v2-219881f7-report.md"
+      }
+    }
+  ]
+}
