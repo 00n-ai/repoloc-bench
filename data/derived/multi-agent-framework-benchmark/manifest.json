@@ -1,71 +1,51 @@
 {
-  "dataset_id": "multi-agent-framework-benchmark",
-  "title": "Multi-Agent Framework Benchmark Dataset",
-  "version": "2026-06-23",
-  "created_date": "2026-06-23",
-  "source_project": "projects/multi-agent-framework",
-  "public_page": "https://00n.ai/benchmarks/multi-agent-framework-benchmark/",
-  "description": "Stable 20-question comparison artifacts and a freshness/retrieval stress question pack for direct LLM, search, reflection, and multi-agent answer paths.",
-  "approaches": [
-    "B0 Vanilla LLM",
-    "B1 LLM + Search",
-    "B2 LLM + Search + Self-Reflection",
-    "MA Multi-Agent"
-  ],
-  "stable_runs": [
-    {
-      "run_id": "comparison-v2-06965864",
-      "model": "GPT-4o",
-      "questions": 20,
-      "summary_file": "comparison-v2-06965864-summary.json",
-      "report_file": "comparison-v2-06965864-report.md"
-    },
-    {
-      "run_id": "comparison-v2-219881f7",
-      "model": "Ollama/qwen2.5:7b",
-      "questions": 20,
-      "summary_file": "comparison-v2-219881f7-summary.json",
-      "report_file": "comparison-v2-219881f7-report.md"
-    }
-  ],
-  "freshness_pack": {
-    "file": "freshness-question-pack-2026-06-23.jsonl",
-    "questions": 20,
-    "status": "input pack only; fresh-run results pending review"
-  },
-  "claim_boundary": "Exploratory benchmark artifacts; do not generalize beyond this harness without replication.",
+  "dataset": "multi-agent-framework-benchmark",
+  "updated": "2026-06-24T03:35:00Z",
   "files": [
     {
       "path": "EXPERIMENT-RATIONALE-AND-RESULTS.md",
-      "bytes": 6464
+      "size": 6464,
+      "sha256": "549de4a9c999ddcbf2013d0f06722400c76ec890053ce7bbe42a817a465efee1"
     },
     {
       "path": "README.md",
-      "bytes": 2351
+      "size": 4361,
+      "sha256": "db43a982b821d177206569ef24591bde9d45cea573adb2460316a246db43770b"
+    },
+    {
+      "path": "V2-V3-LEARNINGS-AND-NEXT-STEPS.md",
+      "size": 13645,
+      "sha256": "2e596c70f424e98fc0064fb45b895b9f36443c7214d63a3b4ae5307456801403"
     },
     {
       "path": "aggregated-results-2026-06-23.json",
-      "bytes": 11709
+      "size": 2970,
+      "sha256": "6ecf05bd7aaa74415e6d53264e15fa09131c345d0ec7d7f2a7f4a99cf25e0cbb"
     },
     {
-      "path": "comparison-v2-06965864-report.md",
-      "bytes": 30625
+      "path": "comparison-v2-0e156cf6-report.md",
+      "size": 307532,
+      "sha256": "6da5ccb57727360faf8116f372b23ffff7db94814e57405a8bac57df940d592d"
     },
     {
-      "path": "comparison-v2-06965864-summary.json",
-      "bytes": 53898
+      "path": "comparison-v2-0e156cf6-summary.json",
+      "size": 427638,
+      "sha256": "440e754bea2cf0c402d7030e2ee4462c7379ce00e2b27c4935a4900bb398ff0f"
     },
     {
-      "path": "comparison-v2-219881f7-report.md",
-      "bytes": 30538
+      "path": "comparison-v2-f3c892c1-report.md",
+      "size": 310273,
+      "sha256": "539e5a7461d0c01351b637bd1da4c48eb3809b63dce371c13ef2371c0634edc0"
     },
     {
-      "path": "comparison-v2-219881f7-summary.json",
-      "bytes": 53937
+      "path": "comparison-v2-f3c892c1-summary.json",
+      "size": 429844,
+      "sha256": "3687dab4808e1be7657d22b52b445bb5db98909cc478f61761803d0739037e31"
     },
     {
       "path": "freshness-question-pack-2026-06-23.jsonl",
-      "bytes": 11965
+      "size": 11965,
+      "sha256": "cec22003a08fea04602754ef38558443d9f3f98019f39d07147b1ce57a128255"
     }
   ]
 }
