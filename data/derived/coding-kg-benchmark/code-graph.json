@@ -1,0 +1,4581 @@
+{
+  "nodes": [
+    {
+      "id": "mod-notifications",
+      "type": "module",
+      "label": "notifications",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "Notifications module \u2014 sends email and push notifications for user events.",
+      "module_variables": [
+        {
+          "name": "_notification_queue",
+          "type_hint": "List[dict]",
+          "value_repr": null
+        }
+      ],
+      "docstring": "Notifications module \u2014 sends email and push notifications for user events.",
+      "functions": [
+        "queue_notification",
+        "send_email",
+        "notify_welcome",
+        "notify_payment_confirmation",
+        "notify_payment_failed",
+        "notify_password_reset",
+        "flush_notification_queue",
+        "get_user_notifications"
+      ],
+      "classes": [
+        "NotificationType"
+      ],
+      "domain": "notifications"
+    },
+    {
+      "id": "var-notifications--notification-queue",
+      "type": "variable",
+      "label": "_notification_queue",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "_notification_queue is a module-level variable in notifications. of type List[dict].",
+      "type_hint": "List[dict]",
+      "value_repr": null,
+      "domain": "notifications"
+    },
+    {
+      "id": "ext-typing",
+      "type": "external_module",
+      "label": "typing",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External module: typing"
+    },
+    {
+      "id": "ext-typing-Optional",
+      "type": "imported_name",
+      "label": "typing.Optional",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "Imported from typing: Optional"
+    },
+    {
+      "id": "ext-typing-Dict",
+      "type": "imported_name",
+      "label": "typing.Dict",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "Imported from typing: Dict"
+    },
+    {
+      "id": "ext-typing-List",
+      "type": "imported_name",
+      "label": "typing.List",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "Imported from typing: List"
+    },
+    {
+      "id": "ext-datetime",
+      "type": "external_module",
+      "label": "datetime",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External module: datetime"
+    },
+    {
+      "id": "ext-datetime-datetime",
+      "type": "imported_name",
+      "label": "datetime.datetime",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "Imported from datetime: datetime"
+    },
+    {
+      "id": "ext-smtplib",
+      "type": "external_module",
+      "label": "smtplib",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External module: smtplib"
+    },
+    {
+      "id": "ext-email-mime-text",
+      "type": "external_module",
+      "label": "email.mime.text",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External module: email.mime.text"
+    },
+    {
+      "id": "ext-email-mime-text-MIMEText",
+      "type": "imported_name",
+      "label": "email.mime.text.MIMEText",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "Imported from email.mime.text: MIMEText"
+    },
+    {
+      "id": "notifications-notificationtype",
+      "type": "class",
+      "label": "NotificationType",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "NotificationType is a class. with attributes: WELCOME, PAYMENT_CONFIRMATION, PAYMENT_FAILED, PASSWORD_RESET, ACCOUNT_DELETED.",
+      "line": 11,
+      "bases": [],
+      "class_attributes": [
+        {
+          "name": "WELCOME",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "PAYMENT_CONFIRMATION",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "PAYMENT_FAILED",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "PASSWORD_RESET",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "ACCOUNT_DELETED",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        }
+      ],
+      "enum_values": [],
+      "methods": [],
+      "domain": "notifications"
+    },
+    {
+      "id": "notifications-queue-notification",
+      "type": "function",
+      "label": "queue_notification",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "queue_notification is a function. that takes parameters: user_id, notification_type, message. and returns a dict. It queue a notification for later sending. Return behavior: returns notification.",
+      "line": 24,
+      "args": [
+        "user_id",
+        "notification_type",
+        "message"
+      ],
+      "arg_types": {
+        "user_id": "str",
+        "notification_type": "str",
+        "message": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "notification",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "dict",
+      "docstring": "Queue a notification for later sending.",
+      "is_method": false,
+      "domain": "notifications"
+    },
+    {
+      "id": "call--notification-queue-append",
+      "type": "external_call",
+      "label": "_notification_queue.append",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: _notification_queue.append"
+    },
+    {
+      "id": "call-datetime-utcnow()-isoformat",
+      "type": "external_call",
+      "label": "datetime.utcnow().isoformat",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: datetime.utcnow().isoformat"
+    },
+    {
+      "id": "call-datetime-utcnow",
+      "type": "external_call",
+      "label": "datetime.utcnow",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: datetime.utcnow"
+    },
+    {
+      "id": "call-len",
+      "type": "external_call",
+      "label": "len",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: len"
+    },
+    {
+      "id": "notifications-send-email",
+      "type": "function",
+      "label": "send_email",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "send_email is a function. that takes parameters: to_address, subject, body. and returns a bool. It send an email. Return behavior: returns True.",
+      "line": 38,
+      "args": [
+        "to_address",
+        "subject",
+        "body"
+      ],
+      "arg_types": {
+        "to_address": "str",
+        "subject": "str",
+        "body": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "True",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Send an email. Returns True if successful, False otherwise.\nIn production this would use a real SMTP server.",
+      "is_method": false,
+      "domain": "notifications"
+    },
+    {
+      "id": "call-print",
+      "type": "external_call",
+      "label": "print",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: print"
+    },
+    {
+      "id": "notifications-notify-welcome",
+      "type": "function",
+      "label": "notify_welcome",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "notify_welcome is a function. that takes parameters: user_email, user_name. and returns a bool. It send a welcome email to a new user. Return behavior: returns send_email(user_email, subject, body).",
+      "line": 57,
+      "args": [
+        "user_email",
+        "user_name"
+      ],
+      "arg_types": {
+        "user_email": "str",
+        "user_name": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "send_email(user_email, subject, body)",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Send a welcome email to a new user.",
+      "is_method": false,
+      "domain": "notifications"
+    },
+    {
+      "id": "notifications-notify-payment-confirmation",
+      "type": "function",
+      "label": "notify_payment_confirmation",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "notify_payment_confirmation is a function. that takes parameters: user_email, amount, tier. and returns a bool. It send a payment confirmation email. Return behavior: returns send_email(user_email, subject, body).",
+      "line": 64,
+      "args": [
+        "user_email",
+        "amount",
+        "tier"
+      ],
+      "arg_types": {
+        "user_email": "str",
+        "amount": "float",
+        "tier": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "send_email(user_email, subject, body)",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Send a payment confirmation email.",
+      "is_method": false,
+      "domain": "payments"
+    },
+    {
+      "id": "call-tier-capitalize",
+      "type": "external_call",
+      "label": "tier.capitalize",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: tier.capitalize"
+    },
+    {
+      "id": "notifications-notify-payment-failed",
+      "type": "function",
+      "label": "notify_payment_failed",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "notify_payment_failed is a function. that takes parameters: user_email, amount. and returns a bool. It send a payment failure notification. Return behavior: returns send_email(user_email, subject, body).",
+      "line": 71,
+      "args": [
+        "user_email",
+        "amount"
+      ],
+      "arg_types": {
+        "user_email": "str",
+        "amount": "float"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "send_email(user_email, subject, body)",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Send a payment failure notification.",
+      "is_method": false,
+      "domain": "payments"
+    },
+    {
+      "id": "notifications-notify-password-reset",
+      "type": "function",
+      "label": "notify_password_reset",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "notify_password_reset is a function. that takes parameters: user_email, reset_token. and returns a bool. It send a password reset email with a reset link. Return behavior: returns send_email(user_email, subject, body).",
+      "line": 78,
+      "args": [
+        "user_email",
+        "reset_token"
+      ],
+      "arg_types": {
+        "user_email": "str",
+        "reset_token": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "send_email(user_email, subject, body)",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Send a password reset email with a reset link.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "notifications-flush-notification-queue",
+      "type": "function",
+      "label": "flush_notification_queue",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "flush_notification_queue is a function. and returns a List[dict]. It send all queued notifications. Return behavior: returns sent.",
+      "line": 85,
+      "args": [],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "sent",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "List[dict]",
+      "docstring": "Send all queued notifications. Returns list of sent notifications.",
+      "is_method": false,
+      "domain": "notifications"
+    },
+    {
+      "id": "call--notification-queue-clear",
+      "type": "external_call",
+      "label": "_notification_queue.clear",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: _notification_queue.clear"
+    },
+    {
+      "id": "call-sent-append",
+      "type": "external_call",
+      "label": "sent.append",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "External call: sent.append"
+    },
+    {
+      "id": "notifications-get-user-notifications",
+      "type": "function",
+      "label": "get_user_notifications",
+      "file": "example-repo/src/notifications.py",
+      "module": "notifications",
+      "natural_language": "get_user_notifications is a function. that takes parameters: user_id. and returns a List[dict]. It get all notifications for a specific user. Return behavior: returns [n for n in _notification_queue if n['user_id'] == user_id].",
+      "line": 97,
+      "args": [
+        "user_id"
+      ],
+      "arg_types": {
+        "user_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "[n for n in _notification_queue if n['user_id'] == user_id]",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "List[dict]",
+      "docstring": "Get all notifications for a specific user.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "mod-payments",
+      "type": "module",
+      "label": "payments",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "Payments module \u2014 handles subscription payments, refunds, and billing logic.",
+      "module_variables": [
+        {
+          "name": "_payment_db",
+          "type_hint": "Dict[str, Payment]",
+          "value_repr": null
+        },
+        {
+          "name": "_payment_counter",
+          "type_hint": "int",
+          "value_repr": "0"
+        }
+      ],
+      "docstring": "Payments module \u2014 handles subscription payments, refunds, and billing logic.",
+      "functions": [
+        "_get_user_service",
+        "process_payment",
+        "refund_payment",
+        "get_payment_history",
+        "get_revenue_by_tier",
+        "get_user_subscription_tier"
+      ],
+      "classes": [
+        "PaymentStatus",
+        "SubscriptionTier",
+        "Payment"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "var-payments--payment-db",
+      "type": "variable",
+      "label": "_payment_db",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "_payment_db is a module-level variable in payments. of type Dict[str, Payment].",
+      "type_hint": "Dict[str, Payment]",
+      "value_repr": null,
+      "domain": "payments"
+    },
+    {
+      "id": "var-payments--payment-counter",
+      "type": "variable",
+      "label": "_payment_counter",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "_payment_counter is a module-level variable in payments. of type int. initialized as 0.",
+      "type_hint": "int",
+      "value_repr": "0",
+      "domain": "payments"
+    },
+    {
+      "id": "ext-enum",
+      "type": "external_module",
+      "label": "enum",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External module: enum"
+    },
+    {
+      "id": "ext-enum-Enum",
+      "type": "imported_name",
+      "label": "enum.Enum",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "Imported from enum: Enum"
+    },
+    {
+      "id": "payments-paymentstatus",
+      "type": "class",
+      "label": "PaymentStatus",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "PaymentStatus is a class. It has enum values: PENDING='pending', COMPLETED='completed', FAILED='failed', REFUNDED='refunded'. with attributes: PENDING, COMPLETED, FAILED, REFUNDED.",
+      "line": 9,
+      "bases": [
+        "Enum"
+      ],
+      "class_attributes": [
+        {
+          "name": "PENDING",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "COMPLETED",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "FAILED",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "REFUNDED",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        }
+      ],
+      "enum_values": [
+        {
+          "name": "PENDING",
+          "value": "'pending'"
+        },
+        {
+          "name": "COMPLETED",
+          "value": "'completed'"
+        },
+        {
+          "name": "FAILED",
+          "value": "'failed'"
+        },
+        {
+          "name": "REFUNDED",
+          "value": "'refunded'"
+        }
+      ],
+      "methods": [],
+      "domain": "payments"
+    },
+    {
+      "id": "enum-paymentstatus-pending",
+      "type": "enum_value",
+      "label": "PaymentStatus.PENDING",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "PaymentStatus.PENDING is an enum value with value 'pending'",
+      "enum_class": "PaymentStatus",
+      "value": "'pending'",
+      "domain": "payments"
+    },
+    {
+      "id": "enum-paymentstatus-completed",
+      "type": "enum_value",
+      "label": "PaymentStatus.COMPLETED",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "PaymentStatus.COMPLETED is an enum value with value 'completed'",
+      "enum_class": "PaymentStatus",
+      "value": "'completed'",
+      "domain": "payments"
+    },
+    {
+      "id": "enum-paymentstatus-failed",
+      "type": "enum_value",
+      "label": "PaymentStatus.FAILED",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "PaymentStatus.FAILED is an enum value with value 'failed'",
+      "enum_class": "PaymentStatus",
+      "value": "'failed'",
+      "domain": "payments"
+    },
+    {
+      "id": "enum-paymentstatus-refunded",
+      "type": "enum_value",
+      "label": "PaymentStatus.REFUNDED",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "PaymentStatus.REFUNDED is an enum value with value 'refunded'",
+      "enum_class": "PaymentStatus",
+      "value": "'refunded'",
+      "domain": "payments"
+    },
+    {
+      "id": "payments-subscriptiontier",
+      "type": "class",
+      "label": "SubscriptionTier",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "SubscriptionTier is a class. It has enum values: FREE='free', PRO='pro', ENTERPRISE='enterprise'. with attributes: FREE, PRO, ENTERPRISE.",
+      "line": 16,
+      "bases": [
+        "Enum"
+      ],
+      "class_attributes": [
+        {
+          "name": "FREE",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "PRO",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        },
+        {
+          "name": "ENTERPRISE",
+          "kind": "class_attribute",
+          "type_hint": "str"
+        }
+      ],
+      "enum_values": [
+        {
+          "name": "FREE",
+          "value": "'free'"
+        },
+        {
+          "name": "PRO",
+          "value": "'pro'"
+        },
+        {
+          "name": "ENTERPRISE",
+          "value": "'enterprise'"
+        }
+      ],
+      "methods": [],
+      "domain": "payments"
+    },
+    {
+      "id": "enum-subscriptiontier-free",
+      "type": "enum_value",
+      "label": "SubscriptionTier.FREE",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "SubscriptionTier.FREE is an enum value with value 'free'",
+      "enum_class": "SubscriptionTier",
+      "value": "'free'",
+      "domain": "payments"
+    },
+    {
+      "id": "enum-subscriptiontier-pro",
+      "type": "enum_value",
+      "label": "SubscriptionTier.PRO",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "SubscriptionTier.PRO is an enum value with value 'pro'",
+      "enum_class": "SubscriptionTier",
+      "value": "'pro'",
+      "domain": "payments"
+    },
+    {
+      "id": "enum-subscriptiontier-enterprise",
+      "type": "enum_value",
+      "label": "SubscriptionTier.ENTERPRISE",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "SubscriptionTier.ENTERPRISE is an enum value with value 'enterprise'",
+      "enum_class": "SubscriptionTier",
+      "value": "'enterprise'",
+      "domain": "payments"
+    },
+    {
+      "id": "payments-payment",
+      "type": "class",
+      "label": "Payment",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "Payment is a class. that represents a single payment transaction. with attributes: payment_id, user_id, amount, tier, status, created_at.",
+      "line": 22,
+      "bases": [],
+      "class_attributes": [
+        {
+          "name": "payment_id",
+          "kind": "instance_attribute",
+          "type_hint": "payment_id"
+        },
+        {
+          "name": "user_id",
+          "kind": "instance_attribute",
+          "type_hint": "user_id"
+        },
+        {
+          "name": "amount",
+          "kind": "instance_attribute",
+          "type_hint": "self._validate_amount"
+        },
+        {
+          "name": "tier",
+          "kind": "instance_attribute",
+          "type_hint": "tier"
+        },
+        {
+          "name": "status",
+          "kind": "instance_attribute",
+          "type_hint": "PaymentStatus.PENDING"
+        },
+        {
+          "name": "created_at",
+          "kind": "instance_attribute",
+          "type_hint": "datetime.utcnow"
+        }
+      ],
+      "enum_values": [],
+      "docstring": "Represents a single payment transaction.",
+      "methods": [
+        "__init__",
+        "_validate_amount",
+        "complete",
+        "fail",
+        "refund",
+        "to_dict"
+      ],
+      "domain": "payments"
+    },
+    {
+      "id": "payments-payment---init--",
+      "type": "method",
+      "label": "__init__",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "__init__ is a method on the Payment class. that takes parameters: self, payment_id, user_id, amount, tier.",
+      "line": 24,
+      "args": [
+        "self",
+        "payment_id",
+        "user_id",
+        "amount",
+        "tier"
+      ],
+      "arg_types": {
+        "payment_id": "str",
+        "user_id": "str",
+        "amount": "float",
+        "tier": "SubscriptionTier"
+      },
+      "raises": [],
+      "return_conditions": [],
+      "class": "Payment",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "payments-payment--validate-amount",
+      "type": "method",
+      "label": "_validate_amount",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "_validate_amount is a method on the Payment class. that takes parameters: amount. and returns a float. It validate payment amount is positive. It raises ValueError (condition: 'Payment amount cannot be negative'), ValueError (condition: 'Payment amount exceeds maximum ($100,000)'). Return behavior: returns round(amount, 2).",
+      "line": 34,
+      "args": [
+        "amount"
+      ],
+      "arg_types": {
+        "amount": "float"
+      },
+      "raises": [
+        {
+          "type": "ValueError",
+          "condition": "'Payment amount cannot be negative'"
+        },
+        {
+          "type": "ValueError",
+          "condition": "'Payment amount exceeds maximum ($100,000)'"
+        }
+      ],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "round(amount, 2)",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "float",
+      "docstring": "Validate payment amount is positive.",
+      "class": "Payment",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "raise-payments-valueerror",
+      "type": "exception",
+      "label": "ValueError",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "Exception: ValueError"
+    },
+    {
+      "id": "call-round",
+      "type": "external_call",
+      "label": "round",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: round"
+    },
+    {
+      "id": "call-valueerror",
+      "type": "external_call",
+      "label": "ValueError",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: ValueError"
+    },
+    {
+      "id": "payments-payment-complete",
+      "type": "method",
+      "label": "complete",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "complete is a method on the Payment class. that takes parameters: self. and returns a None. It mark payment as completed. It raises RuntimeError (condition: f'Cannot complete payment in status {self.status}').",
+      "line": 42,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [
+        {
+          "type": "RuntimeError",
+          "condition": "f'Cannot complete payment in status {self.status}'"
+        }
+      ],
+      "return_conditions": [],
+      "returns": "None",
+      "docstring": "Mark payment as completed.",
+      "class": "Payment",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "raise-payments-runtimeerror",
+      "type": "exception",
+      "label": "RuntimeError",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "Exception: RuntimeError"
+    },
+    {
+      "id": "call-runtimeerror",
+      "type": "external_call",
+      "label": "RuntimeError",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: RuntimeError"
+    },
+    {
+      "id": "payments-payment-fail",
+      "type": "method",
+      "label": "fail",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "fail is a method on the Payment class. that takes parameters: self. and returns a None. It mark payment as failed.",
+      "line": 48,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [],
+      "returns": "None",
+      "docstring": "Mark payment as failed.",
+      "class": "Payment",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "payments-payment-refund",
+      "type": "method",
+      "label": "refund",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "refund is a method on the Payment class. that takes parameters: self. and returns a None. It refund a completed payment. It raises RuntimeError (condition: 'Can only refund completed payments').",
+      "line": 52,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [
+        {
+          "type": "RuntimeError",
+          "condition": "'Can only refund completed payments'"
+        }
+      ],
+      "return_conditions": [],
+      "returns": "None",
+      "docstring": "Refund a completed payment.",
+      "class": "Payment",
+      "is_method": true,
+      "domain": "payments"
+    },
+    {
+      "id": "payments-payment-to-dict",
+      "type": "method",
+      "label": "to_dict",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "to_dict is a method on the Payment class. that takes parameters: self. and returns a dict. It serialize payment to dictionary. Return behavior: returns {'payment_id': self.payment_id, 'user_id': self.user_id, 'amount': self.amount, 'tier': self.tier.value, 'status': self.status.value, 'created_at': self.created_at.isoformat(), 'refunded_at': self.refunded_at.isoformat() if self.refunded_at else None}.",
+      "line": 59,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "{'payment_id': self.payment_id, 'user_id': self.user_id, 'amount': self.amount, 'tier': self.tier.value, 'status': self.status.value, 'created_at': self.created_at.isoformat(), 'refunded_at': self.refunded_at.isoformat() if self.refunded_at else None}",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "dict",
+      "docstring": "Serialize payment to dictionary.",
+      "class": "Payment",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "payments--get-user-service",
+      "type": "function",
+      "label": "_get_user_service",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "_get_user_service is a function. Return behavior: returns user_service. It uses the import convention: imports user_service inside function _get_user_service.",
+      "line": 79,
+      "args": [],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "user_service",
+          "branch": "unconditional"
+        }
+      ],
+      "import_convention": "imports user_service inside function _get_user_service",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "payments-process-payment",
+      "type": "function",
+      "label": "process_payment",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "process_payment is a function. that takes parameters: user_id, amount, tier. and returns a Payment. It process a payment for a user subscription. It raises ValueError (condition: f'User {user_id} not found'). Return behavior: returns payment.",
+      "line": 84,
+      "args": [
+        "user_id",
+        "amount",
+        "tier"
+      ],
+      "arg_types": {
+        "user_id": "str",
+        "amount": "float",
+        "tier": "SubscriptionTier"
+      },
+      "raises": [
+        {
+          "type": "ValueError",
+          "condition": "f'User {user_id} not found'"
+        }
+      ],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "payment",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Payment",
+      "docstring": "Process a payment for a user subscription.\nValidates user exists before processing.",
+      "is_method": false,
+      "domain": "payments"
+    },
+    {
+      "id": "call-user-svc-get-user-profile",
+      "type": "external_call",
+      "label": "user_svc.get_user_profile",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: user_svc.get_user_profile"
+    },
+    {
+      "id": "call-payment-complete",
+      "type": "external_call",
+      "label": "payment.complete",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: payment.complete"
+    },
+    {
+      "id": "call-payment-fail",
+      "type": "external_call",
+      "label": "payment.fail",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: payment.fail"
+    },
+    {
+      "id": "payments-refund-payment",
+      "type": "function",
+      "label": "refund_payment",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "refund_payment is a function. that takes parameters: payment_id. and returns a Optional[Payment]. It refund a payment by id. Return behavior: if not payment then returns None; returns payment.",
+      "line": 110,
+      "args": [
+        "payment_id"
+      ],
+      "arg_types": {
+        "payment_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": "not payment",
+          "returns": "None",
+          "branch": "if_true"
+        },
+        {
+          "condition": null,
+          "returns": "payment",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Optional[Payment]",
+      "docstring": "Refund a payment by ID. Returns updated Payment or None if not found.",
+      "is_method": false,
+      "domain": "payments"
+    },
+    {
+      "id": "call--payment-db-get",
+      "type": "external_call",
+      "label": "_payment_db.get",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: _payment_db.get"
+    },
+    {
+      "id": "call-payment-refund",
+      "type": "external_call",
+      "label": "payment.refund",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: payment.refund"
+    },
+    {
+      "id": "payments-get-payment-history",
+      "type": "function",
+      "label": "get_payment_history",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "get_payment_history is a function. that takes parameters: user_id. and returns a List[Payment]. It get all payments for a user. Return behavior: returns [p for p in _payment_db.values() if p.user_id == user_id].",
+      "line": 119,
+      "args": [
+        "user_id"
+      ],
+      "arg_types": {
+        "user_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "[p for p in _payment_db.values() if p.user_id == user_id]",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "List[Payment]",
+      "docstring": "Get all payments for a user.",
+      "is_method": false,
+      "domain": "payments"
+    },
+    {
+      "id": "call--payment-db-values",
+      "type": "external_call",
+      "label": "_payment_db.values",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: _payment_db.values"
+    },
+    {
+      "id": "payments-get-revenue-by-tier",
+      "type": "function",
+      "label": "get_revenue_by_tier",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "get_revenue_by_tier is a function. that takes parameters: tier. and returns a float. It calculate total revenue for a subscription tier (completed payments only). Return behavior: returns round(total, 2).",
+      "line": 124,
+      "args": [
+        "tier"
+      ],
+      "arg_types": {
+        "tier": "SubscriptionTier"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "round(total, 2)",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "float",
+      "docstring": "Calculate total revenue for a subscription tier (completed payments only).",
+      "is_method": false,
+      "domain": "core"
+    },
+    {
+      "id": "call-sum",
+      "type": "external_call",
+      "label": "sum",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: sum"
+    },
+    {
+      "id": "payments-get-user-subscription-tier",
+      "type": "function",
+      "label": "get_user_subscription_tier",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "get_user_subscription_tier is a function. that takes parameters: user_id. and returns a Optional[SubscriptionTier]. It get a user's current subscription tier (highest active tier). Return behavior: if not active_tiers then returns None; returns max(active_tiers, key=lambda t: priority[t]).",
+      "line": 133,
+      "args": [
+        "user_id"
+      ],
+      "arg_types": {
+        "user_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": "not active_tiers",
+          "returns": "None",
+          "branch": "if_true"
+        },
+        {
+          "condition": null,
+          "returns": "max(active_tiers, key=lambda t: priority[t])",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Optional[SubscriptionTier]",
+      "docstring": "Get a user's current subscription tier (highest active tier).",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "call-max",
+      "type": "external_call",
+      "label": "max",
+      "file": "example-repo/src/payments.py",
+      "module": "payments",
+      "natural_language": "External call: max"
+    },
+    {
+      "id": "mod-user-service",
+      "type": "module",
+      "label": "user_service",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "User service module \u2014 handles user registration, authentication, and profile management.",
+      "module_variables": [
+        {
+          "name": "_user_db",
+          "type_hint": "Dict[str, dict]",
+          "value_repr": null
+        }
+      ],
+      "docstring": "User service module \u2014 handles user registration, authentication, and profile management.",
+      "functions": [
+        "hash_password",
+        "verify_password",
+        "register_user",
+        "authenticate_user",
+        "get_user_profile",
+        "update_user_profile",
+        "list_users_by_role",
+        "delete_user",
+        "promote_to_admin"
+      ],
+      "classes": [
+        "User",
+        "AdminUser"
+      ],
+      "domain": "user_management"
+    },
+    {
+      "id": "var-user-service--user-db",
+      "type": "variable",
+      "label": "_user_db",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "_user_db is a module-level variable in user_service. of type Dict[str, dict].",
+      "type_hint": "Dict[str, dict]",
+      "value_repr": null,
+      "domain": "user_management"
+    },
+    {
+      "id": "ext-hashlib",
+      "type": "external_module",
+      "label": "hashlib",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External module: hashlib"
+    },
+    {
+      "id": "ext-json",
+      "type": "external_module",
+      "label": "json",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External module: json"
+    },
+    {
+      "id": "ext-os",
+      "type": "external_module",
+      "label": "os",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External module: os"
+    },
+    {
+      "id": "user-service-user",
+      "type": "class",
+      "label": "User",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "User is a class. that represents a registered user. with attributes: user_id, email, name, role, created_at.",
+      "line": 14,
+      "bases": [],
+      "class_attributes": [
+        {
+          "name": "user_id",
+          "kind": "instance_attribute",
+          "type_hint": "user_id"
+        },
+        {
+          "name": "email",
+          "kind": "instance_attribute",
+          "type_hint": "self._validate_email"
+        },
+        {
+          "name": "name",
+          "kind": "instance_attribute",
+          "type_hint": "name"
+        },
+        {
+          "name": "role",
+          "kind": "instance_attribute",
+          "type_hint": "role"
+        },
+        {
+          "name": "created_at",
+          "kind": "instance_attribute",
+          "type_hint": "datetime.utcnow"
+        }
+      ],
+      "enum_values": [],
+      "docstring": "Represents a registered user.",
+      "methods": [
+        "__init__",
+        "_validate_email",
+        "to_dict",
+        "__repr__"
+      ],
+      "domain": "user_management"
+    },
+    {
+      "id": "user-service-user---init--",
+      "type": "method",
+      "label": "__init__",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "__init__ is a method on the User class. that takes parameters: self, user_id, email, name, role.",
+      "line": 16,
+      "args": [
+        "self",
+        "user_id",
+        "email",
+        "name",
+        "role"
+      ],
+      "arg_types": {
+        "user_id": "str",
+        "email": "str",
+        "name": "str",
+        "role": "str"
+      },
+      "raises": [],
+      "return_conditions": [],
+      "class": "User",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "user-service-user--validate-email",
+      "type": "method",
+      "label": "_validate_email",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "_validate_email is a method on the User class. that takes parameters: email. and returns a str. It basic email validation. It raises ValueError (condition: f'Invalid email: {email}'). Return behavior: returns email.lower().",
+      "line": 26,
+      "args": [
+        "email"
+      ],
+      "arg_types": {
+        "email": "str"
+      },
+      "raises": [
+        {
+          "type": "ValueError",
+          "condition": "f'Invalid email: {email}'"
+        }
+      ],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "email.lower()",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "str",
+      "docstring": "Basic email validation.",
+      "class": "User",
+      "is_method": true,
+      "domain": "notifications"
+    },
+    {
+      "id": "raise-user-service-valueerror",
+      "type": "exception",
+      "label": "ValueError",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "Exception: ValueError"
+    },
+    {
+      "id": "call-email-lower",
+      "type": "external_call",
+      "label": "email.lower",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: email.lower"
+    },
+    {
+      "id": "user-service-user-to-dict",
+      "type": "method",
+      "label": "to_dict",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "to_dict is a method on the User class. that takes parameters: self. and returns a dict. It serialize user to dictionary. Return behavior: returns {'user_id': self.user_id, 'email': self.email, 'name': self.name, 'role': self.role, 'created_at': self.created_at.isoformat(), 'last_login': self.last_login.isoformat() if self.last_login else None}.",
+      "line": 32,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "{'user_id': self.user_id, 'email': self.email, 'name': self.name, 'role': self.role, 'created_at': self.created_at.isoformat(), 'last_login': self.last_login.isoformat() if self.last_login else None}",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "dict",
+      "docstring": "Serialize user to dictionary.",
+      "class": "User",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "user-service-user---repr--",
+      "type": "method",
+      "label": "__repr__",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "__repr__ is a method on the User class. that takes parameters: self. Return behavior: returns f'User(id={self.user_id}, email={self.email}, role={self.role})'.",
+      "line": 43,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "f'User(id={self.user_id}, email={self.email}, role={self.role})'",
+          "branch": "unconditional"
+        }
+      ],
+      "class": "User",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "user-service-adminuser",
+      "type": "class",
+      "label": "AdminUser",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "AdminUser is a class. that admin user with elevated permissions.",
+      "line": 47,
+      "bases": [
+        "User"
+      ],
+      "class_attributes": [],
+      "enum_values": [],
+      "docstring": "Admin user with elevated permissions.",
+      "methods": [
+        "__init__",
+        "has_permission",
+        "to_dict"
+      ],
+      "domain": "user_management"
+    },
+    {
+      "id": "user-service-adminuser---init--",
+      "type": "method",
+      "label": "__init__",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "__init__ is a method on the AdminUser class. that takes parameters: self, user_id, email, name.",
+      "line": 49,
+      "args": [
+        "self",
+        "user_id",
+        "email",
+        "name"
+      ],
+      "arg_types": {
+        "user_id": "str",
+        "email": "str",
+        "name": "str"
+      },
+      "raises": [],
+      "return_conditions": [],
+      "class": "AdminUser",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "call-super()---init--",
+      "type": "external_call",
+      "label": "super().__init__",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: super().__init__"
+    },
+    {
+      "id": "call-super",
+      "type": "external_call",
+      "label": "super",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: super"
+    },
+    {
+      "id": "user-service-adminuser-has-permission",
+      "type": "method",
+      "label": "has_permission",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "has_permission is a method on the AdminUser class. that takes parameters: self, action. and returns a bool. It check if admin has a permission. Return behavior: returns action in self.permissions.",
+      "line": 53,
+      "args": [
+        "self",
+        "action"
+      ],
+      "arg_types": {
+        "action": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "action in self.permissions",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Check if admin has a permission.",
+      "class": "AdminUser",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "user-service-adminuser-to-dict",
+      "type": "method",
+      "label": "to_dict",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "to_dict is a method on the AdminUser class. that takes parameters: self. and returns a dict. Return behavior: returns base.",
+      "line": 57,
+      "args": [
+        "self"
+      ],
+      "arg_types": {},
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "base",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "dict",
+      "class": "AdminUser",
+      "is_method": true,
+      "domain": "core"
+    },
+    {
+      "id": "call-super()-to-dict",
+      "type": "external_call",
+      "label": "super().to_dict",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: super().to_dict"
+    },
+    {
+      "id": "user-service-hash-password",
+      "type": "function",
+      "label": "hash_password",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "hash_password is a function. that takes parameters: password. and returns a str. It hash a password using sha-256 with salt. Return behavior: returns f'{salt}${hashed}'.",
+      "line": 65,
+      "args": [
+        "password"
+      ],
+      "arg_types": {
+        "password": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "f'{salt}${hashed}'",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "str",
+      "docstring": "Hash a password using SHA-256 with salt.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "call-os-urandom(16)-hex",
+      "type": "external_call",
+      "label": "os.urandom(16).hex",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: os.urandom(16).hex"
+    },
+    {
+      "id": "call-hashlib-sha256((password + salt)-encode())-hexdigest",
+      "type": "external_call",
+      "label": "hashlib.sha256((password + salt).encode()).hexdigest",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: hashlib.sha256((password + salt).encode()).hexdigest"
+    },
+    {
+      "id": "call-os-urandom",
+      "type": "external_call",
+      "label": "os.urandom",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: os.urandom"
+    },
+    {
+      "id": "call-hashlib-sha256",
+      "type": "external_call",
+      "label": "hashlib.sha256",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: hashlib.sha256"
+    },
+    {
+      "id": "call-(password + salt)-encode",
+      "type": "external_call",
+      "label": "(password + salt).encode",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: (password + salt).encode"
+    },
+    {
+      "id": "user-service-verify-password",
+      "type": "function",
+      "label": "verify_password",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "verify_password is a function. that takes parameters: password, stored_hash. and returns a bool. It verify a password against a stored salt$hash string.",
+      "line": 72,
+      "args": [
+        "password",
+        "stored_hash"
+      ],
+      "arg_types": {
+        "password": "str",
+        "stored_hash": "str"
+      },
+      "raises": [],
+      "return_conditions": [],
+      "returns": "bool",
+      "docstring": "Verify a password against a stored salt$hash string.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "call-stored-hash-split",
+      "type": "external_call",
+      "label": "stored_hash.split",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: stored_hash.split"
+    },
+    {
+      "id": "user-service-register-user",
+      "type": "function",
+      "label": "register_user",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "register_user is a function. that takes parameters: email, name, password. and returns a User. It register a new user. It raises ValueError (condition: f'User with email {email} already exists'). Return behavior: returns user.",
+      "line": 84,
+      "args": [
+        "email",
+        "name",
+        "password"
+      ],
+      "arg_types": {
+        "email": "str",
+        "name": "str",
+        "password": "str"
+      },
+      "raises": [
+        {
+          "type": "ValueError",
+          "condition": "f'User with email {email} already exists'"
+        }
+      ],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "user",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "User",
+      "docstring": "Register a new user. Raises ValueError if email already exists.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "call--user-db-values",
+      "type": "external_call",
+      "label": "_user_db.values",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: _user_db.values"
+    },
+    {
+      "id": "user-service-authenticate-user",
+      "type": "function",
+      "label": "authenticate_user",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "authenticate_user is a function. that takes parameters: email, password. and returns a Optional[User]. It authenticate a user by email and password. Return behavior: returns user; returns None.",
+      "line": 97,
+      "args": [
+        "email",
+        "password"
+      ],
+      "arg_types": {
+        "email": "str",
+        "password": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "user",
+          "branch": "unconditional"
+        },
+        {
+          "condition": null,
+          "returns": "None",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Optional[User]",
+      "docstring": "Authenticate a user by email and password. Returns User if valid, None otherwise.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "user-service-get-user-profile",
+      "type": "function",
+      "label": "get_user_profile",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "get_user_profile is a function. that takes parameters: user_id. and returns a Optional[dict]. It get a user's profile as a dictionary. Return behavior: if user then returns user.to_dict(); returns None.",
+      "line": 107,
+      "args": [
+        "user_id"
+      ],
+      "arg_types": {
+        "user_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": "user",
+          "returns": "user.to_dict()",
+          "branch": "if_true"
+        },
+        {
+          "condition": null,
+          "returns": "None",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Optional[dict]",
+      "docstring": "Get a user's profile as a dictionary. Returns None if user not found.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "call--user-db-get",
+      "type": "external_call",
+      "label": "_user_db.get",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: _user_db.get"
+    },
+    {
+      "id": "call-user-to-dict",
+      "type": "external_call",
+      "label": "user.to_dict",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: user.to_dict"
+    },
+    {
+      "id": "user-service-update-user-profile",
+      "type": "function",
+      "label": "update_user_profile",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "update_user_profile is a function. that takes parameters: user_id, name, email. and returns a Optional[User]. It update a user's profile. Return behavior: if not user then returns None; returns user.",
+      "line": 115,
+      "args": [
+        "user_id",
+        "name",
+        "email"
+      ],
+      "arg_types": {
+        "user_id": "str",
+        "name": "Optional[str]",
+        "email": "Optional[str]"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": "not user",
+          "returns": "None",
+          "branch": "if_true"
+        },
+        {
+          "condition": null,
+          "returns": "user",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Optional[User]",
+      "docstring": "Update a user's profile. Only provided fields are updated.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "call-user--validate-email",
+      "type": "external_call",
+      "label": "User._validate_email",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "External call: User._validate_email"
+    },
+    {
+      "id": "user-service-list-users-by-role",
+      "type": "function",
+      "label": "list_users_by_role",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "list_users_by_role is a function. that takes parameters: role. and returns a List[User]. It list all users with a given role. Return behavior: returns [u for u in _user_db.values() if u.role == role].",
+      "line": 127,
+      "args": [
+        "role"
+      ],
+      "arg_types": {
+        "role": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": null,
+          "returns": "[u for u in _user_db.values() if u.role == role]",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "List[User]",
+      "docstring": "List all users with a given role.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "user-service-delete-user",
+      "type": "function",
+      "label": "delete_user",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "delete_user is a function. that takes parameters: user_id. and returns a bool. It delete a user by id. Return behavior: if user_id in _user_db then returns True; returns False.",
+      "line": 132,
+      "args": [
+        "user_id"
+      ],
+      "arg_types": {
+        "user_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": "user_id in _user_db",
+          "returns": "True",
+          "branch": "if_true"
+        },
+        {
+          "condition": null,
+          "returns": "False",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "bool",
+      "docstring": "Delete a user by ID. Returns True if deleted, False if not found.",
+      "is_method": false,
+      "domain": "user_management"
+    },
+    {
+      "id": "user-service-promote-to-admin",
+      "type": "function",
+      "label": "promote_to_admin",
+      "file": "example-repo/src/user_service.py",
+      "module": "user_service",
+      "natural_language": "promote_to_admin is a function. that takes parameters: user_id. and returns a Optional[AdminUser]. It promote a regular user to admin. Return behavior: if not user then returns None; returns admin.",
+      "line": 140,
+      "args": [
+        "user_id"
+      ],
+      "arg_types": {
+        "user_id": "str"
+      },
+      "raises": [],
+      "return_conditions": [
+        {
+          "condition": "not user",
+          "returns": "None",
+          "branch": "if_true"
+        },
+        {
+          "condition": null,
+          "returns": "admin",
+          "branch": "unconditional"
+        }
+      ],
+      "returns": "Optional[AdminUser]",
+      "docstring": "Promote a regular user to admin. Returns new AdminUser or None if user not found.",
+      "is_method": false,
+      "domain": "core"
+    },
+    {
+      "id": "test-mod-test-notifications",
+      "type": "test_module",
+      "label": "test_notifications",
+      "file": "example-repo/tests/test_notifications.py",
+      "natural_language": "Test module test_notifications: Tests for notifications module."
+    },
+    {
+      "id": "test-testnotifications",
+      "type": "test_class",
+      "label": "TestNotifications",
+      "file": "example-repo/tests/test_notifications.py",
+      "natural_language": "Test class TestNotifications"
+    },
+    {
+      "id": "test-testnotifications-setup-method",
+      "type": "test_method",
+      "label": "setup_method",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 17,
+      "tests_function": null,
+      "natural_language": "Test method setup_method"
+    },
+    {
+      "id": "test-testnotifications-test-queue-notification",
+      "type": "test_method",
+      "label": "test_queue_notification",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 20,
+      "tests_function": "queue_notification",
+      "natural_language": "Test method test_queue_notification \u2014 tests queue_notification"
+    },
+    {
+      "id": "test-testnotifications-test-send-email",
+      "type": "test_method",
+      "label": "test_send_email",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 28,
+      "tests_function": "send_email",
+      "natural_language": "Test method test_send_email \u2014 tests send_email"
+    },
+    {
+      "id": "test-testnotifications-test-notify-welcome",
+      "type": "test_method",
+      "label": "test_notify_welcome",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 32,
+      "tests_function": "notify_welcome",
+      "natural_language": "Test method test_notify_welcome \u2014 tests notify_welcome"
+    },
+    {
+      "id": "test-testnotifications-test-notify-payment-confirmation",
+      "type": "test_method",
+      "label": "test_notify_payment_confirmation",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 36,
+      "tests_function": "notify_payment_confirmation",
+      "natural_language": "Test method test_notify_payment_confirmation \u2014 tests notify_payment_confirmation"
+    },
+    {
+      "id": "test-testnotifications-test-notify-payment-failed",
+      "type": "test_method",
+      "label": "test_notify_payment_failed",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 40,
+      "tests_function": "notify_payment_failed",
+      "natural_language": "Test method test_notify_payment_failed \u2014 tests notify_payment_failed"
+    },
+    {
+      "id": "test-testnotifications-test-notify-password-reset",
+      "type": "test_method",
+      "label": "test_notify_password_reset",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 44,
+      "tests_function": "notify_password_reset",
+      "natural_language": "Test method test_notify_password_reset \u2014 tests notify_password_reset"
+    },
+    {
+      "id": "test-testnotifications-test-flush-notification-queue",
+      "type": "test_method",
+      "label": "test_flush_notification_queue",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 48,
+      "tests_function": "flush_notification_queue",
+      "natural_language": "Test method test_flush_notification_queue \u2014 tests flush_notification_queue"
+    },
+    {
+      "id": "test-testnotifications-test-flush-empty-queue",
+      "type": "test_method",
+      "label": "test_flush_empty_queue",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 55,
+      "tests_function": "flush_empty_queue",
+      "natural_language": "Test method test_flush_empty_queue \u2014 tests flush_empty_queue"
+    },
+    {
+      "id": "test-testnotifications-test-get-user-notifications",
+      "type": "test_method",
+      "label": "test_get_user_notifications",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 59,
+      "tests_function": "get_user_notifications",
+      "natural_language": "Test method test_get_user_notifications \u2014 tests get_user_notifications"
+    },
+    {
+      "id": "test-testnotifications-test-get-user-notifications-empty",
+      "type": "test_method",
+      "label": "test_get_user_notifications_empty",
+      "file": "example-repo/tests/test_notifications.py",
+      "line": 67,
+      "tests_function": "get_user_notifications_empty",
+      "natural_language": "Test method test_get_user_notifications_empty \u2014 tests get_user_notifications_empty"
+    },
+    {
+      "id": "test-mod-test-payments",
+      "type": "test_module",
+      "label": "test_payments",
+      "file": "example-repo/tests/test_payments.py",
+      "natural_language": "Test module test_payments: Tests for payments module."
+    },
+    {
+      "id": "test-testpayment",
+      "type": "test_class",
+      "label": "TestPayment",
+      "file": "example-repo/tests/test_payments.py",
+      "natural_language": "Test class TestPayment"
+    },
+    {
+      "id": "test-testpayment-test-payment-creation",
+      "type": "test_method",
+      "label": "test_payment_creation",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 17,
+      "tests_function": "payment_creation",
+      "natural_language": "Test method test_payment_creation \u2014 tests payment_creation"
+    },
+    {
+      "id": "test-testpayment-test-negative-amount-raises",
+      "type": "test_method",
+      "label": "test_negative_amount_raises",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 24,
+      "tests_function": "negative_amount_raises",
+      "natural_language": "Test method test_negative_amount_raises \u2014 tests negative_amount_raises"
+    },
+    {
+      "id": "test-testpayment-test-amount-over-max-raises",
+      "type": "test_method",
+      "label": "test_amount_over_max_raises",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 28,
+      "tests_function": "amount_over_max_raises",
+      "natural_language": "Test method test_amount_over_max_raises \u2014 tests amount_over_max_raises"
+    },
+    {
+      "id": "test-testpayment-test-complete-payment",
+      "type": "test_method",
+      "label": "test_complete_payment",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 32,
+      "tests_function": "complete_payment",
+      "natural_language": "Test method test_complete_payment \u2014 tests complete_payment"
+    },
+    {
+      "id": "test-testpayment-test-complete-non-pending-raises",
+      "type": "test_method",
+      "label": "test_complete_non_pending_raises",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 37,
+      "tests_function": "complete_non_pending_raises",
+      "natural_language": "Test method test_complete_non_pending_raises \u2014 tests complete_non_pending_raises"
+    },
+    {
+      "id": "test-testpayment-test-refund-completed",
+      "type": "test_method",
+      "label": "test_refund_completed",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 43,
+      "tests_function": "refund_completed",
+      "natural_language": "Test method test_refund_completed \u2014 tests refund_completed"
+    },
+    {
+      "id": "test-testpayment-test-refund-non-completed-raises",
+      "type": "test_method",
+      "label": "test_refund_non_completed_raises",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 50,
+      "tests_function": "refund_non_completed_raises",
+      "natural_language": "Test method test_refund_non_completed_raises \u2014 tests refund_non_completed_raises"
+    },
+    {
+      "id": "test-testpayment-test-fail-payment",
+      "type": "test_method",
+      "label": "test_fail_payment",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 55,
+      "tests_function": "fail_payment",
+      "natural_language": "Test method test_fail_payment \u2014 tests fail_payment"
+    },
+    {
+      "id": "test-testpayment-test-to-dict",
+      "type": "test_method",
+      "label": "test_to_dict",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 60,
+      "tests_function": "to_dict",
+      "natural_language": "Test method test_to_dict \u2014 tests to_dict"
+    },
+    {
+      "id": "test-testbillingservice",
+      "type": "test_class",
+      "label": "TestBillingService",
+      "file": "example-repo/tests/test_payments.py",
+      "natural_language": "Test class TestBillingService"
+    },
+    {
+      "id": "test-testbillingservice-setup-method",
+      "type": "test_method",
+      "label": "setup_method",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 70,
+      "tests_function": null,
+      "natural_language": "Test method setup_method. Clear dbs before each test."
+    },
+    {
+      "id": "test-testbillingservice-test-process-payment-for-existing-user",
+      "type": "test_method",
+      "label": "test_process_payment_for_existing_user",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 77,
+      "tests_function": "process_payment_for_existing_user",
+      "natural_language": "Test method test_process_payment_for_existing_user \u2014 tests process_payment_for_existing_user"
+    },
+    {
+      "id": "test-testbillingservice-test-process-payment-nonexistent-user-raises",
+      "type": "test_method",
+      "label": "test_process_payment_nonexistent_user_raises",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 83,
+      "tests_function": "process_payment_nonexistent_user_raises",
+      "natural_language": "Test method test_process_payment_nonexistent_user_raises \u2014 tests process_payment_nonexistent_user_raises"
+    },
+    {
+      "id": "test-testbillingservice-test-refund-payment",
+      "type": "test_method",
+      "label": "test_refund_payment",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 87,
+      "tests_function": "refund_payment",
+      "natural_language": "Test method test_refund_payment \u2014 tests refund_payment"
+    },
+    {
+      "id": "test-testbillingservice-test-refund-nonexistent-payment",
+      "type": "test_method",
+      "label": "test_refund_nonexistent_payment",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 93,
+      "tests_function": "refund_nonexistent_payment",
+      "natural_language": "Test method test_refund_nonexistent_payment \u2014 tests refund_nonexistent_payment"
+    },
+    {
+      "id": "test-testbillingservice-test-get-payment-history",
+      "type": "test_method",
+      "label": "test_get_payment_history",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 96,
+      "tests_function": "get_payment_history",
+      "natural_language": "Test method test_get_payment_history \u2014 tests get_payment_history"
+    },
+    {
+      "id": "test-testbillingservice-test-get-revenue-by-tier",
+      "type": "test_method",
+      "label": "test_get_revenue_by_tier",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 103,
+      "tests_function": "get_revenue_by_tier",
+      "natural_language": "Test method test_get_revenue_by_tier \u2014 tests get_revenue_by_tier"
+    },
+    {
+      "id": "test-testbillingservice-test-get-revenue-by-tier-excludes-refunded",
+      "type": "test_method",
+      "label": "test_get_revenue_by_tier_excludes_refunded",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 110,
+      "tests_function": "get_revenue_by_tier_excludes_refunded",
+      "natural_language": "Test method test_get_revenue_by_tier_excludes_refunded \u2014 tests get_revenue_by_tier_excludes_refunded"
+    },
+    {
+      "id": "test-testbillingservice-test-get-user-subscription-tier",
+      "type": "test_method",
+      "label": "test_get_user_subscription_tier",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 118,
+      "tests_function": "get_user_subscription_tier",
+      "natural_language": "Test method test_get_user_subscription_tier \u2014 tests get_user_subscription_tier"
+    },
+    {
+      "id": "test-testbillingservice-test-get-user-subscription-tier-no-payments",
+      "type": "test_method",
+      "label": "test_get_user_subscription_tier_no_payments",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 125,
+      "tests_function": "get_user_subscription_tier_no_payments",
+      "natural_language": "Test method test_get_user_subscription_tier_no_payments \u2014 tests get_user_subscription_tier_no_payments"
+    },
+    {
+      "id": "test-testbillingservice-test-get-user-subscription-tier-excludes-refunded",
+      "type": "test_method",
+      "label": "test_get_user_subscription_tier_excludes_refunded",
+      "file": "example-repo/tests/test_payments.py",
+      "line": 130,
+      "tests_function": "get_user_subscription_tier_excludes_refunded",
+      "natural_language": "Test method test_get_user_subscription_tier_excludes_refunded \u2014 tests get_user_subscription_tier_excludes_refunded"
+    },
+    {
+      "id": "test-mod-test-user-service",
+      "type": "test_module",
+      "label": "test_user_service",
+      "file": "example-repo/tests/test_user_service.py",
+      "natural_language": "Test module test_user_service: Tests for user_service module."
+    },
+    {
+      "id": "test-testuser",
+      "type": "test_class",
+      "label": "TestUser",
+      "file": "example-repo/tests/test_user_service.py",
+      "natural_language": "Test class TestUser"
+    },
+    {
+      "id": "test-testuser-test-user-creation",
+      "type": "test_method",
+      "label": "test_user_creation",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 16,
+      "tests_function": "user_creation",
+      "natural_language": "Test method test_user_creation \u2014 tests user_creation"
+    },
+    {
+      "id": "test-testuser-test-email-validation-lowercase",
+      "type": "test_method",
+      "label": "test_email_validation_lowercase",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 22,
+      "tests_function": "email_validation_lowercase",
+      "natural_language": "Test method test_email_validation_lowercase \u2014 tests email_validation_lowercase"
+    },
+    {
+      "id": "test-testuser-test-invalid-email-raises",
+      "type": "test_method",
+      "label": "test_invalid_email_raises",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 26,
+      "tests_function": "invalid_email_raises",
+      "natural_language": "Test method test_invalid_email_raises \u2014 tests invalid_email_raises"
+    },
+    {
+      "id": "test-testuser-test-to-dict",
+      "type": "test_method",
+      "label": "test_to_dict",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 30,
+      "tests_function": "to_dict",
+      "natural_language": "Test method test_to_dict \u2014 tests to_dict"
+    },
+    {
+      "id": "test-testadminuser",
+      "type": "test_class",
+      "label": "TestAdminUser",
+      "file": "example-repo/tests/test_user_service.py",
+      "natural_language": "Test class TestAdminUser"
+    },
+    {
+      "id": "test-testadminuser-test-admin-has-admin-role",
+      "type": "test_method",
+      "label": "test_admin_has_admin_role",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 40,
+      "tests_function": "admin_has_admin_role",
+      "natural_language": "Test method test_admin_has_admin_role \u2014 tests admin_has_admin_role"
+    },
+    {
+      "id": "test-testadminuser-test-admin-permissions",
+      "type": "test_method",
+      "label": "test_admin_permissions",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 44,
+      "tests_function": "admin_permissions",
+      "natural_language": "Test method test_admin_permissions \u2014 tests admin_permissions"
+    },
+    {
+      "id": "test-testadminuser-test-admin-to-dict-includes-permissions",
+      "type": "test_method",
+      "label": "test_admin_to_dict_includes_permissions",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 51,
+      "tests_function": "admin_to_dict_includes_permissions",
+      "natural_language": "Test method test_admin_to_dict_includes_permissions \u2014 tests admin_to_dict_includes_permissions"
+    },
+    {
+      "id": "test-testpasswordhashing",
+      "type": "test_class",
+      "label": "TestPasswordHashing",
+      "file": "example-repo/tests/test_user_service.py",
+      "natural_language": "Test class TestPasswordHashing"
+    },
+    {
+      "id": "test-testpasswordhashing-test-hash-password-format",
+      "type": "test_method",
+      "label": "test_hash_password_format",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 59,
+      "tests_function": "hash_password_format",
+      "natural_language": "Test method test_hash_password_format \u2014 tests hash_password_format"
+    },
+    {
+      "id": "test-testpasswordhashing-test-verify-correct-password",
+      "type": "test_method",
+      "label": "test_verify_correct_password",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 66,
+      "tests_function": "verify_correct_password",
+      "natural_language": "Test method test_verify_correct_password \u2014 tests verify_correct_password"
+    },
+    {
+      "id": "test-testpasswordhashing-test-verify-wrong-password",
+      "type": "test_method",
+      "label": "test_verify_wrong_password",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 70,
+      "tests_function": "verify_wrong_password",
+      "natural_language": "Test method test_verify_wrong_password \u2014 tests verify_wrong_password"
+    },
+    {
+      "id": "test-testpasswordhashing-test-verify-malformed-hash",
+      "type": "test_method",
+      "label": "test_verify_malformed_hash",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 74,
+      "tests_function": "verify_malformed_hash",
+      "natural_language": "Test method test_verify_malformed_hash \u2014 tests verify_malformed_hash"
+    },
+    {
+      "id": "test-testuserservice",
+      "type": "test_class",
+      "label": "TestUserService",
+      "file": "example-repo/tests/test_user_service.py",
+      "natural_language": "Test class TestUserService"
+    },
+    {
+      "id": "test-testuserservice-setup-method",
+      "type": "test_method",
+      "label": "setup_method",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 79,
+      "tests_function": null,
+      "natural_language": "Test method setup_method. Clear user db before each test."
+    },
+    {
+      "id": "test-testuserservice-test-register-user",
+      "type": "test_method",
+      "label": "test_register_user",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 84,
+      "tests_function": "register_user",
+      "natural_language": "Test method test_register_user \u2014 tests register_user"
+    },
+    {
+      "id": "test-testuserservice-test-register-duplicate-email-raises",
+      "type": "test_method",
+      "label": "test_register_duplicate_email_raises",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 90,
+      "tests_function": "register_duplicate_email_raises",
+      "natural_language": "Test method test_register_duplicate_email_raises \u2014 tests register_duplicate_email_raises"
+    },
+    {
+      "id": "test-testuserservice-test-authenticate-valid",
+      "type": "test_method",
+      "label": "test_authenticate_valid",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 95,
+      "tests_function": "authenticate_valid",
+      "natural_language": "Test method test_authenticate_valid \u2014 tests authenticate_valid"
+    },
+    {
+      "id": "test-testuserservice-test-authenticate-wrong-password",
+      "type": "test_method",
+      "label": "test_authenticate_wrong_password",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 102,
+      "tests_function": "authenticate_wrong_password",
+      "natural_language": "Test method test_authenticate_wrong_password \u2014 tests authenticate_wrong_password"
+    },
+    {
+      "id": "test-testuserservice-test-authenticate-nonexistent-user",
+      "type": "test_method",
+      "label": "test_authenticate_nonexistent_user",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 107,
+      "tests_function": "authenticate_nonexistent_user",
+      "natural_language": "Test method test_authenticate_nonexistent_user \u2014 tests authenticate_nonexistent_user"
+    },
+    {
+      "id": "test-testuserservice-test-get-user-profile",
+      "type": "test_method",
+      "label": "test_get_user_profile",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 111,
+      "tests_function": "get_user_profile",
+      "natural_language": "Test method test_get_user_profile \u2014 tests get_user_profile"
+    },
+    {
+      "id": "test-testuserservice-test-get-user-profile-not-found",
+      "type": "test_method",
+      "label": "test_get_user_profile_not_found",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 117,
+      "tests_function": "get_user_profile_not_found",
+      "natural_language": "Test method test_get_user_profile_not_found \u2014 tests get_user_profile_not_found"
+    },
+    {
+      "id": "test-testuserservice-test-update-user-profile-name",
+      "type": "test_method",
+      "label": "test_update_user_profile_name",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 120,
+      "tests_function": "update_user_profile_name",
+      "natural_language": "Test method test_update_user_profile_name \u2014 tests update_user_profile_name"
+    },
+    {
+      "id": "test-testuserservice-test-update-user-profile-email",
+      "type": "test_method",
+      "label": "test_update_user_profile_email",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 125,
+      "tests_function": "update_user_profile_email",
+      "natural_language": "Test method test_update_user_profile_email \u2014 tests update_user_profile_email"
+    },
+    {
+      "id": "test-testuserservice-test-update-nonexistent-user",
+      "type": "test_method",
+      "label": "test_update_nonexistent_user",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 130,
+      "tests_function": "update_nonexistent_user",
+      "natural_language": "Test method test_update_nonexistent_user \u2014 tests update_nonexistent_user"
+    },
+    {
+      "id": "test-testuserservice-test-list-users-by-role",
+      "type": "test_method",
+      "label": "test_list_users_by_role",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 133,
+      "tests_function": "list_users_by_role",
+      "natural_language": "Test method test_list_users_by_role \u2014 tests list_users_by_role"
+    },
+    {
+      "id": "test-testuserservice-test-delete-user",
+      "type": "test_method",
+      "label": "test_delete_user",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 139,
+      "tests_function": "delete_user",
+      "natural_language": "Test method test_delete_user \u2014 tests delete_user"
+    },
+    {
+      "id": "test-testuserservice-test-delete-nonexistent-user",
+      "type": "test_method",
+      "label": "test_delete_nonexistent_user",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 144,
+      "tests_function": "delete_nonexistent_user",
+      "natural_language": "Test method test_delete_nonexistent_user \u2014 tests delete_nonexistent_user"
+    },
+    {
+      "id": "test-testuserservice-test-promote-to-admin",
+      "type": "test_method",
+      "label": "test_promote_to_admin",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 147,
+      "tests_function": "promote_to_admin",
+      "natural_language": "Test method test_promote_to_admin \u2014 tests promote_to_admin"
+    },
+    {
+      "id": "test-testuserservice-test-promote-nonexistent",
+      "type": "test_method",
+      "label": "test_promote_nonexistent",
+      "file": "example-repo/tests/test_user_service.py",
+      "line": 154,
+      "tests_function": "promote_nonexistent",
+      "natural_language": "Test method test_promote_nonexistent \u2014 tests promote_nonexistent"
+    },
+    {
+      "id": "convention-payments-valueerror",
+      "type": "convention",
+      "label": "payments.ValueError convention",
+      "natural_language": "User validation convention in payments: functions that validate user existence raise ValueError when the user is not found. Pattern: check if user exists, if not raise ValueError with a descriptive message containing 'not found'. Followed by: _validate_amount, process_payment. When implementing new functions that VALIDATE users in payments, use this same pattern: raise ValueError for nonexistent users. ",
+      "module": "payments",
+      "exception_type": "ValueError",
+      "functions": [
+        "_validate_amount",
+        "process_payment"
+      ],
+      "conditions": [
+        "'Payment amount cannot be negative'",
+        "f'User {user_id} not found'"
+      ],
+      "domain": "conventions"
+    },
+    {
+      "id": "convention-payments-runtimeerror",
+      "type": "convention",
+      "label": "payments.RuntimeError convention",
+      "natural_language": "State transition convention in payments: functions raise RuntimeError when an operation is attempted in an invalid state. Followed by: complete, refund. When implementing new functions that change state, check the current state first and raise RuntimeError if the state doesn't allow the operation.",
+      "module": "payments",
+      "exception_type": "RuntimeError",
+      "functions": [
+        "complete",
+        "refund"
+      ],
+      "conditions": [
+        "f'Cannot complete payment in status {self.status}'",
+        "'Can only refund completed payments'"
+      ],
+      "domain": "conventions"
+    },
+    {
+      "id": "convention-user-service-valueerror",
+      "type": "convention",
+      "label": "user_service.ValueError convention",
+      "natural_language": "User validation convention in user_service: functions that validate user existence raise ValueError when the user is not found. Pattern: check if user exists, if not raise ValueError with a descriptive message containing 'not found'. Followed by: _validate_email, register_user. When implementing new functions that VALIDATE users in user_service, use this same pattern: raise ValueError for nonexistent users. ",
+      "module": "user_service",
+      "exception_type": "ValueError",
+      "functions": [
+        "_validate_email",
+        "register_user"
+      ],
+      "conditions": [
+        "f'Invalid email: {email}'",
+        "f'User with email {email} already exists'"
+      ],
+      "domain": "conventions"
+    },
+    {
+      "id": "convention-cross-module-payments-user-service",
+      "type": "convention",
+      "label": "payments \u2192 user_service access convention",
+      "natural_language": "Cross-module access convention: payments accesses user_service functions via a lazy import pattern. Use _get_user_service() (returns the module) to access user_service functions from payments. Do NOT import user_service directly at the top level. Do NOT redefine user_service functions. Example: svc = _get_user_service(); svc.some_function(args).",
+      "module": "payments",
+      "domain": "conventions"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mod-notifications",
+      "target": "var-notifications--notification-queue",
+      "relation": "MANAGES_STATE",
+      "assertion": "notifications manages state variable _notification_queue"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-Optional",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-Dict",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-List",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "ext-datetime",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-datetime",
+      "target": "ext-datetime-datetime",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "ext-smtplib",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "ext-email-mime-text",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-email-mime-text",
+      "target": "ext-email-mime-text-MIMEText",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-notificationtype",
+      "relation": "DEFINES_CLASS"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-queue-notification",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-queue-notification",
+      "target": "call--notification-queue-append",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _notification_queue.append"
+    },
+    {
+      "source": "notifications-queue-notification",
+      "target": "call-datetime-utcnow()-isoformat",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow().isoformat"
+    },
+    {
+      "source": "notifications-queue-notification",
+      "target": "call-datetime-utcnow",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow"
+    },
+    {
+      "source": "notifications-queue-notification",
+      "target": "call-len",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls len"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-send-email",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-send-email",
+      "target": "ext-email-mime-text-MIMEText",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls email.mime.text.MIMEText"
+    },
+    {
+      "source": "notifications-send-email",
+      "target": "call-print",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls print"
+    },
+    {
+      "source": "notifications-send-email",
+      "target": "call-print",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls print"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-notify-welcome",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-notify-welcome",
+      "target": "notifications-send-email",
+      "relation": "CALLS",
+      "assertion": "calls send_email()"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-notify-payment-confirmation",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-notify-payment-confirmation",
+      "target": "notifications-send-email",
+      "relation": "CALLS",
+      "assertion": "calls send_email()"
+    },
+    {
+      "source": "notifications-notify-payment-confirmation",
+      "target": "call-tier-capitalize",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls tier.capitalize"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-notify-payment-failed",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-notify-payment-failed",
+      "target": "notifications-send-email",
+      "relation": "CALLS",
+      "assertion": "calls send_email()"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-notify-password-reset",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-notify-password-reset",
+      "target": "notifications-send-email",
+      "relation": "CALLS",
+      "assertion": "calls send_email()"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-flush-notification-queue",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "notifications-flush-notification-queue",
+      "target": "call--notification-queue-clear",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _notification_queue.clear"
+    },
+    {
+      "source": "notifications-flush-notification-queue",
+      "target": "call-datetime-utcnow()-isoformat",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow().isoformat"
+    },
+    {
+      "source": "notifications-flush-notification-queue",
+      "target": "call-sent-append",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls sent.append"
+    },
+    {
+      "source": "notifications-flush-notification-queue",
+      "target": "call-datetime-utcnow",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow"
+    },
+    {
+      "source": "mod-notifications",
+      "target": "notifications-get-user-notifications",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "mod-payments",
+      "target": "var-payments--payment-db",
+      "relation": "MANAGES_STATE",
+      "assertion": "payments manages state variable _payment_db"
+    },
+    {
+      "source": "mod-payments",
+      "target": "var-payments--payment-counter",
+      "relation": "MANAGES_STATE",
+      "assertion": "payments manages state variable _payment_counter"
+    },
+    {
+      "source": "mod-payments",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-Optional",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-payments",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-Dict",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-payments",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-List",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-payments",
+      "target": "ext-datetime",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-datetime",
+      "target": "ext-datetime-datetime",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-payments",
+      "target": "ext-enum",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-enum",
+      "target": "ext-enum-Enum",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-paymentstatus",
+      "relation": "DEFINES_CLASS"
+    },
+    {
+      "source": "payments-paymentstatus",
+      "target": "payments-enum",
+      "relation": "INHERITS_FROM",
+      "assertion": "PaymentStatus inherits from Enum"
+    },
+    {
+      "source": "payments-paymentstatus",
+      "target": "enum-paymentstatus-pending",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "PaymentStatus has enum value PENDING"
+    },
+    {
+      "source": "payments-paymentstatus",
+      "target": "enum-paymentstatus-completed",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "PaymentStatus has enum value COMPLETED"
+    },
+    {
+      "source": "payments-paymentstatus",
+      "target": "enum-paymentstatus-failed",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "PaymentStatus has enum value FAILED"
+    },
+    {
+      "source": "payments-paymentstatus",
+      "target": "enum-paymentstatus-refunded",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "PaymentStatus has enum value REFUNDED"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-subscriptiontier",
+      "relation": "DEFINES_CLASS"
+    },
+    {
+      "source": "payments-subscriptiontier",
+      "target": "payments-enum",
+      "relation": "INHERITS_FROM",
+      "assertion": "SubscriptionTier inherits from Enum"
+    },
+    {
+      "source": "payments-subscriptiontier",
+      "target": "enum-subscriptiontier-free",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "SubscriptionTier has enum value FREE"
+    },
+    {
+      "source": "payments-subscriptiontier",
+      "target": "enum-subscriptiontier-pro",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "SubscriptionTier has enum value PRO"
+    },
+    {
+      "source": "payments-subscriptiontier",
+      "target": "enum-subscriptiontier-enterprise",
+      "relation": "HAS_ENUM_VALUE",
+      "assertion": "SubscriptionTier has enum value ENTERPRISE"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-payment",
+      "relation": "DEFINES_CLASS"
+    },
+    {
+      "source": "payments-payment",
+      "target": "payments-payment---init--",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-payment---init--",
+      "target": "payments-payment--validate-amount",
+      "relation": "CALLS",
+      "assertion": "calls self._validate_amount()"
+    },
+    {
+      "source": "payments-payment---init--",
+      "target": "call-datetime-utcnow",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow"
+    },
+    {
+      "source": "payments-payment",
+      "target": "payments-payment--validate-amount",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-payment--validate-amount",
+      "target": "raise-payments-valueerror",
+      "relation": "RAISES",
+      "assertion": "_validate_amount raises ValueError",
+      "condition": "'Payment amount cannot be negative'"
+    },
+    {
+      "source": "payments-payment--validate-amount",
+      "target": "raise-payments-valueerror",
+      "relation": "RAISES",
+      "assertion": "_validate_amount raises ValueError",
+      "condition": "'Payment amount exceeds maximum ($100,000)'"
+    },
+    {
+      "source": "payments-payment--validate-amount",
+      "target": "call-round",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls round"
+    },
+    {
+      "source": "payments-payment--validate-amount",
+      "target": "call-valueerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls ValueError"
+    },
+    {
+      "source": "payments-payment--validate-amount",
+      "target": "call-valueerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls ValueError"
+    },
+    {
+      "source": "payments-payment",
+      "target": "payments-payment-complete",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-payment-complete",
+      "target": "raise-payments-runtimeerror",
+      "relation": "RAISES",
+      "assertion": "complete raises RuntimeError",
+      "condition": "f'Cannot complete payment in status {self.status}'"
+    },
+    {
+      "source": "payments-payment-complete",
+      "target": "call-runtimeerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls RuntimeError"
+    },
+    {
+      "source": "payments-payment",
+      "target": "payments-payment-fail",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-payment",
+      "target": "payments-payment-refund",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-payment-refund",
+      "target": "raise-payments-runtimeerror",
+      "relation": "RAISES",
+      "assertion": "refund raises RuntimeError",
+      "condition": "'Can only refund completed payments'"
+    },
+    {
+      "source": "payments-payment-refund",
+      "target": "call-datetime-utcnow",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow"
+    },
+    {
+      "source": "payments-payment-refund",
+      "target": "call-runtimeerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls RuntimeError"
+    },
+    {
+      "source": "payments-payment",
+      "target": "payments-payment-to-dict",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-payment-to-dict",
+      "target": "payments-payment-isoformat",
+      "relation": "CALLS",
+      "assertion": "calls self.isoformat()"
+    },
+    {
+      "source": "payments-payment-to-dict",
+      "target": "payments-payment-isoformat",
+      "relation": "CALLS",
+      "assertion": "calls self.isoformat()"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments--get-user-service",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-process-payment",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "raise-payments-valueerror",
+      "relation": "RAISES",
+      "assertion": "process_payment raises ValueError",
+      "condition": "f'User {user_id} not found'"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "payments--get-user-service",
+      "relation": "CALLS",
+      "assertion": "calls _get_user_service()"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "call-user-svc-get-user-profile",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls user_svc.get_user_profile"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "payments-payment",
+      "relation": "CALLS",
+      "assertion": "calls Payment()"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "call-valueerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls ValueError"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "call-payment-complete",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls payment.complete"
+    },
+    {
+      "source": "payments-process-payment",
+      "target": "call-payment-fail",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls payment.fail"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-refund-payment",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-refund-payment",
+      "target": "call--payment-db-get",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _payment_db.get"
+    },
+    {
+      "source": "payments-refund-payment",
+      "target": "call-payment-refund",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls payment.refund"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-get-payment-history",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-get-payment-history",
+      "target": "call--payment-db-values",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _payment_db.values"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-get-revenue-by-tier",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-get-revenue-by-tier",
+      "target": "call-sum",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls sum"
+    },
+    {
+      "source": "payments-get-revenue-by-tier",
+      "target": "call-round",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls round"
+    },
+    {
+      "source": "payments-get-revenue-by-tier",
+      "target": "call--payment-db-values",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _payment_db.values"
+    },
+    {
+      "source": "mod-payments",
+      "target": "payments-get-user-subscription-tier",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "payments-get-user-subscription-tier",
+      "target": "payments-get-payment-history",
+      "relation": "CALLS",
+      "assertion": "calls get_payment_history()"
+    },
+    {
+      "source": "payments-get-user-subscription-tier",
+      "target": "call-max",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls max"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "var-user-service--user-db",
+      "relation": "MANAGES_STATE",
+      "assertion": "user_service manages state variable _user_db"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-Optional",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-Dict",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-typing",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-typing",
+      "target": "ext-typing-List",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-datetime",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "ext-datetime",
+      "target": "ext-datetime-datetime",
+      "relation": "EXPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-hashlib",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-json",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "ext-os",
+      "relation": "IMPORTS"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-user",
+      "relation": "DEFINES_CLASS"
+    },
+    {
+      "source": "user-service-user",
+      "target": "user-service-user---init--",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-user---init--",
+      "target": "user-service-user--validate-email",
+      "relation": "CALLS",
+      "assertion": "calls self._validate_email()"
+    },
+    {
+      "source": "user-service-user---init--",
+      "target": "call-datetime-utcnow",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow"
+    },
+    {
+      "source": "user-service-user",
+      "target": "user-service-user--validate-email",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-user--validate-email",
+      "target": "raise-user-service-valueerror",
+      "relation": "RAISES",
+      "assertion": "_validate_email raises ValueError",
+      "condition": "f'Invalid email: {email}'"
+    },
+    {
+      "source": "user-service-user--validate-email",
+      "target": "call-email-lower",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls email.lower"
+    },
+    {
+      "source": "user-service-user--validate-email",
+      "target": "call-valueerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls ValueError"
+    },
+    {
+      "source": "user-service-user",
+      "target": "user-service-user-to-dict",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-user-to-dict",
+      "target": "user-service-user-isoformat",
+      "relation": "CALLS",
+      "assertion": "calls self.isoformat()"
+    },
+    {
+      "source": "user-service-user-to-dict",
+      "target": "user-service-user-isoformat",
+      "relation": "CALLS",
+      "assertion": "calls self.isoformat()"
+    },
+    {
+      "source": "user-service-user",
+      "target": "user-service-user---repr--",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-adminuser",
+      "relation": "DEFINES_CLASS"
+    },
+    {
+      "source": "user-service-adminuser",
+      "target": "user-service-user",
+      "relation": "INHERITS_FROM",
+      "assertion": "AdminUser inherits from User"
+    },
+    {
+      "source": "user-service-adminuser",
+      "target": "user-service-adminuser---init--",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-adminuser---init--",
+      "target": "call-super()---init--",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls super().__init__"
+    },
+    {
+      "source": "user-service-adminuser---init--",
+      "target": "call-super",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls super"
+    },
+    {
+      "source": "user-service-adminuser",
+      "target": "user-service-adminuser-has-permission",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-adminuser",
+      "target": "user-service-adminuser-to-dict",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-adminuser-to-dict",
+      "target": "call-super()-to-dict",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls super().to_dict"
+    },
+    {
+      "source": "user-service-adminuser-to-dict",
+      "target": "call-super",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls super"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-hash-password",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-hash-password",
+      "target": "call-os-urandom(16)-hex",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls os.urandom(16).hex"
+    },
+    {
+      "source": "user-service-hash-password",
+      "target": "call-hashlib-sha256((password + salt)-encode())-hexdigest",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls hashlib.sha256((password + salt).encode()).hexdigest"
+    },
+    {
+      "source": "user-service-hash-password",
+      "target": "call-os-urandom",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls os.urandom"
+    },
+    {
+      "source": "user-service-hash-password",
+      "target": "call-hashlib-sha256",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls hashlib.sha256"
+    },
+    {
+      "source": "user-service-hash-password",
+      "target": "call-(password + salt)-encode",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls (password + salt).encode"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-verify-password",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-verify-password",
+      "target": "call-stored-hash-split",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls stored_hash.split"
+    },
+    {
+      "source": "user-service-verify-password",
+      "target": "call-hashlib-sha256((password + salt)-encode())-hexdigest",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls hashlib.sha256((password + salt).encode()).hexdigest"
+    },
+    {
+      "source": "user-service-verify-password",
+      "target": "call-hashlib-sha256",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls hashlib.sha256"
+    },
+    {
+      "source": "user-service-verify-password",
+      "target": "call-(password + salt)-encode",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls (password + salt).encode"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-register-user",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "raise-user-service-valueerror",
+      "relation": "RAISES",
+      "assertion": "register_user raises ValueError",
+      "condition": "f'User with email {email} already exists'"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "call-email-lower",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls email.lower"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "call--user-db-values",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _user_db.values"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "user-service-user",
+      "relation": "CALLS",
+      "assertion": "calls User()"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "user-service-hash-password",
+      "relation": "CALLS",
+      "assertion": "calls hash_password()"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "call-valueerror",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls ValueError"
+    },
+    {
+      "source": "user-service-register-user",
+      "target": "call-len",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls len"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-authenticate-user",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-authenticate-user",
+      "target": "call--user-db-values",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _user_db.values"
+    },
+    {
+      "source": "user-service-authenticate-user",
+      "target": "call-email-lower",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls email.lower"
+    },
+    {
+      "source": "user-service-authenticate-user",
+      "target": "user-service-verify-password",
+      "relation": "CALLS",
+      "assertion": "calls verify_password()"
+    },
+    {
+      "source": "user-service-authenticate-user",
+      "target": "call-datetime-utcnow",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls datetime.utcnow"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-get-user-profile",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-get-user-profile",
+      "target": "call--user-db-get",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _user_db.get"
+    },
+    {
+      "source": "user-service-get-user-profile",
+      "target": "call-user-to-dict",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls user.to_dict"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-update-user-profile",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-update-user-profile",
+      "target": "call--user-db-get",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _user_db.get"
+    },
+    {
+      "source": "user-service-update-user-profile",
+      "target": "call-user--validate-email",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls User._validate_email"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-list-users-by-role",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-list-users-by-role",
+      "target": "call--user-db-values",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _user_db.values"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-delete-user",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "user-service-promote-to-admin",
+      "relation": "DEFINES_FUNCTION"
+    },
+    {
+      "source": "user-service-promote-to-admin",
+      "target": "call--user-db-get",
+      "relation": "CALLS_EXTERNAL",
+      "assertion": "calls _user_db.get"
+    },
+    {
+      "source": "user-service-promote-to-admin",
+      "target": "user-service-adminuser",
+      "relation": "CALLS",
+      "assertion": "calls AdminUser()"
+    },
+    {
+      "source": "test-mod-test-notifications",
+      "target": "test-testnotifications",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-setup-method",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-queue-notification",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-queue-notification",
+      "target": "notifications-queue-notification",
+      "relation": "TESTS",
+      "assertion": "tests queue_notification"
+    },
+    {
+      "source": "test-testnotifications-test-queue-notification",
+      "target": "test-testnotifications-test-queue-notification",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications-test-queue-notification",
+      "target": "test-testnotifications-test-queue-notification",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications-test-queue-notification",
+      "target": "test-testnotifications-test-queue-notification",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications-test-queue-notification",
+      "target": "test-testnotifications-test-queue-notification",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications-test-queue-notification",
+      "target": "test-testnotifications-test-queue-notification",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-send-email",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-send-email",
+      "target": "notifications-send-email",
+      "relation": "TESTS",
+      "assertion": "tests send_email"
+    },
+    {
+      "source": "test-testnotifications-test-send-email",
+      "target": "test-testnotifications-test-send-email",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-notify-welcome",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-notify-welcome",
+      "target": "notifications-notify-welcome",
+      "relation": "TESTS",
+      "assertion": "tests notify_welcome"
+    },
+    {
+      "source": "test-testnotifications-test-notify-welcome",
+      "target": "test-testnotifications-test-notify-welcome",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-notify-payment-confirmation",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-notify-payment-confirmation",
+      "target": "notifications-notify-payment-confirmation",
+      "relation": "TESTS",
+      "assertion": "tests notify_payment_confirmation"
+    },
+    {
+      "source": "test-testnotifications-test-notify-payment-confirmation",
+      "target": "test-testnotifications-test-notify-payment-confirmation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-notify-payment-failed",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-notify-payment-failed",
+      "target": "notifications-notify-payment-failed",
+      "relation": "TESTS",
+      "assertion": "tests notify_payment_failed"
+    },
+    {
+      "source": "test-testnotifications-test-notify-payment-failed",
+      "target": "test-testnotifications-test-notify-payment-failed",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-notify-password-reset",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-notify-password-reset",
+      "target": "notifications-notify-password-reset",
+      "relation": "TESTS",
+      "assertion": "tests notify_password_reset"
+    },
+    {
+      "source": "test-testnotifications-test-notify-password-reset",
+      "target": "test-testnotifications-test-notify-password-reset",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-flush-notification-queue",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-flush-notification-queue",
+      "target": "notifications-flush-notification-queue",
+      "relation": "TESTS",
+      "assertion": "tests flush_notification_queue"
+    },
+    {
+      "source": "test-testnotifications-test-flush-notification-queue",
+      "target": "test-testnotifications-test-flush-notification-queue",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications-test-flush-notification-queue",
+      "target": "test-testnotifications-test-flush-notification-queue",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-flush-empty-queue",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-flush-empty-queue",
+      "target": "test-testnotifications-test-flush-empty-queue",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-get-user-notifications",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-get-user-notifications",
+      "target": "notifications-get-user-notifications",
+      "relation": "TESTS",
+      "assertion": "tests get_user_notifications"
+    },
+    {
+      "source": "test-testnotifications-test-get-user-notifications",
+      "target": "test-testnotifications-test-get-user-notifications",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications-test-get-user-notifications",
+      "target": "test-testnotifications-test-get-user-notifications",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testnotifications",
+      "target": "test-testnotifications-test-get-user-notifications-empty",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testnotifications-test-get-user-notifications-empty",
+      "target": "test-testnotifications-test-get-user-notifications-empty",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-mod-test-payments",
+      "target": "test-testpayment",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-payment-creation",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment-test-payment-creation",
+      "target": "test-testpayment-test-payment-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-payment-creation",
+      "target": "test-testpayment-test-payment-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-payment-creation",
+      "target": "test-testpayment-test-payment-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-payment-creation",
+      "target": "test-testpayment-test-payment-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-negative-amount-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-amount-over-max-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-complete-payment",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment-test-complete-payment",
+      "target": "test-testpayment-test-complete-payment",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-complete-non-pending-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-refund-completed",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment-test-refund-completed",
+      "target": "test-testpayment-test-refund-completed",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-refund-completed",
+      "target": "test-testpayment-test-refund-completed",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-refund-non-completed-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-fail-payment",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment-test-fail-payment",
+      "target": "test-testpayment-test-fail-payment",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment",
+      "target": "test-testpayment-test-to-dict",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpayment-test-to-dict",
+      "target": "user-service-adminuser-to-dict",
+      "relation": "TESTS",
+      "assertion": "tests to_dict"
+    },
+    {
+      "source": "test-testpayment-test-to-dict",
+      "target": "test-testpayment-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-to-dict",
+      "target": "test-testpayment-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-to-dict",
+      "target": "test-testpayment-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpayment-test-to-dict",
+      "target": "test-testpayment-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-mod-test-payments",
+      "target": "test-testbillingservice",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-setup-method",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-process-payment-for-existing-user",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-process-payment-for-existing-user",
+      "target": "test-testbillingservice-test-process-payment-for-existing-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice-test-process-payment-for-existing-user",
+      "target": "test-testbillingservice-test-process-payment-for-existing-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-process-payment-nonexistent-user-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-refund-payment",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-refund-payment",
+      "target": "payments-refund-payment",
+      "relation": "TESTS",
+      "assertion": "tests refund_payment"
+    },
+    {
+      "source": "test-testbillingservice-test-refund-payment",
+      "target": "test-testbillingservice-test-refund-payment",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-refund-nonexistent-payment",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-refund-nonexistent-payment",
+      "target": "test-testbillingservice-test-refund-nonexistent-payment",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-get-payment-history",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-get-payment-history",
+      "target": "payments-get-payment-history",
+      "relation": "TESTS",
+      "assertion": "tests get_payment_history"
+    },
+    {
+      "source": "test-testbillingservice-test-get-payment-history",
+      "target": "test-testbillingservice-test-get-payment-history",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-get-revenue-by-tier",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-get-revenue-by-tier",
+      "target": "payments-get-revenue-by-tier",
+      "relation": "TESTS",
+      "assertion": "tests get_revenue_by_tier"
+    },
+    {
+      "source": "test-testbillingservice-test-get-revenue-by-tier",
+      "target": "test-testbillingservice-test-get-revenue-by-tier",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-get-revenue-by-tier-excludes-refunded",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-get-revenue-by-tier-excludes-refunded",
+      "target": "test-testbillingservice-test-get-revenue-by-tier-excludes-refunded",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-get-user-subscription-tier",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-get-user-subscription-tier",
+      "target": "payments-get-user-subscription-tier",
+      "relation": "TESTS",
+      "assertion": "tests get_user_subscription_tier"
+    },
+    {
+      "source": "test-testbillingservice-test-get-user-subscription-tier",
+      "target": "test-testbillingservice-test-get-user-subscription-tier",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-get-user-subscription-tier-no-payments",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-get-user-subscription-tier-no-payments",
+      "target": "test-testbillingservice-test-get-user-subscription-tier-no-payments",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testbillingservice",
+      "target": "test-testbillingservice-test-get-user-subscription-tier-excludes-refunded",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testbillingservice-test-get-user-subscription-tier-excludes-refunded",
+      "target": "test-testbillingservice-test-get-user-subscription-tier-excludes-refunded",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-mod-test-user-service",
+      "target": "test-testuser",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuser",
+      "target": "test-testuser-test-user-creation",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuser-test-user-creation",
+      "target": "test-testuser-test-user-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser-test-user-creation",
+      "target": "test-testuser-test-user-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser-test-user-creation",
+      "target": "test-testuser-test-user-creation",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser",
+      "target": "test-testuser-test-email-validation-lowercase",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuser-test-email-validation-lowercase",
+      "target": "test-testuser-test-email-validation-lowercase",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser",
+      "target": "test-testuser-test-invalid-email-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuser",
+      "target": "test-testuser-test-to-dict",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuser-test-to-dict",
+      "target": "user-service-adminuser-to-dict",
+      "relation": "TESTS",
+      "assertion": "tests to_dict"
+    },
+    {
+      "source": "test-testuser-test-to-dict",
+      "target": "test-testuser-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser-test-to-dict",
+      "target": "test-testuser-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser-test-to-dict",
+      "target": "test-testuser-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuser-test-to-dict",
+      "target": "test-testuser-test-to-dict",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-mod-test-user-service",
+      "target": "test-testadminuser",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testadminuser",
+      "target": "test-testadminuser-test-admin-has-admin-role",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testadminuser-test-admin-has-admin-role",
+      "target": "test-testadminuser-test-admin-has-admin-role",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testadminuser",
+      "target": "test-testadminuser-test-admin-permissions",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testadminuser-test-admin-permissions",
+      "target": "test-testadminuser-test-admin-permissions",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testadminuser-test-admin-permissions",
+      "target": "test-testadminuser-test-admin-permissions",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testadminuser-test-admin-permissions",
+      "target": "test-testadminuser-test-admin-permissions",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testadminuser-test-admin-permissions",
+      "target": "test-testadminuser-test-admin-permissions",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testadminuser",
+      "target": "test-testadminuser-test-admin-to-dict-includes-permissions",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testadminuser-test-admin-to-dict-includes-permissions",
+      "target": "test-testadminuser-test-admin-to-dict-includes-permissions",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testadminuser-test-admin-to-dict-includes-permissions",
+      "target": "test-testadminuser-test-admin-to-dict-includes-permissions",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-mod-test-user-service",
+      "target": "test-testpasswordhashing",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpasswordhashing",
+      "target": "test-testpasswordhashing-test-hash-password-format",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpasswordhashing-test-hash-password-format",
+      "target": "test-testpasswordhashing-test-hash-password-format",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpasswordhashing-test-hash-password-format",
+      "target": "test-testpasswordhashing-test-hash-password-format",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpasswordhashing-test-hash-password-format",
+      "target": "test-testpasswordhashing-test-hash-password-format",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpasswordhashing",
+      "target": "test-testpasswordhashing-test-verify-correct-password",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpasswordhashing-test-verify-correct-password",
+      "target": "test-testpasswordhashing-test-verify-correct-password",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpasswordhashing",
+      "target": "test-testpasswordhashing-test-verify-wrong-password",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpasswordhashing-test-verify-wrong-password",
+      "target": "test-testpasswordhashing-test-verify-wrong-password",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testpasswordhashing",
+      "target": "test-testpasswordhashing-test-verify-malformed-hash",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testpasswordhashing-test-verify-malformed-hash",
+      "target": "test-testpasswordhashing-test-verify-malformed-hash",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-mod-test-user-service",
+      "target": "test-testuserservice",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-setup-method",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-register-user",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-register-user",
+      "target": "user-service-register-user",
+      "relation": "TESTS",
+      "assertion": "tests register_user"
+    },
+    {
+      "source": "test-testuserservice-test-register-user",
+      "target": "test-testuserservice-test-register-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-register-user",
+      "target": "test-testuserservice-test-register-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-register-user",
+      "target": "test-testuserservice-test-register-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-register-duplicate-email-raises",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-authenticate-valid",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-authenticate-valid",
+      "target": "test-testuserservice-test-authenticate-valid",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-authenticate-valid",
+      "target": "test-testuserservice-test-authenticate-valid",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-authenticate-valid",
+      "target": "test-testuserservice-test-authenticate-valid",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-authenticate-wrong-password",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-authenticate-wrong-password",
+      "target": "test-testuserservice-test-authenticate-wrong-password",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-authenticate-nonexistent-user",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-authenticate-nonexistent-user",
+      "target": "test-testuserservice-test-authenticate-nonexistent-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-get-user-profile",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-get-user-profile",
+      "target": "user-service-get-user-profile",
+      "relation": "TESTS",
+      "assertion": "tests get_user_profile"
+    },
+    {
+      "source": "test-testuserservice-test-get-user-profile",
+      "target": "test-testuserservice-test-get-user-profile",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-get-user-profile",
+      "target": "test-testuserservice-test-get-user-profile",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-get-user-profile-not-found",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-get-user-profile-not-found",
+      "target": "test-testuserservice-test-get-user-profile-not-found",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-update-user-profile-name",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-update-user-profile-name",
+      "target": "test-testuserservice-test-update-user-profile-name",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-update-user-profile-email",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-update-user-profile-email",
+      "target": "test-testuserservice-test-update-user-profile-email",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-update-nonexistent-user",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-update-nonexistent-user",
+      "target": "test-testuserservice-test-update-nonexistent-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-list-users-by-role",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-list-users-by-role",
+      "target": "user-service-list-users-by-role",
+      "relation": "TESTS",
+      "assertion": "tests list_users_by_role"
+    },
+    {
+      "source": "test-testuserservice-test-list-users-by-role",
+      "target": "test-testuserservice-test-list-users-by-role",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-delete-user",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-delete-user",
+      "target": "user-service-delete-user",
+      "relation": "TESTS",
+      "assertion": "tests delete_user"
+    },
+    {
+      "source": "test-testuserservice-test-delete-user",
+      "target": "test-testuserservice-test-delete-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-delete-user",
+      "target": "test-testuserservice-test-delete-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-delete-nonexistent-user",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-delete-nonexistent-user",
+      "target": "test-testuserservice-test-delete-nonexistent-user",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-promote-to-admin",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-promote-to-admin",
+      "target": "user-service-promote-to-admin",
+      "relation": "TESTS",
+      "assertion": "tests promote_to_admin"
+    },
+    {
+      "source": "test-testuserservice-test-promote-to-admin",
+      "target": "test-testuserservice-test-promote-to-admin",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-promote-to-admin",
+      "target": "test-testuserservice-test-promote-to-admin",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice-test-promote-to-admin",
+      "target": "test-testuserservice-test-promote-to-admin",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "test-testuserservice",
+      "target": "test-testuserservice-test-promote-nonexistent",
+      "relation": "CONTAINS"
+    },
+    {
+      "source": "test-testuserservice-test-promote-nonexistent",
+      "target": "test-testuserservice-test-promote-nonexistent",
+      "relation": "HAS_ASSERTION",
+      "assertion": "contains an assert statement"
+    },
+    {
+      "source": "payments--get-user-service",
+      "target": "mod-user-service",
+      "relation": "RUNTIME_IMPORT",
+      "assertion": "_get_user_service imports user_service at runtime",
+      "bridge": "The _get_user_service function in payments imports user_service inside the function body (lazy import pattern). This means cross-module calls go through: payments._get_user_service() \u2192 import user_service \u2192 user_service.<function>(). Use this pattern when calling user_service functions from payments."
+    },
+    {
+      "source": "mod-payments",
+      "target": "mod-user-service",
+      "relation": "DEPENDS_ON",
+      "assertion": "payments depends on user_service",
+      "bridge": "The payments module imports user_service at runtime to access its functions. This means payments cannot operate independently \u2014 it needs user_service to be available."
+    },
+    {
+      "source": "mod-payments",
+      "target": "convention-payments-valueerror",
+      "relation": "FOLLOWS_CONVENTION",
+      "assertion": "payments follows a ValueError convention for error handling"
+    },
+    {
+      "source": "convention-payments-valueerror",
+      "target": "payments-payment--validate-amount",
+      "relation": "EXEMPLIFIES",
+      "assertion": "_validate_amount exemplifies this ValueError convention"
+    },
+    {
+      "source": "convention-payments-valueerror",
+      "target": "payments-process-payment",
+      "relation": "EXEMPLIFIES",
+      "assertion": "process_payment exemplifies this ValueError convention"
+    },
+    {
+      "source": "mod-payments",
+      "target": "convention-payments-runtimeerror",
+      "relation": "FOLLOWS_CONVENTION",
+      "assertion": "payments follows a RuntimeError convention for error handling"
+    },
+    {
+      "source": "convention-payments-runtimeerror",
+      "target": "payments-payment-complete",
+      "relation": "EXEMPLIFIES",
+      "assertion": "complete exemplifies this RuntimeError convention"
+    },
+    {
+      "source": "convention-payments-runtimeerror",
+      "target": "payments-payment-refund",
+      "relation": "EXEMPLIFIES",
+      "assertion": "refund exemplifies this RuntimeError convention"
+    },
+    {
+      "source": "mod-user-service",
+      "target": "convention-user-service-valueerror",
+      "relation": "FOLLOWS_CONVENTION",
+      "assertion": "user_service follows a ValueError convention for error handling"
+    },
+    {
+      "source": "convention-user-service-valueerror",
+      "target": "user-service-user--validate-email",
+      "relation": "EXEMPLIFIES",
+      "assertion": "_validate_email exemplifies this ValueError convention"
+    },
+    {
+      "source": "convention-user-service-valueerror",
+      "target": "user-service-register-user",
+      "relation": "EXEMPLIFIES",
+      "assertion": "register_user exemplifies this ValueError convention"
+    },
+    {
+      "source": "payments--get-user-service",
+      "target": "convention-cross-module-payments-user-service",
+      "relation": "FOLLOWS_CONVENTION",
+      "assertion": "payments uses lazy import to access user-service"
+    }
+  ],
+  "metadata": {
+    "source_files": [
+      "notifications.py",
+      "payments.py",
+      "user_service.py"
+    ],
+    "test_files": [
+      "test_notifications.py",
+      "test_payments.py",
+      "test_user_service.py"
+    ],
+    "module_exports": {
+      "notifications": [
+        "NotificationType",
+        "queue_notification",
+        "send_email",
+        "notify_welcome",
+        "notify_payment_confirmation",
+        "notify_payment_failed",
+        "notify_password_reset",
+        "flush_notification_queue",
+        "get_user_notifications"
+      ],
+      "payments": [
+        "PaymentStatus",
+        "SubscriptionTier",
+        "Payment",
+        "_get_user_service",
+        "process_payment",
+        "refund_payment",
+        "get_payment_history",
+        "get_revenue_by_tier",
+        "get_user_subscription_tier"
+      ],
+      "user_service": [
+        "User",
+        "AdminUser",
+        "hash_password",
+        "verify_password",
+        "register_user",
+        "authenticate_user",
+        "get_user_profile",
+        "update_user_profile",
+        "list_users_by_role",
+        "delete_user",
+        "promote_to_admin"
+      ]
+    },
+    "conventions": [
+      "payments.ValueError convention",
+      "payments.RuntimeError convention",
+      "user_service.ValueError convention",
+      "payments \u2192 user_service access convention"
+    ]
+  }
+}

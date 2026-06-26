@@ -1,0 +1,115 @@
+[
+  {
+    "id": "gen-cancel-subscription",
+    "type": "generation",
+    "prompt": "Add a cancel_subscription function to the payments module that cancels a user's active subscription by refunding their most recent completed payment. It should validate the user exists, find the most recent COMPLETED payment, refund it, and return the refunded Payment (or None if no active subscription).",
+    "module": "payments",
+    "test_file": "tasks/tests/test_gen_cancel_subscription.py",
+    "test_names": [
+      "test_cancels_active_subscription",
+      "test_returns_none_when_no_active",
+      "test_refunds_most_recent_when_multiple",
+      "test_nonexistent_user_raises"
+    ]
+  },
+  {
+    "id": "gen-reset-password",
+    "type": "generation",
+    "prompt": "Add a reset_password function to the user_service module that allows a user to reset their password by providing their user_id, old password, and new password. It should verify the user exists, verify the old password, hash the new password, update it, and return True on success or False if credentials don't match.",
+    "module": "user_service",
+    "test_file": "tasks/tests/test_gen_reset_password.py",
+    "test_names": [
+      "test_reset_password_success",
+      "test_reset_wrong_old_password",
+      "test_reset_nonexistent_user",
+      "test_reset_uses_new_password_for_auth"
+    ]
+  },
+  {
+    "id": "gen-notify-user-deleted",
+    "type": "generation",
+    "prompt": "Add a notify_user_deleted function to the notifications module that sends a confirmation email when a user account is deleted. It should accept user_email and user_name, send an email with subject Account Deleted and a goodbye message, and also queue an internal notification. Return True if email sent successfully.",
+    "module": "notifications",
+    "test_file": "tasks/tests/test_gen_notify_deleted.py",
+    "test_names": [
+      "test_sends_deletion_email",
+      "test_queues_internal_notification",
+      "test_returns_true_on_success"
+    ]
+  },
+  {
+    "id": "repair-duplicate-email",
+    "type": "repair",
+    "prompt": "The register_user function in user_service has a bug: it checks for duplicate emails by looking up the email as a key in _user_db, but _user_db is keyed by user_id not email. Fix it so it properly checks all existing users emails for duplicates regardless of case.",
+    "module": "user_service",
+    "test_file": "tasks/tests/test_repair_duplicate_email.py",
+    "test_names": [
+      "test_duplicate_email_rejected",
+      "test_duplicate_email_case_insensitive",
+      "test_registration_still_works_for_new_emails"
+    ]
+  },
+  {
+    "id": "repair-revenue-refunded",
+    "type": "repair",
+    "prompt": "The get_revenue_by_tier function in payments has a bug: it sums all payments with status COMPLETED but does not properly exclude payments that were later refunded. A refunded payment has its status changed to REFUNDED, so it is no longer COMPLETED. However, the function should also handle the case where a payment is marked COMPLETED but then fails. Fix get_revenue_by_tier so it only counts payments that are truly completed and not refunded.",
+    "module": "payments",
+    "test_file": "tasks/tests/test_repair_revenue.py",
+    "test_names": [
+      "test_revenue_excludes_refunded",
+      "test_revenue_includes_completed",
+      "test_revenue_zero_when_all_refunded"
+    ]
+  },
+  {
+    "id": "repair-notification-queue",
+    "type": "repair",
+    "prompt": "The flush_notification_queue function in notifications sends all queued notifications and returns them. Fix it so it properly sends each notification via send_email before marking it as sent, and only clears the queue after all notifications are sent.",
+    "module": "notifications",
+    "test_file": "tasks/tests/test_repair_notification_queue.py",
+    "test_names": [
+      "test_flush_sends_notifications",
+      "test_flush_clears_sent_notifications",
+      "test_flush_preserves_unsent_on_error"
+    ]
+  },
+  {
+    "id": "comp-update-timestamp",
+    "type": "completion",
+    "prompt": "Complete the update_user_profile function in user_service. It currently updates name and email but does not update an updated_at field. Add an updated_at timestamp to the User class that gets set on creation and updated whenever the profile is modified. Also add updated_at to the to_dict method.",
+    "module": "user_service",
+    "test_file": "tasks/tests/test_comp_timestamp.py",
+    "test_names": [
+      "test_updated_at_set_on_creation",
+      "test_updated_at_changes_on_update",
+      "test_to_dict_includes_updated_at"
+    ]
+  },
+  {
+    "id": "comp-payment-summary",
+    "type": "completion",
+    "prompt": "Complete the get_payment_summary function in payments. This function should return a dictionary with total_revenue (sum of COMPLETED payments), total_refunded (sum of REFUNDED payments), payment_count (total payments), and active_subscribers (count of users with at least one COMPLETED payment).",
+    "module": "payments",
+    "test_file": "tasks/tests/test_comp_summary.py",
+    "test_names": [
+      "test_summary_returns_all_fields",
+      "test_summary_revenue_calculation",
+      "test_summary_refunded_calculation",
+      "test_summary_active_subscribers",
+      "test_summary_empty_when_no_payments"
+    ]
+  },
+  {
+    "id": "comp-notification-stats",
+    "type": "completion",
+    "prompt": "Complete the get_notification_stats function in notifications. It should return a dictionary with total_queued (count of all notifications), by_type (dict counting notifications by type), and unsent_count (notifications where sent_at is None).",
+    "module": "notifications",
+    "test_file": "tasks/tests/test_comp_notif_stats.py",
+    "test_names": [
+      "test_stats_returns_all_fields",
+      "test_stats_by_type_count",
+      "test_stats_unsent_count",
+      "test_stats_empty_queue"
+    ]
+  }
+]

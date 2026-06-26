@@ -1,0 +1,22 @@
+{
+  "name": "coding-kg-benchmark",
+  "version": "1.0.0",
+  "date": "2026-06-26",
+  "description": "Coding knowledge graph agent benchmark: 4 models × 4 conditions × 9 tasks × 5 runs",
+  "models": ["qwen2.5:7b", "mistral:7b", "llama3.1:8b", "deepinfra/zai-org/GLM-5.2"],
+  "conditions": ["b0", "kg", "kg-nl", "ma-kg", "frontier-b0"],
+  "tasks": 9,
+  "runs_per_condition": 5,
+  "total_runs": 585,
+  "evaluation": "pass@1 via pytest",
+  "files": {
+    "code-graph.json": "Knowledge graph (178 nodes, 348 edges)",
+    "tasks.json": "9 task definitions",
+    "full-qwen2-57b-mqur77ed.json": "qwen2.5:7b results (180 runs)",
+    "full-mistral7b-mquvar1s.json": "mistral:7b results (178 runs)",
+    "full-llama3-18b-mquzge6s.json": "llama3.1:8b results (180 runs)",
+    "frontier-b0.json": "GLM-5.2 frontier B0 ceiling (45 runs)"
+  },
+  "website": "https://00n.ai/research/coding-kg-agent-benchmark/",
+  "license": "CC-BY-4.0"
+}
