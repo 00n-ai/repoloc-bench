@@ -15,7 +15,15 @@
     "full-qwen2-57b-mqur77ed.json": "qwen2.5:7b results (180 runs)",
     "full-mistral7b-mquvar1s.json": "mistral:7b results (178 runs)",
     "full-llama3-18b-mquzge6s.json": "llama3.1:8b results (180 runs)",
-    "frontier-b0.json": "GLM-5.2 frontier B0 ceiling (45 runs)"
+    "frontier-b0.json": "GLM-5.2 frontier B0 ceiling (45 runs)",
+    "src/extract_code_kg.py": "AST-based graph extractor",
+    "src/code_kg_agent.js": "Single-agent KG pipeline",
+    "src/ma_kg_agent.js": "MA+KG pipeline with directional reasoning",
+    "src/run_full_experiment.mjs": "Full experiment runner",
+    "example-repo/src/payments.py": "Payments module",
+    "example-repo/src/user_service.py": "User service module",
+    "example-repo/src/notifications.py": "Notifications module",
+    "tasks/tests/": "Pytest suites for 9 tasks"
   },
   "website": "https://00n.ai/research/coding-kg-agent-benchmark/",
   "license": "CC-BY-4.0"
